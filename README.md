@@ -77,7 +77,7 @@ flowchart TB
 
 ## 版本与安全
 
-- 全部内容已提交到本地 Git 仓库并 push 到 GitHub，仓库为**公开访问**，教师无需申请权限即可查看。
+- 全部内容已通过本地 Git 提交（`git commit`）并 `git push` 上传到 GitHub，仓库为**公开访问**，教师无需申请权限即可查看。
 - 本仓库**不包含**任何 API Key、密码、个人隐私信息或其他敏感文件；`.gitignore` 已排除常见敏感文件类型。
 
 ## 踩坑与解决记录
@@ -85,8 +85,8 @@ flowchart TB
 在搭建环境和完成本作业的过程中，我遇到并解决了以下问题（记录问题与最终解决方式）：
 
 1. **GitHub SSH 端口（22/443）被网络屏蔽** → 无法用 SSH 认证推送，最终改用 **HTTPS + Personal Access Token（PAT）** 完成认证与推送。
-2. **`git push` 时 `github.com` 不可达**（走代理返回 502、直连失败，但 `api.github.com` 正常）→ 临时改用 **GitHub Contents API** 把文件内容写进仓库，效果等同于 push。
-3. **本地与云端提交历史分叉**（因上述 API 推送导致）→ 网络恢复后用 `git pull --rebase origin main` 对齐，本地与云端重新一致。
+2. **`git push` 时 `github.com` 短暂不可达**（走代理返回 502、直连失败，但 `api.github.com` 正常）→ 曾临时用 GitHub Contents API 写入文件以完成同步；网络恢复后已改用标准 `git push` 完成最终上传。
+3. **本地与云端提交历史分叉**（因临时 API 写入导致）→ 网络恢复后先对齐本地与云端基线，再通过标准 `git commit` + `git push` 完成上传，最终本地与云端提交历史完全一致、均为标准 push 结果。
 4. **`osxkeychain` 凭据存储在自动化环境不可用** → 改用 `store` 方式，凭据保存在 `~/.git-credentials`（权限 600）。
 
 ## 后续迭代
