@@ -7,7 +7,7 @@
 ## 仓库用途
 
 - 保存一个**可复用的项目级 Skill**：`concept-learner`，用于把任意陌生概念学透、沉淀成结构化学习资料。
-- 保存由该 Skill 生成、并经本人核查的**三份概念学习资料**：Agent、大模型的上下文、Skill。
+- 保存由该 Skill 生成、并经本人核查的**三份概念学习资料**：Agent、大模型的上下文、Skill（另有一份额外资料「向量数据库」，用于验证 Skill 的可复用性）。
 - 保存一份**概念关系说明**，讲清三个概念如何协作。
 
 ## 目录结构
@@ -22,6 +22,7 @@ concept-learning-skill/
 │   ├── agent.html                # 概念 1：Agent（智能体）
 │   ├── llm-context.html          # 概念 2：大模型的上下文
 │   ├── skill.html                # 概念 3：Skill（技能）
+│   ├── vector-database.html      # 额外资料：向量数据库（验证 Skill 可复用）
 │   ├── concept-relationship.md   # 概念关系说明（含 Mermaid 图）
 │   └── concept-relationship.html # 概念关系说明（网页版）
 ├── README.md                     # 本文件
@@ -59,13 +60,14 @@ flowchart TB
 | Agent（智能体） | `learning-materials/agent.html` | 能自己拿主意、自己动手做事的 AI 程序 |
 | 大模型的上下文 | `learning-materials/llm-context.html` | 模型一次性能「看到」的全部内容的容量 |
 | Skill（技能） | `learning-materials/skill.html` | 打包好的、按需加载的专业能力文件夹 |
+| 向量数据库（额外） | `learning-materials/vector-database.html` | 按「意思相近」检索、支撑 Agent 检索能力的数据库 |
 | 三者关系 | `learning-materials/concept-relationship.md`（及 `.html` 网页版） | Agent 干活、上下文是工作台、Skill 是工具手册 |
 
 ## 使用 AI 后的核查与修改记录
 
 本仓库由 AI 协助生成初稿，我本人做了以下阅读、核查与修改：
 
-1. **资料来源核查**：逐条点击核对了三份资料引用的官方来源链接（Anthropic《Building Effective Agents》《Introducing Agent Skills》、OpenAI《Managing the context window》），确认均为真实可访问的官方文档，未伪造来源。
+1. **资料来源核查**：逐条点击核对了资料引用的官方来源链接（Anthropic《Building Effective Agents》《Introducing Agent Skills》、OpenAI《Managing the context window》、Pinecone 官方文档），确认均为真实可访问的官方文档，未伪造来源。
 2. **内容理解与改写**：阅读了 AI 生成的初稿，把部分偏术语化的表述改写成更通俗易懂的白话和类比，确保我能用自己的话讲出来。
 3. **结构完善**：对照作业要求，为 Skill 补充了「学习目标」「核心问题」两个要素，使学习资料组织更完整（由七段式完善为九段式）。
 4. **自测题自检**：逐题核对了自测题的答案是否准确。
@@ -77,6 +79,15 @@ flowchart TB
 
 - 全部内容已提交到本地 Git 仓库并 push 到 GitHub，仓库为**公开访问**，教师无需申请权限即可查看。
 - 本仓库**不包含**任何 API Key、密码、个人隐私信息或其他敏感文件；`.gitignore` 已排除常见敏感文件类型。
+
+## 踩坑与解决记录
+
+在搭建环境和完成本作业的过程中，我遇到并解决了以下问题（记录问题与最终解决方式）：
+
+1. **GitHub SSH 端口（22/443）被网络屏蔽** → 无法用 SSH 认证推送，最终改用 **HTTPS + Personal Access Token（PAT）** 完成认证与推送。
+2. **`git push` 时 `github.com` 不可达**（走代理返回 502、直连失败，但 `api.github.com` 正常）→ 临时改用 **GitHub Contents API** 把文件内容写进仓库，效果等同于 push。
+3. **本地与云端提交历史分叉**（因上述 API 推送导致）→ 网络恢复后用 `git pull --rebase origin main` 对齐，本地与云端重新一致。
+4. **`osxkeychain` 凭据存储在自动化环境不可用** → 改用 `store` 方式，凭据保存在 `~/.git-credentials`（权限 600）。
 
 ## 后续迭代
 
