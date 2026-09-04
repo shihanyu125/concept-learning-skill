@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念学习 · Agent（智能体）</title>
+<style>
+  :root{--bg:#f5f6f8;--card:#ffffff;--ink:#1f2937;--sub:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--green:#059669;--amber:#d97706;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;padding:40px 16px}
+  .wrap{max-width:820px;margin:0 auto}
+  header{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;border-radius:16px;padding:32px 36px;margin-bottom:24px}
+  header .tag{display:inline-block;background:rgba(255,255,255,.18);padding:3px 12px;border-radius:999px;font-size:13px;margin-bottom:12px}
+  header h1{font-size:28px;font-weight:700;margin-bottom:8px}
+  header p{opacity:.92;font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 30px;margin-bottom:16px}
+  .card h2{font-size:18px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .card h2 .n{width:28px;height:28px;border-radius:8px;background:var(--accent);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+  .card p{margin-bottom:10px;color:var(--ink)}
+  .card li{margin:6px 0 6px 22px}
+  .quote{background:var(--accent-soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:0 10px 10px 0;margin:12px 0;font-size:15px}
+  .analogy{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px 18px;margin:12px 0;font-size:15px}
+  .analogy b{color:var(--amber)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+  th{background:#f9fafb;font-weight:600}
+  .qa{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:14px 18px;margin:10px 0}
+  .qa b{color:var(--green)}
+  .src a{color:var(--accent);word-break:break-all}
+  .note{background:#fef2f2;border:1px dashed #fca5a5;border-radius:10px;padding:16px 18px;margin-top:8px;color:#7f1d1d;font-size:14px}
+  footer{text-align:center;color:var(--sub);font-size:13px;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">概念学习资料 · Concept Learning Material</span>
+    <h1>Agent（智能体）</h1>
+    <p>用 AI 生成并经本人核查的学习资料 · 可复用 Skill：concept-learner 产出</p>
+  </header>
+
+  <div class="card">
+    <h2><span class="n">1</span>一句话解释（我的理解）</h2>
+    <p><b>Agent 是一个「能自己拿主意、自己动手做事」的 AI 程序。</b>普通聊天机器人只能回答你问题；而 Agent 会在接到一个目标后，自己拆步骤、自己决定下一步干什么、自己调用工具，一步步把目标完成。</p>
+    <div class="analogy">
+      <b>生活类比：</b>普通 AI 像一位「只会给你建议的顾问」——你问它「怎么订机票」，它告诉你步骤，但不动手。Agent 则像一位「能直接替你办事的助理」——你说「帮我订张明天的机票」，它自己查航班、比价格、下单、确认，全程不用你一步步指挥。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">2</span>核心机制 / 组成</h2>
+    <p>一个 Agent 的内核，是一个「被增强的大语言模型（LLM）」，在模型之上叠加了三种能力：</p>
+    <ul>
+      <li><b>检索（Retrieval）</b>：能去外部查资料、查数据，不是只靠脑内记忆。</li>
+      <li><b>工具（Tools）</b>：能调用外部工具——搜网页、跑代码、查数据库、发邮件等。</li>
+      <li><b>记忆（Memory）</b>：能记住对话过程和中间状态，跨步骤保持连贯。</li>
+    </ul>
+    <p>理解 Agent 最关键是区分它与「工作流（Workflow）」——这是 Anthropic 官方文章反复强调的核心：</p>
+    <table>
+      <tr><th></th><th>工作流 Workflow</th><th>智能体 Agent</th></tr>
+      <tr><td><b>控制权在谁</b></td><td>代码（预先写死流程）</td><td>模型（自己动态决定）</td></tr>
+      <tr><td><b>类比</b></td><td>有轨列车，轨道提前铺好</td><td>自动驾驶汽车，按路况变路线</td></tr>
+      <tr><td><b>优点</b></td><td>稳定、可预测、易调试、省钱</td><td>灵活、能应对开放复杂任务</td></tr>
+      <tr><td><b>缺点</b></td><td>只能处理固定流程</td><td>不确定、可能无效循环、更费 token、难排查</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">3</span>一个具体应用场景</h2>
+    <p><b>自动整理邮箱的 Agent：</b>你设定一个目标「帮我整理今天的邮件」，Agent 会自己读取收件箱 → 判断每封是垃圾、广告还是重要事务 → 垃圾的归档、广告的打标签、重要的自动起草回复并提醒你确认。整个过程它自己规划、自己调用「读邮件」「分类」「归档」等工具完成，你只看结果。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">4</span>容易混淆的点 / 使用边界</h2>
+    <ul>
+      <li><b>易混淆：</b>不是「只要调用了工具的 AI」就叫 Agent；很多自动化脚本也会调工具，但流程是写死的，那是 Workflow 不是 Agent。</li>
+      <li><b>易混淆：</b>不是「越自主越好」。Anthropic 的结论是：<b>能用简单方案解决就不要上 Agent</b>——简单任务用一次普通 AI 调用就够了，盲目上 Agent 只会更贵、更慢、更不可控。</li>
+      <li><b>使用边界：</b>Agent 适合「目标开放、步骤无法提前枚举」的任务；对于「步骤固定、结果可预测」的任务，Workflow 或直接调用反而更好。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">5</span>自测题（检验是否真懂）</h2>
+    <div class="qa"><b>Q1：</b>Workflow 和 Agent 最本质的区别是什么？<br><b>A：</b>控制权在谁手里——Workflow 由代码预先定流程，Agent 由模型自己动态决定下一步。</div>
+    <div class="qa"><b>Q2：</b>Agent 的三种核心增强能力分别是什么？<br><b>A：</b>检索（Retrieval）、工具（Tools）、记忆（Memory）。</div>
+    <div class="qa"><b>Q3：</b>什么样的情况下「不该」使用 Agent？<br><b>A：</b>任务简单、步骤固定、可预测时，用简单方案（一次 LLM 调用或 Workflow）即可，无需 Agent。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">6</span>可核查的资料来源</h2>
+    <ul class="src">
+      <li>Anthropic 官方工程指南《Building Effective Agents》（2024-12，作者 Erik Schluntz &amp; Barry Zhang）——定义 Agent 与 Workflow 的区分、增强型 LLM 的三种能力：<br><a href="https://www.anthropic.com/engineering/building-effective-agents">https://www.anthropic.com/engineering/building-effective-agents</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">7</span>我的理解与核查笔记（本人填写）</h2>
+    <p class="note">✍️ 此处由学习者本人阅读资料后填写：你用自己的话复述一遍「Agent 是什么」，并记录你核查时发现或修改了哪些内容、以及你还有哪些疑问。</p>
+  </div>
+
+  <footer>由 concept-learner Skill 生成 · 资料来源已核查 · 内容经本人阅读修改</footer>
+</div>
+</body>
+</html>

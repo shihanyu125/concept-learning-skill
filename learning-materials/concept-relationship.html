@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念关系 · Agent / 上下文 / Skill</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true, theme:'base', themeVariables:{primaryColor:'#eff6ff', primaryTextColor:'#1f2937', primaryBorderColor:'#2563eb', lineColor:'#6b7280'}});</script>
+<style>
+  :root{--bg:#f5f6f8;--card:#ffffff;--ink:#1f2937;--sub:#6b7280;--line:#e5e7eb;--accent:#2563eb;--purple:#7c3aed;--green:#059669;--amber:#d97706;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;padding:40px 16px}
+  .wrap{max-width:860px;margin:0 auto}
+  header{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;border-radius:16px;padding:32px 36px;margin-bottom:24px}
+  header .tag{display:inline-block;background:rgba(255,255,255,.15);padding:3px 12px;border-radius:999px;font-size:13px;margin-bottom:12px}
+  header h1{font-size:26px;font-weight:700;margin-bottom:8px}
+  header p{opacity:.9;font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 30px;margin-bottom:16px}
+  .card h2{font-size:18px;margin-bottom:12px}
+  .card p{margin-bottom:10px}
+  .card li{margin:6px 0 6px 22px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+  th{background:#f9fafb;font-weight:600}
+  .chip{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;margin-right:4px}
+  .chip.agent{background:#dbeafe;color:#1d4ed8}
+  .chip.ctx{background:#ede9fe;color:#6d28d9}
+  .chip.skill{background:#d1fae5;color:#047857}
+  .mermaid-box{background:#fafbfc;border:1px solid var(--line);border-radius:10px;padding:20px;text-align:center;margin:12px 0}
+  .key{background:#fffbeb;border-left:4px solid var(--amber);padding:14px 18px;border-radius:0 10px 10px 0;margin:12px 0;font-size:15px}
+  .key b{color:var(--amber)}
+  .note{background:#fef2f2;border:1px dashed #fca5a5;border-radius:10px;padding:16px 18px;margin-top:8px;color:#7f1d1d;font-size:14px}
+  footer{text-align:center;color:var(--sub);font-size:13px;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">概念关系说明 · Concept Relationship</span>
+    <h1>Agent、上下文、Skill 三者之间的关系</h1>
+    <p>用文字、表格与 Mermaid 图呈现 · 体现本人理解</p>
+  </header>
+
+  <div class="card">
+    <h2>一、先给三个概念各自一个「定位」</h2>
+    <table>
+      <tr><th>概念</th><th>一句话定位</th><th>扮演的角色</th></tr>
+      <tr><td><span class="chip agent">Agent</span></td><td>能自己拿主意、自己动手做事的 AI 程序</td><td><b>执行者 / 决策者</b></td></tr>
+      <tr><td><span class="chip ctx">上下文</span></td><td>模型一次性能「看到」的全部内容的容量</td><td><b>工作记忆 / 工作台</b></td></tr>
+      <tr><td><span class="chip skill">Skill</span></td><td>打包好的、按需加载的专业能力文件夹</td><td><b>可复用的知识包</b></td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>二、一张图看懂三者的关系</h2>
+    <div class="mermaid-box">
+      <div class="mermaid">
+flowchart TB
+    subgraph RT["一次任务运行的「大脑」"]
+        A["Agent 智能体<br/>执行者 / 决策者"]
+        C["上下文 Context<br/>工作记忆 / 工作台"]
+    end
+    S["Skill 技能包<br/>指令 + 脚本 + 资源"]
+
+    A <-->|"读写信息"| C
+    S -.->|"按需加载（渐进式披露）"| C
+    C -.->|"支撑更专业的决策"| A
+      </div>
+    </div>
+    <p>这张图说明了一个<b>闭环</b>：<b>Skill</b> 在需要时把专业知识「装进」<b>上下文</b>，<b>上下文</b> 把「装了什么」提供给 <b>Agent</b> 做决策，<b>Agent</b> 据此更专业地行动。三者缺一不可。</p>
+  </div>
+
+  <div class="card">
+    <h2>三、重点关系 ①：上下文如何影响 Agent 的工作</h2>
+    <p><b>上下文是 Agent 决策的「原料」。</b>Agent 运行时，它能看到的一切——用户的目标、对话历史、工具返回的结果、加载进来的 Skill 内容——全都堆在上下文窗口里。所以：</p>
+    <ul>
+      <li><b>上下文大小 = Agent 的「眼界」：</b>窗口越大，Agent 一次能记住和参考的信息越多，做复杂决策就越不容易「忘事」。</li>
+      <li><b>上下文内容 = Agent 的「判断质量」：</b>喂给 Agent 的信息如果不相关、太冗长，会挤占窗口，反而让 Agent 「看不清重点」、做出更差的决定。</li>
+      <li><b>窗口满时会「遗忘」：</b>一旦超出上限，最早的信息被挤掉，Agent 就像「忘了前面聊过什么」，这正是长任务里 Agent 表现下滑的常见原因。</li>
+    </ul>
+    <div class="key"><b>一句话：</b>上下文决定了 Agent 能「看到多少、看清多少」，因此也决定了它「想得对不对、做得好不好」。</div>
+  </div>
+
+  <div class="card">
+    <h2>四、重点关系 ②：Skill 如何沉淀可复用的任务知识</h2>
+    <p><b>Skill 把「一次性经验」变成了「可反复调用的方法」。</b>它通过「渐进式披露」，只在任务需要时把专业知识注入上下文，从而：</p>
+    <ul>
+      <li><b>沉淀：</b>把「怎么做某件事」的流程、指令、工具，固化成一个文件夹（SKILL.md + 资源），不会用完就丢。</li>
+      <li><b>省空间：</b>平时只占一点点（只预读 name+description），需要时才加载全文，不浪费宝贵的上下文。</li>
+      <li><b>可复用：</b>同一个 Skill 能用于多个相似任务（比如 concept-learner 能学任何新概念），也能分享给他人、持续迭代。</li>
+    </ul>
+    <div class="key"><b>一句话：</b>Skill 让「通用 Agent」在需要时临时变成「专业 Agent」，而不用每次都从头教一遍。</div>
+  </div>
+
+  <div class="card">
+    <h2>五、串起来的一句话（我的理解）</h2>
+    <p><b>Agent 是干活的「人」，上下文是它眼前的「工作台」，Skill 是它抽屉里「随用随取的工具手册」。</b>三者协作：合适的 Skill 按需把专业方法摆上工作台，让 Agent 在有限的上下文里做出更专业的判断和行动。</p>
+    <p class="note">✍️ 此处可补充你自己的理解：用你自己的话，重新说一遍「上下文如何影响 Agent」「Skill 如何复用」这两个问题。</p>
+  </div>
+
+  <footer>由 concept-learner Skill 生成 · 关系说明经本人阅读核查</footer>
+</div>
+</body>
+</html>

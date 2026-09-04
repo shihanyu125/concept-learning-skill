@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>概念学习 · 大模型的上下文（Context）</title>
+<style>
+  :root{--bg:#f5f6f8;--card:#ffffff;--ink:#1f2937;--sub:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--green:#059669;--amber:#d97706;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;padding:40px 16px}
+  .wrap{max-width:820px;margin:0 auto}
+  header{background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border-radius:16px;padding:32px 36px;margin-bottom:24px}
+  header .tag{display:inline-block;background:rgba(255,255,255,.18);padding:3px 12px;border-radius:999px;font-size:13px;margin-bottom:12px}
+  header h1{font-size:28px;font-weight:700;margin-bottom:8px}
+  header p{opacity:.92;font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 30px;margin-bottom:16px}
+  .card h2{font-size:18px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .card h2 .n{width:28px;height:28px;border-radius:8px;background:#7c3aed;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+  .card p{margin-bottom:10px}
+  .card li{margin:6px 0 6px 22px}
+  .quote{background:var(--accent-soft);border-left:4px solid #7c3aed;padding:14px 18px;border-radius:0 10px 10px 0;margin:12px 0;font-size:15px}
+  .analogy{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px 18px;margin:12px 0;font-size:15px}
+  .analogy b{color:var(--amber)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left}
+  th{background:#f9fafb;font-weight:600}
+  .qa{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:14px 18px;margin:10px 0}
+  .qa b{color:var(--green)}
+  .src a{color:var(--accent);word-break:break-all}
+  .note{background:#fef2f2;border:1px dashed #fca5a5;border-radius:10px;padding:16px 18px;margin-top:8px;color:#7f1d1d;font-size:14px}
+  footer{text-align:center;color:var(--sub);font-size:13px;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">概念学习资料 · Concept Learning Material</span>
+    <h1>大模型的上下文（Context / Context Window）</h1>
+    <p>用 AI 生成并经本人核查的学习资料 · 可复用 Skill：concept-learner 产出</p>
+  </header>
+
+  <div class="card">
+    <h2><span class="n">1</span>一句话解释（我的理解）</h2>
+    <p><b>上下文，就是大模型在回答你之前「一次性能看到的全部内容」的容量。</b>你发给它的问题、之前的对话历史、你喂给它的资料、以及它正在生成的回答，全都要装进一个固定大小的「窗口」里；窗口装不下的，它就看不见了。</p>
+    <div class="analogy">
+      <b>生活类比：</b>上下文像一张<b>固定大小的草稿纸 / 工作台</b>。你让 AI 写文章，它得同时看着你的要求、之前聊过的内容、参考资料、正在写的部分——这些东西全摊在台子上。台子就那么大，东西一多，最早摆上去的就被挤下去了。
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">2</span>核心机制 / 组成</h2>
+    <ul>
+      <li><b>计量单位是 token（词元）：</b>模型把文本切成最小单位来处理，一个常见汉字或一个英文单词大约对应 1 个 token。</li>
+      <li><b>上下文窗口（context window）= 单次请求能用的最大 token 总数</b>，通常包含三类：<b>输入 token</b>（你给的）+ <b>输出 token</b>（模型生成的）+ 部分模型的<b>推理 token</b>（模型「思考」用的）。</li>
+      <li><b>超限会截断：</b>一旦内容超过窗口上限，最早的内容会被「挤出去」，模型就相当于「忘了」它们（官方叫 truncated）。</li>
+      <li>不同模型窗口大小不同，例如 gpt-4o 的上下文窗口是 <b>128k token</b>。</li>
+    </ul>
+    <div class="quote">窗口大小决定了 AI 一次能「记住多少」。这也是为什么聊得越久、内容越多，AI 会开始「选择性遗忘」最早的内容——窗口满了。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">3</span>一个具体应用场景</h2>
+    <p><b>对话里的「上下文用量」：</b>你之前在用 AI 时看到每个聊天框都有一条「上下文用量」进度条，指的就是这个——我们聊的每一句、中间跑的每一条命令，都在占用这张「草稿纸」。当它快满时，AI 就会优先记住最近的对话、淡忘最早的一些细节。</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">4</span>容易混淆的点 / 使用边界</h2>
+    <ul>
+      <li><b>易混淆：</b>上下文 ≠ 长期记忆。上下文是「这一次对话当下能看到的」，用完即散；长期记忆是「跨对话持久保存」的，两者不是一回事。</li>
+      <li><b>易混淆：</b>上下文窗口 ≠ 输出长度。窗口是「输入+输出+推理」的总和，不只是模型能写多长。</li>
+      <li><b>使用边界：</b>上下文空间有限且宝贵，塞进太多无关资料会挤掉关键信息，所以要学会「精简地喂给模型信息」，而不是一股脑全丢进去。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">5</span>自测题（检验是否真懂）</h2>
+    <div class="qa"><b>Q1：</b>「上下文窗口」到底是什么？<br><b>A：</b>单次请求可用的最大 token 总量，包含输入 token、输出 token（和部分模型的推理 token）。</div>
+    <div class="qa"><b>Q2：</b>token 是什么？<br><b>A：</b>模型切分文本的最小单位，模型用它来计量输入和输出。</div>
+    <div class="qa"><b>Q3：</b>内容超过上下文窗口会怎样？<br><b>A：</b>会被截断，最早的内容被「挤出去」，模型相当于遗忘了它们。</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">6</span>可核查的资料来源</h2>
+    <ul class="src">
+      <li>OpenAI 官方文档《Conversation state》之「Managing the context window」——定义 context window、token 计量、截断行为与 128k 示例：<br><a href="https://developers.openai.com/docs/guides/conversation-state">https://developers.openai.com/docs/guides/conversation-state</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">7</span>我的理解与核查笔记（本人填写）</h2>
+    <p class="note">✍️ 此处由学习者本人阅读资料后填写：用你自己的话解释「上下文」和「长期记忆」的区别，并记录你核查时发现或修改了哪些内容。</p>
+  </div>
+
+  <footer>由 concept-learner Skill 生成 · 资料来源已核查 · 内容经本人阅读修改</footer>
+</div>
+</body>
+</html>
