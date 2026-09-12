@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-13 00:07",
+  "built_at": "2026-09-13 01:03",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -7,10 +7,10 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 28,
-    "edges": 132,
-    "extracted": 125,
-    "inferred": 7,
+    "nodes": 37,
+    "edges": 234,
+    "extracted": 220,
+    "inferred": 14,
     "communities": 7
   },
   "nodes": [
@@ -31,8 +31,26 @@
       ],
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
+      "community": 4,
+      "degree": 24
+    },
+    {
+      "id": "Automation",
+      "label": "Automation（自动化）",
+      "type": "concept",
+      "tags": [
+        "automation",
+        "scheduling",
+        "agent-platform",
+        "workflow"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/Automation.md",
+      "updated": "2026-09-13",
       "community": 1,
-      "degree": 18
+      "degree": 10
     },
     {
       "id": "Context",
@@ -52,8 +70,28 @@
       ],
       "path": "concepts/Context.md",
       "updated": "2026-09-13",
-      "community": 6,
-      "degree": 19
+      "community": 5,
+      "degree": 26
+    },
+    {
+      "id": "ContextManagement",
+      "label": "ContextManagement（上下文管理）",
+      "type": "concept",
+      "tags": [
+        "context-window",
+        "context-editing",
+        "compaction",
+        "engineering-practice",
+        "memory"
+      ],
+      "sources": [
+        "llm-context",
+        "agent"
+      ],
+      "path": "concepts/ContextManagement.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 15
     },
     {
       "id": "LLMWiki",
@@ -66,12 +104,52 @@
         "meta"
       ],
       "sources": [
-        "llm-wiki-pattern"
+        "llm-wiki-pattern",
+        ""
       ],
       "path": "concepts/LLMWiki.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 15
+      "degree": 20
+    },
+    {
+      "id": "Memory",
+      "label": "Memory（记忆）",
+      "type": "concept",
+      "tags": [
+        "memory",
+        "llm",
+        "agent",
+        "state",
+        "core-concept"
+      ],
+      "sources": [
+        "agent",
+        "llm-context",
+        ""
+      ],
+      "path": "concepts/Memory.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 20
+    },
+    {
+      "id": "ModelRouting",
+      "label": "ModelRouting（选模型策略）",
+      "type": "concept",
+      "tags": [
+        "model-routing",
+        "cost",
+        "latency",
+        "agent-platform"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/ModelRouting.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 13
     },
     {
       "id": "ProgressiveDisclosure",
@@ -88,8 +166,28 @@
       ],
       "path": "concepts/ProgressiveDisclosure.md",
       "updated": "2026-09-13",
-      "community": 3,
-      "degree": 14
+      "community": 5,
+      "degree": 19
+    },
+    {
+      "id": "Prompt",
+      "label": "Prompt（提示词）",
+      "type": "concept",
+      "tags": [
+        "llm",
+        "prompt",
+        "prompting",
+        "skill",
+        "core-concept"
+      ],
+      "sources": [
+        "skill",
+        "concept-relationship"
+      ],
+      "path": "concepts/Prompt.md",
+      "updated": "2026-09-13",
+      "community": 5,
+      "degree": 13
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -108,7 +206,7 @@
       "path": "concepts/RetrievalAugmentedGeneration.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 15
+      "degree": 17
     },
     {
       "id": "Skill",
@@ -122,12 +220,52 @@
       ],
       "sources": [
         "skill",
-        "concept-relationship"
+        "concept-relationship",
+        ""
       ],
       "path": "concepts/Skill.md",
       "updated": "2026-09-13",
-      "community": 3,
-      "degree": 15
+      "community": 5,
+      "degree": 22
+    },
+    {
+      "id": "Token",
+      "label": "Token（词元）",
+      "type": "concept",
+      "tags": [
+        "llm",
+        "token",
+        "tokenization",
+        "context-window",
+        "core-concept"
+      ],
+      "sources": [
+        "llm-context"
+      ],
+      "path": "concepts/Token.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 11
+    },
+    {
+      "id": "ToolUse",
+      "label": "ToolUse（工具调用）",
+      "type": "concept",
+      "tags": [
+        "tools",
+        "function-calling",
+        "llm",
+        "agent",
+        "core-concept"
+      ],
+      "sources": [
+        "agent",
+        "concept-relationship"
+      ],
+      "path": "concepts/ToolUse.md",
+      "updated": "2026-09-13",
+      "community": 4,
+      "degree": 12
     },
     {
       "id": "VectorDatabase",
@@ -157,12 +295,13 @@
         "contrast-concept"
       ],
       "sources": [
-        "agent"
+        "agent",
+        ""
       ],
       "path": "concepts/Workflow.md",
       "updated": "2026-09-13",
-      "community": 1,
-      "degree": 7
+      "community": 4,
+      "degree": 13
     },
     {
       "id": "AndrejKarpathy",
@@ -198,8 +337,8 @@
       ],
       "path": "entities/Anthropic.md",
       "updated": "2026-09-13",
-      "community": 1,
-      "degree": 12
+      "community": 5,
+      "degree": 15
     },
     {
       "id": "ConceptLearner",
@@ -220,8 +359,8 @@
       ],
       "path": "entities/ConceptLearner.md",
       "updated": "2026-09-13",
-      "community": 3,
-      "degree": 13
+      "community": 5,
+      "degree": 15
     },
     {
       "id": "LlmWikiAgent",
@@ -239,7 +378,7 @@
       "path": "entities/LlmWikiAgent.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 7
+      "degree": 9
     },
     {
       "id": "OpenAI",
@@ -257,7 +396,7 @@
       "path": "entities/OpenAI.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 10
+      "degree": 14
     },
     {
       "id": "Pinecone",
@@ -275,6 +414,24 @@
       "updated": "2026-09-13",
       "community": 6,
       "degree": 5
+    },
+    {
+      "id": "WorkBuddy",
+      "label": "WorkBuddy",
+      "type": "entity",
+      "tags": [
+        "entity",
+        "product",
+        "agent-platform"
+      ],
+      "sources": [
+        "",
+        "skill"
+      ],
+      "path": "entities/WorkBuddy.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 12
     },
     {
       "id": "health-report",
@@ -301,7 +458,7 @@
       "sources": [],
       "path": "index.md",
       "updated": "2026-09-13",
-      "community": 3,
+      "community": 5,
       "degree": 1
     },
     {
@@ -315,7 +472,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 3,
       "degree": 0
     },
     {
@@ -329,8 +486,8 @@
       "sources": [],
       "path": "log.md",
       "updated": "2026-09-13",
-      "community": 5,
-      "degree": 0
+      "community": 1,
+      "degree": 9
     },
     {
       "id": "overview",
@@ -348,12 +505,13 @@
         "vector-database",
         "concept-relationship",
         "llm-wiki-pattern",
-        "karpathy-llm-wiki-gist"
+        "karpathy-llm-wiki-gist",
+        ""
       ],
       "path": "overview.md",
       "updated": "2026-09-13",
-      "community": 6,
-      "degree": 14
+      "community": 1,
+      "degree": 23
     },
     {
       "id": "agent",
@@ -369,8 +527,27 @@
       ],
       "path": "sources/agent.md",
       "updated": "2026-09-13",
+      "community": 4,
+      "degree": 13
+    },
+    {
+      "id": "",
+      "label": "资料（）：记忆系统与 LLM Wiki",
+      "type": "source",
+      "tags": [
+        "notes",
+        "memory",
+        "llm-wiki",
+        "automation",
+        "model-routing"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "sources/.md",
+      "updated": "2026-09-13",
       "community": 1,
-      "degree": 10
+      "degree": 14
     },
     {
       "id": "concept-relationship",
@@ -386,8 +563,8 @@
       ],
       "path": "sources/concept-relationship.md",
       "updated": "2026-09-13",
-      "community": 3,
-      "degree": 7
+      "community": 5,
+      "degree": 9
     },
     {
       "id": "karpathy-llm-wiki-gist",
@@ -422,7 +599,7 @@
       "path": "sources/llm-context.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 9
+      "degree": 14
     },
     {
       "id": "llm-wiki-pattern",
@@ -456,8 +633,8 @@
       ],
       "path": "sources/skill.md",
       "updated": "2026-09-13",
-      "community": 3,
-      "degree": 7
+      "community": 5,
+      "degree": 9
     },
     {
       "id": "vector-database",
@@ -496,8 +673,8 @@
       ],
       "path": "syntheses/agent-context-skill-relationship.md",
       "updated": "2026-09-13",
-      "community": 1,
-      "degree": 16
+      "community": 5,
+      "degree": 20
     },
     {
       "id": "why-compile-not-retrieve",
@@ -517,10 +694,22 @@
       "path": "syntheses/why-compile-not-retrieve.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 9
+      "degree": 10
     }
   ],
   "edges": [
+    {
+      "source": "Agent",
+      "target": "ToolUse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Agent",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
     {
       "source": "Agent",
       "target": "Context",
@@ -559,6 +748,18 @@
     },
     {
       "source": "Agent",
+      "target": "Automation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Agent",
+      "target": "ModelRouting",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Agent",
       "target": "agent",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -588,14 +789,62 @@
       "confidence": 1.0
     },
     {
-      "source": "Context",
+      "source": "Automation",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Automation",
+      "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Automation",
       "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Automation",
+      "target": "WorkBuddy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Automation",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Context",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Context",
+      "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Context",
+      "target": "Memory",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
     {
       "source": "Context",
       "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Context",
+      "target": "Skill",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -642,6 +891,54 @@
       "confidence": 1.0
     },
     {
+      "source": "ContextManagement",
+      "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "Agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "Anthropic",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "OpenAI",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
+      "target": "llm-context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "LLMWiki",
       "target": "AndrejKarpathy",
       "kind": "EXTRACTED",
@@ -650,6 +947,12 @@
     {
       "source": "LLMWiki",
       "target": "RetrievalAugmentedGeneration",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LLMWiki",
+      "target": "",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -668,6 +971,12 @@
     {
       "source": "LLMWiki",
       "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LLMWiki",
+      "target": "Memory",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -696,8 +1005,110 @@
       "confidence": 1.0
     },
     {
+      "source": "Memory",
+      "target": "agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "WorkBuddy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "llm-context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "RetrievalAugmentedGeneration",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "Prompt",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "WorkBuddy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModelRouting",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "ProgressiveDisclosure",
       "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ProgressiveDisclosure",
+      "target": "Token",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -722,6 +1133,60 @@
     {
       "source": "ProgressiveDisclosure",
       "target": "Anthropic",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "Agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "concept-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
+      "target": "ConceptLearner",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -763,6 +1228,18 @@
     },
     {
       "source": "Skill",
+      "target": "WorkBuddy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Skill",
+      "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Skill",
       "target": "ConceptLearner",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -781,7 +1258,79 @@
     },
     {
       "source": "Skill",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Skill",
       "target": "Anthropic",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Token",
+      "target": "OpenAI",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Token",
+      "target": "llm-context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "RetrievalAugmentedGeneration",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "concept-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "overview",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ToolUse",
+      "target": "OpenAI",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -812,6 +1361,12 @@
     {
       "source": "Workflow",
       "target": "agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Workflow",
+      "target": "",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -924,8 +1479,98 @@
       "confidence": 1.0
     },
     {
+      "source": "WorkBuddy",
+      "target": "ConceptLearner",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WorkBuddy",
+      "target": "Anthropic",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WorkBuddy",
+      "target": "OpenAI",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WorkBuddy",
+      "target": "LlmWikiAgent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WorkBuddy",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WorkBuddy",
+      "target": "skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "index",
       "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ToolUse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Prompt",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Automation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "WorkBuddy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ModelRouting",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -943,19 +1588,13 @@
     },
     {
       "source": "overview",
+      "target": "Memory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
       "target": "Workflow",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "overview",
-      "target": "Context",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "overview",
-      "target": "ProgressiveDisclosure",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -967,7 +1606,49 @@
     },
     {
       "source": "overview",
+      "target": "Prompt",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
       "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Automation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "ModelRouting",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -979,19 +1660,19 @@
     },
     {
       "source": "overview",
-      "target": "AndrejKarpathy",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "overview",
-      "target": "ConceptLearner",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "overview",
       "target": "Anthropic",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "OpenAI",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "WorkBuddy",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1003,7 +1684,13 @@
     },
     {
       "source": "overview",
-      "target": "OpenAI",
+      "target": "ConceptLearner",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1034,6 +1721,42 @@
     {
       "source": "agent",
       "target": "OpenAI",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "AndrejKarpathy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "LlmWikiAgent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "why-compile-not-retrieve",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "llm-context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "ContextManagement",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1122,6 +1845,12 @@
       "confidence": 1.0
     },
     {
+      "source": "llm-context",
+      "target": "overview",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "llm-wiki-pattern",
       "target": "Skill",
       "kind": "EXTRACTED",
@@ -1189,7 +1918,25 @@
     },
     {
       "source": "agent-context-skill-relationship",
+      "target": "Prompt",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "agent-context-skill-relationship",
+      "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "agent-context-skill-relationship",
       "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "agent-context-skill-relationship",
+      "target": "Token",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1272,6 +2019,13 @@
       "confidence": 1.0
     },
     {
+      "source": "Automation",
+      "target": "ModelRouting",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
       "source": "ConceptLearner",
       "target": "agent-context-skill-relationship",
       "kind": "INFERRED",
@@ -1284,6 +2038,13 @@
       "kind": "INFERRED",
       "confidence": 0.75,
       "reason": "共享来源 ['agent', 'llm-context', 'skill']"
+    },
+    {
+      "source": "Memory",
+      "target": "OpenAI",
+      "kind": "INFERRED",
+      "confidence": 0.67,
+      "reason": "共享来源 ['agent', 'llm-context']"
     },
     {
       "source": "Anthropic",
@@ -1300,18 +2061,39 @@
       "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context']"
     },
     {
-      "source": "agent-context-skill-relationship",
-      "target": "overview",
+      "source": "Anthropic",
+      "target": "Memory",
       "kind": "INFERRED",
-      "confidence": 0.57,
-      "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context', 'skill']"
+      "confidence": 0.5,
+      "reason": "共享来源 ['agent', 'llm-context']"
     },
     {
-      "source": "OpenAI",
-      "target": "Workflow",
+      "source": "Automation",
+      "target": "LLMWiki",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "ContextManagement",
+      "target": "agent",
       "kind": "INFERRED",
       "confidence": 0.5,
       "reason": "共享来源 ['agent']"
+    },
+    {
+      "source": "LLMWiki",
+      "target": "ModelRouting",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "ModelRouting",
+      "target": "Workflow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
     },
     {
       "source": "OpenAI",
@@ -1319,6 +2101,20 @@
       "kind": "INFERRED",
       "confidence": 0.5,
       "reason": "共享来源 ['agent', 'llm-context']"
+    },
+    {
+      "source": "ToolUse",
+      "target": "agent-context-skill-relationship",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['agent', 'concept-relationship']"
+    },
+    {
+      "source": "agent-context-skill-relationship",
+      "target": "overview",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context', 'skill']"
     }
   ]
 }

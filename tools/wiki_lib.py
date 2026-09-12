@@ -189,10 +189,15 @@ def extract_wikilinks(text: str) -> list[str]:
     """抽出页面里的所有 [[双链]]（已排除代码块与行内代码里的示例）。
 
     兼容 Obsidian 的别名与锚点写法：[[Page|显示文字]] -> Page，[[Page#小节]] -> Page。
+
+    表格里写别名必须转义竖线（`[[Page\\|别名]]`），否则会把表格列切开；
+    转义后按 "|" 切分会残留一个结尾反斜杠，所以要再 rstrip 一次，
+    否则 `Page\\` 会被当成不存在的页面、误报成断链。
     """
     names: list[str] = []
     for raw in _WIKILINK_RE.findall(strip_code(text)):
         target = raw.split("|", 1)[0].split("#", 1)[0].strip()
+        target = target.rstrip("\\").strip()
         if target:
             names.append(target)
     return names
