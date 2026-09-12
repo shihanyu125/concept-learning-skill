@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Wiki · 知识图谱</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --ink:#1f2937; --sub:#6b7280;
+    --line:#e5e7eb; --accent:#2563eb; --dim:#9ca3af;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#111318; --panel:#1a1d24; --ink:#e8eaed; --sub:#9aa0aa;
+      --line:#2b3038; --accent:#7aa2f7; --dim:#6b7280;
+    }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+       background:var(--bg);color:var(--ink);overflow:hidden}
+  #canvas{display:block;width:100vw;height:100vh;cursor:grab}
+  #canvas.dragging{cursor:grabbing}
+  .panel{position:fixed;background:var(--panel);border:1px solid var(--line);
+         border-radius:12px;padding:14px 16px;box-shadow:0 6px 24px rgba(0,0,0,.08);font-size:13px}
+  #title{top:16px;left:16px;min-width:200px}
+  #title h1{font-size:15px;font-weight:700;margin-bottom:6px}
+  #title .meta{color:var(--sub);line-height:1.7}
+  #legend{bottom:16px;left:16px;line-height:1.9}
+  #legend .row{display:flex;align-items:center;gap:8px}
+  #legend .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+  #legend .line{width:22px;height:0;border-top:2px solid var(--dim);flex-shrink:0}
+  #legend .line.dash{border-top-style:dashed}
+  #info{top:16px;right:16px;max-width:290px;display:none}
+  #info h2{font-size:14px;margin-bottom:6px}
+  #info .type{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;
+              color:#fff;margin-bottom:8px}
+  #info .kv{color:var(--sub);margin:3px 0;line-height:1.6;word-break:break-all}
+  #info ul{margin:6px 0 0 16px;color:var(--sub);line-height:1.7}
+  #hint{bottom:16px;right:16px;color:var(--sub)}
+</style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<div class="panel" id="title">
+  <h1>LLM Wiki · 知识图谱</h1>
+  <div class="meta" id="stats"></div>
+</div>
+
+<div class="panel" id="legend">
+  <div class="row"><span class="dot" style="background:#2563eb"></span>source 来源页</div>
+  <div class="row"><span class="dot" style="background:#7c3aed"></span>entity 实体页</div>
+  <div class="row"><span class="dot" style="background:#059669"></span>concept 概念页</div>
+  <div class="row"><span class="dot" style="background:#d97706"></span>synthesis 综合页</div>
+  <div class="row"><span class="line"></span>EXTRACTED 双链</div>
+  <div class="row"><span class="line dash"></span>INFERRED 推断</div>
+</div>
+
+<div class="panel" id="info"></div>
+<div class="panel" id="hint">拖拽节点 · 滚轮缩放 · 悬停高亮邻居</div>
+
+<script>
+const GRAPH = {"built_at": "2026-09-13 00:07", "builder": "tools/build_graph.py", "method": {"pass1": "确定性解析 [[双链]] → EXTRACTED", "pass2": "共享来源 Jaccard ≥ 0.5 推断 → INFERRED", "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"}, "stats": {"nodes": 28, "edges": 132, "extracted": 125, "inferred": 7, "communities": 7}, "nodes": [{"id": "Agent", "label": "Agent（智能体）", "type": "concept", "tags": ["ai-agent", "llm", "autonomy", "core-concept"], "sources": ["agent", "concept-relationship", "llm-wiki-pattern"], "path": "concepts/Agent.md", "updated": "2026-09-13", "community": 1, "degree": 18}, {"id": "Context", "label": "Context（上下文 / 上下文窗口）", "type": "concept", "tags": ["llm", "context-window", "token", "memory", "core-concept"], "sources": ["llm-context", "agent", "concept-relationship"], "path": "concepts/Context.md", "updated": "2026-09-13", "community": 6, "degree": 19}, {"id": "LLMWiki", "label": "LLMWiki（LLM Wiki 模式）", "type": "concept", "tags": ["llm-wiki", "knowledge-management", "methodology", "meta"], "sources": ["llm-wiki-pattern"], "path": "concepts/LLMWiki.md", "updated": "2026-09-13", "community": 0, "degree": 15}, {"id": "ProgressiveDisclosure", "label": "ProgressiveDisclosure（渐进式披露）", "type": "concept", "tags": ["context-management", "agent-skill", "mechanism"], "sources": ["skill", "concept-relationship"], "path": "concepts/ProgressiveDisclosure.md", "updated": "2026-09-13", "community": 3, "degree": 14}, {"id": "RetrievalAugmentedGeneration", "label": "RetrievalAugmentedGeneration（RAG / 检索增强生成）", "type": "concept", "tags": ["rag", "retrieval", "grounding", "pattern"], "sources": ["vector-database", "llm-wiki-pattern"], "path": "concepts/RetrievalAugmentedGeneration.md", "updated": "2026-09-13", "community": 0, "degree": 15}, {"id": "Skill", "label": "Skill（Agent Skill / 技能包）", "type": "concept", "tags": ["agent-skill", "skill-md", "reuse", "core-concept"], "sources": ["skill", "concept-relationship"], "path": "concepts/Skill.md", "updated": "2026-09-13", "community": 3, "degree": 15}, {"id": "VectorDatabase", "label": "VectorDatabase（向量数据库）", "type": "concept", "tags": ["vector-database", "embedding", "similarity-search", "retrieval"], "sources": ["vector-database"], "path": "concepts/VectorDatabase.md", "updated": "2026-09-13", "community": 6, "degree": 9}, {"id": "Workflow", "label": "Workflow（工作流）", "type": "concept", "tags": ["orchestration", "control-flow", "contrast-concept"], "sources": ["agent"], "path": "concepts/Workflow.md", "updated": "2026-09-13", "community": 1, "degree": 7}, {"id": "AndrejKarpathy", "label": "AndrejKarpathy", "type": "entity", "tags": ["person", "ai-researcher", "source-provider"], "sources": ["karpathy-llm-wiki-gist", "llm-wiki-pattern"], "path": "entities/AndrejKarpathy.md", "updated": "2026-09-13", "community": 0, "degree": 8}, {"id": "Anthropic", "label": "Anthropic", "type": "entity", "tags": ["company", "ai-lab", "source-provider"], "sources": ["agent", "skill", "llm-context"], "path": "entities/Anthropic.md", "updated": "2026-09-13", "community": 1, "degree": 12}, {"id": "ConceptLearner", "label": "ConceptLearner（概念学习 Skill）", "type": "entity", "tags": ["project", "agent-skill", "this-repo", "example"], "sources": ["skill", "agent", "llm-context", "vector-database", "concept-relationship"], "path": "entities/ConceptLearner.md", "updated": "2026-09-13", "community": 3, "degree": 13}, {"id": "LlmWikiAgent", "label": "LlmWikiAgent（参考实现）", "type": "entity", "tags": ["project", "open-source", "reference-implementation", "llm-wiki"], "sources": ["llm-wiki-pattern"], "path": "entities/LlmWikiAgent.md", "updated": "2026-09-13", "community": 0, "degree": 7}, {"id": "OpenAI", "label": "OpenAI", "type": "entity", "tags": ["company", "ai-lab", "source-provider"], "sources": ["agent", "llm-context"], "path": "entities/OpenAI.md", "updated": "2026-09-13", "community": 1, "degree": 10}, {"id": "Pinecone", "label": "Pinecone", "type": "entity", "tags": ["company", "vector-database", "source-provider"], "sources": ["vector-database"], "path": "entities/Pinecone.md", "updated": "2026-09-13", "community": 6, "degree": 5}, {"id": "health-report", "label": "Health Report", "type": "synthesis", "tags": ["meta", "health-report"], "sources": [], "path": "health-report.md", "updated": "2026-09-13", "community": 2, "degree": 0}, {"id": "index", "label": "Wiki Index", "type": "synthesis", "tags": ["meta", "index"], "sources": [], "path": "index.md", "updated": "2026-09-13", "community": 3, "degree": 1}, {"id": "lint-report", "label": "Lint Report", "type": "synthesis", "tags": ["meta", "lint-report"], "sources": [], "path": "lint-report.md", "updated": "2026-09-13", "community": 4, "degree": 0}, {"id": "log", "label": "Wiki Log", "type": "synthesis", "tags": ["meta", "log"], "sources": [], "path": "log.md", "updated": "2026-09-13", "community": 5, "degree": 0}, {"id": "overview", "label": "Overview — 跨来源综述", "type": "synthesis", "tags": ["meta", "overview", "synthesis"], "sources": ["agent", "llm-context", "skill", "vector-database", "concept-relationship", "llm-wiki-pattern", "karpathy-llm-wiki-gist"], "path": "overview.md", "updated": "2026-09-13", "community": 6, "degree": 14}, {"id": "agent", "label": "概念学习资料：Agent（智能体）", "type": "source", "tags": ["concept-material", "ai-agent", "learning-notes"], "sources": ["agent"], "path": "sources/agent.md", "updated": "2026-09-13", "community": 1, "degree": 10}, {"id": "concept-relationship", "label": "概念关系说明：Agent、上下文、Skill 三者之间的关系", "type": "source", "tags": ["concept-material", "cross-concept", "learning-notes"], "sources": ["concept-relationship"], "path": "sources/concept-relationship.md", "updated": "2026-09-13", "community": 3, "degree": 7}, {"id": "karpathy-llm-wiki-gist", "label": "Karpathy 的 llm-wiki 原始材料", "type": "source", "tags": ["llm-wiki", "karpathy", "gist", "knowledge-management"], "sources": ["karpathy-llm-wiki-gist"], "path": "sources/karpathy-llm-wiki-gist.md", "updated": "2026-09-13", "community": 0, "degree": 9}, {"id": "llm-context", "label": "概念学习资料：大模型的上下文（Context / Context Window）", "type": "source", "tags": ["concept-material", "llm-context", "learning-notes"], "sources": ["llm-context"], "path": "sources/llm-context.md", "updated": "2026-09-13", "community": 1, "degree": 9}, {"id": "llm-wiki-pattern", "label": "LLM Wiki 模式（The LLM Wiki Pattern）", "type": "source", "tags": ["llm-wiki", "karpathy", "methodology", "meta"], "sources": ["llm-wiki-pattern"], "path": "sources/llm-wiki-pattern.md", "updated": "2026-09-13", "community": 0, "degree": 9}, {"id": "skill", "label": "概念学习资料：Skill（技能包）", "type": "source", "tags": ["concept-material", "agent-skill", "learning-notes"], "sources": ["skill"], "path": "sources/skill.md", "updated": "2026-09-13", "community": 3, "degree": 7}, {"id": "vector-database", "label": "概念学习资料：向量数据库（Vector Database）", "type": "source", "tags": ["concept-material", "vector-database", "rag", "learning-notes"], "sources": ["vector-database"], "path": "sources/vector-database.md", "updated": "2026-09-13", "community": 6, "degree": 6}, {"id": "agent-context-skill-relationship", "label": "Agent、上下文、Skill 三者是什么关系？", "type": "synthesis", "tags": ["cross-concept", "agent", "context", "skill", "analysis"], "sources": ["concept-relationship", "agent", "llm-context", "skill"], "path": "syntheses/agent-context-skill-relationship.md", "updated": "2026-09-13", "community": 1, "degree": 16}, {"id": "why-compile-not-retrieve", "label": "为什么要「先编译」而不是「每次检索」？", "type": "synthesis", "tags": ["llm-wiki", "rag", "knowledge-management", "analysis"], "sources": ["karpathy-llm-wiki-gist", "llm-wiki-pattern", "vector-database"], "path": "syntheses/why-compile-not-retrieve.md", "updated": "2026-09-13", "community": 0, "degree": 9}], "edges": [{"source": "Agent", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "Workflow", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "VectorDatabase", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "LLMWiki", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "concept-relationship", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Agent", "target": "OpenAI", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "LLMWiki", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "llm-context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "concept-relationship", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "OpenAI", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Context", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "AndrejKarpathy", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "LlmWikiAgent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "why-compile-not-retrieve", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "ConceptLearner", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "karpathy-llm-wiki-gist", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LLMWiki", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ProgressiveDisclosure", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ProgressiveDisclosure", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ProgressiveDisclosure", "target": "skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ProgressiveDisclosure", "target": "concept-relationship", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ProgressiveDisclosure", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "RetrievalAugmentedGeneration", "target": "VectorDatabase", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "RetrievalAugmentedGeneration", "target": "why-compile-not-retrieve", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "RetrievalAugmentedGeneration", "target": "vector-database", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "RetrievalAugmentedGeneration", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "RetrievalAugmentedGeneration", "target": "Pinecone", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "RetrievalAugmentedGeneration", "target": "LlmWikiAgent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Skill", "target": "ConceptLearner", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Skill", "target": "skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Skill", "target": "concept-relationship", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Skill", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "VectorDatabase", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "VectorDatabase", "target": "Pinecone", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "VectorDatabase", "target": "vector-database", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Workflow", "target": "ConceptLearner", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Workflow", "target": "agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Workflow", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "AndrejKarpathy", "target": "LlmWikiAgent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "AndrejKarpathy", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "AndrejKarpathy", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "AndrejKarpathy", "target": "karpathy-llm-wiki-gist", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "AndrejKarpathy", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Anthropic", "target": "OpenAI", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "llm-context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "vector-database", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "concept-relationship", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LlmWikiAgent", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "LlmWikiAgent", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "OpenAI", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "OpenAI", "target": "Pinecone", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "Pinecone", "target": "vector-database", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "index", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "Workflow", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "LLMWiki", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "VectorDatabase", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "AndrejKarpathy", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "ConceptLearner", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "Pinecone", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "overview", "target": "OpenAI", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent", "target": "VectorDatabase", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent", "target": "OpenAI", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "concept-relationship", "target": "agent-context-skill-relationship", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "concept-relationship", "target": "LLMWiki", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "karpathy-llm-wiki-gist", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "karpathy-llm-wiki-gist", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "karpathy-llm-wiki-gist", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "karpathy-llm-wiki-gist", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "karpathy-llm-wiki-gist", "target": "LlmWikiAgent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "karpathy-llm-wiki-gist", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-context", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-context", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-context", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-context", "target": "OpenAI", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-context", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-context", "target": "LLMWiki", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-wiki-pattern", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "llm-wiki-pattern", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "skill", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "skill", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "skill", "target": "Anthropic", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "vector-database", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "vector-database", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "Agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "Skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "Workflow", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "RetrievalAugmentedGeneration", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "VectorDatabase", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "LLMWiki", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "agent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "llm-context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "agent-context-skill-relationship", "target": "skill", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "ProgressiveDisclosure", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "AndrejKarpathy", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "LlmWikiAgent", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "VectorDatabase", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "Context", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "karpathy-llm-wiki-gist", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "why-compile-not-retrieve", "target": "llm-wiki-pattern", "kind": "EXTRACTED", "confidence": 1.0}, {"source": "ConceptLearner", "target": "agent-context-skill-relationship", "kind": "INFERRED", "confidence": 0.8, "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context', 'skill']"}, {"source": "Anthropic", "target": "agent-context-skill-relationship", "kind": "INFERRED", "confidence": 0.75, "reason": "共享来源 ['agent', 'llm-context', 'skill']"}, {"source": "Anthropic", "target": "ConceptLearner", "kind": "INFERRED", "confidence": 0.6, "reason": "共享来源 ['agent', 'llm-context', 'skill']"}, {"source": "ConceptLearner", "target": "Context", "kind": "INFERRED", "confidence": 0.6, "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context']"}, {"source": "agent-context-skill-relationship", "target": "overview", "kind": "INFERRED", "confidence": 0.57, "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context', 'skill']"}, {"source": "OpenAI", "target": "Workflow", "kind": "INFERRED", "confidence": 0.5, "reason": "共享来源 ['agent']"}, {"source": "OpenAI", "target": "agent-context-skill-relationship", "kind": "INFERRED", "confidence": 0.5, "reason": "共享来源 ['agent', 'llm-context']"}]};
+const TYPE_COLORS = {"source": "#2563eb", "entity": "#7c3aed", "concept": "#059669", "synthesis": "#d97706"};
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+let W = 0, H = 0, DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+function resize(){
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W * DPR; canvas.height = H * DPR;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+}
+window.addEventListener('resize', resize);
+
+// ---- 建索引
+const nodes = GRAPH.nodes.map((n, i) => Object.assign({}, n, {x: 0, y: 0, vx: 0, vy: 0, degree: 0}));
+const byId = {}; nodes.forEach(n => byId[n.id] = n);
+const links = GRAPH.edges.filter(e => byId[e.source] && byId[e.target]);
+const neighbors = {}; nodes.forEach(n => neighbors[n.id] = new Set());
+links.forEach(e => {
+  byId[e.source].degree++; byId[e.target].degree++;
+  neighbors[e.source].add(e.target); neighbors[e.target].add(e.source);
+});
+
+// ---- 初始布局：按社区分扇区摆在圆周上（确定性，避免每次打开都不一样）
+function seedLayout(){
+  const communities = {};
+  nodes.forEach(n => { (communities[n.community] = communities[n.community] || []).push(n); });
+  const keys = Object.keys(communities).sort((a,b) => a - b);
+  const R = Math.min(W, H) * 0.34;
+  let angle = -Math.PI / 2;
+  keys.forEach(k => {
+    const group = communities[k];
+    const span = (Math.PI * 2) / keys.length;
+    group.forEach((n, i) => {
+      const a = angle + span * (i / Math.max(group.length, 1));
+      const r = R * (0.72 + 0.28 * (i % 2));
+      n.x = W / 2 + Math.cos(a) * r;
+      n.y = H / 2 + Math.sin(a) * r;
+    });
+    angle += span;
+  });
+}
+
+// ---- 力导向模拟
+function simulate(steps){
+  const k = Math.sqrt((W * H) / Math.max(nodes.length, 1)) * 0.55;
+  for (let s = 0; s < steps; s++){
+    // 斥力
+    for (let i = 0; i < nodes.length; i++){
+      const a = nodes[i];
+      for (let j = i + 1; j < nodes.length; j++){
+        const b = nodes[j];
+        let dx = a.x - b.x, dy = a.y - b.y;
+        let d2 = dx*dx + dy*dy;
+        if (d2 < 1) { d2 = 1; dx = Math.random() - 0.5; dy = Math.random() - 0.5; }
+        const d = Math.sqrt(d2);
+        const force = (k * k) / d;
+        const fx = (dx / d) * force * 0.02, fy = (dy / d) * force * 0.02;
+        a.vx += fx; a.vy += fy; b.vx -= fx; b.vy -= fy;
+      }
+    }
+    // 弹簧
+    links.forEach(e => {
+      const a = byId[e.source], b = byId[e.target];
+      let dx = b.x - a.x, dy = b.y - a.y;
+      const d = Math.max(Math.sqrt(dx*dx + dy*dy), 1);
+      const rest = (e.kind === 'EXTRACTED' ? 105 : 165);
+      const force = (d - rest) / d * 0.06;
+      const fx = dx * force, fy = dy * force;
+      a.vx += fx; a.vy += fy; b.vx -= fx; b.vy -= fy;
+    });
+    // 向心 + 阻尼 + 位移限制
+    let maxStep = 0;
+    nodes.forEach(n => {
+      if (n.fixed) { n.vx = n.vy = 0; return; }
+      n.vx += (W / 2 - n.x) * 0.0016;
+      n.vy += (H / 2 - n.y) * 0.0016;
+      n.vx *= 0.86; n.vy *= 0.86;
+      const step = Math.sqrt(n.vx*n.vx + n.vy*n.vy);
+      const cap = 30;
+      if (step > cap) { n.vx = n.vx / step * cap; n.vy = n.vy / step * cap; }
+      n.x += n.vx; n.y += n.vy;
+      maxStep = Math.max(maxStep, step);
+    });
+    if (s > 60 && maxStep < 0.12) break;
+  }
+}
+
+// ---- 视图变换
+let view = {scale: 1, ox: 0, oy: 0};
+const toScreen = (x, y) => ({x: x * view.scale + view.ox, y: y * view.scale + view.oy});
+const toWorld = (x, y) => ({x: (x - view.ox) / view.scale, y: (y - view.oy) / view.scale});
+
+let hovered = null, dragging = null, panning = null;
+
+function radius(n){ return 6 + Math.min(n.degree, 8) * 1.4; }
+
+function styleOf(name, key, fallback){
+  const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return v || fallback;
+}
+
+function draw(){
+  const ink = styleOf('--ink', '#1f2937');
+  const dim = styleOf('--dim', '#9ca3af');
+
+  ctx.save();
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  const active = hovered ? neighbors[hovered.id] : null;
+
+  // 边
+  links.forEach(e => {
+    const a = byId[e.source], b = byId[e.target];
+    const pa = toScreen(a.x, a.y), pb = toScreen(b.x, b.y);
+    const isNear = hovered && (e.source === hovered.id || e.target === hovered.id);
+    ctx.beginPath();
+    ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y);
+    ctx.setLineDash(e.kind === 'INFERRED' ? [5, 5] : []);
+    if (isNear){
+      ctx.strokeStyle = TYPE_COLORS[hovered.type] || ink;
+      ctx.lineWidth = 2.2; ctx.globalAlpha = 1;
+    } else {
+      ctx.strokeStyle = dim;
+      ctx.lineWidth = e.kind === 'EXTRACTED' ? 1.3 : 1;
+      ctx.globalAlpha = hovered ? 0.16 : (e.kind === 'EXTRACTED' ? 0.5 : 0.3);
+    }
+    ctx.stroke();
+  });
+  ctx.setLineDash([]);
+  ctx.globalAlpha = 1;
+
+  // 节点
+  nodes.forEach(n => {
+    const p = toScreen(n.x, n.y);
+    const r = radius(n) * Math.max(view.scale, 0.6);
+    const dimmed = hovered && n.id !== hovered.id && !active.has(n.id);
+    ctx.globalAlpha = dimmed ? 0.2 : 1;
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
+    ctx.fillStyle = TYPE_COLORS[n.type] || '#999';
+    ctx.fill();
+    if (n === hovered){
+      ctx.lineWidth = 2.5; ctx.strokeStyle = ink; ctx.stroke();
+    }
+
+    if (!dimmed){
+      ctx.font = (n === hovered ? '600 ' : '') + '12px -apple-system, "PingFang SC", sans-serif';
+      ctx.fillStyle = ink;
+      ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+      const label = n.label.length > 26 ? n.label.slice(0, 25) + '…' : n.label;
+      ctx.fillText(label, p.x, p.y + r + 4);
+    }
+    ctx.globalAlpha = 1;
+  });
+
+  ctx.restore();
+}
+
+// ---- 交互
+function pick(mx, my){
+  let best = null, bestDist = Infinity;
+  nodes.forEach(n => {
+    const p = toScreen(n.x, n.y);
+    const d = Math.hypot(p.x - mx, p.y - my);
+    const hit = Math.max(radius(n) * view.scale, 0.6) + 6;
+    if (d < hit && d < bestDist){ best = n; bestDist = d; }
+  });
+  return best;
+}
+
+canvas.addEventListener('mousemove', ev => {
+  const mx = ev.clientX, my = ev.clientY;
+  if (dragging){
+    const w = toWorld(mx, my);
+    dragging.x = w.x; dragging.y = w.y; dragging.vx = dragging.vy = 0;
+    draw(); return;
+  }
+  if (panning){
+    view.ox += mx - panning.x; view.oy += my - panning.y;
+    panning.x = mx; panning.y = my;
+    draw(); return;
+  }
+  const hit = pick(mx, my);
+  if (hit !== hovered){
+    hovered = hit;
+    canvas.style.cursor = hit ? 'pointer' : 'grab';
+    showInfo(hit);
+    draw();
+  }
+});
+
+canvas.addEventListener('mousedown', ev => {
+  const hit = pick(ev.clientX, ev.clientY);
+  if (hit){ dragging = hit; hit.fixed = true; canvas.classList.add('dragging'); }
+  else { panning = {x: ev.clientX, y: ev.clientY}; canvas.style.cursor = 'grabbing'; }
+});
+
+window.addEventListener('mouseup', () => {
+  if (dragging){ dragging.fixed = false; dragging = null; }
+  panning = null;
+  canvas.classList.remove('dragging');
+  canvas.style.cursor = 'grab';
+});
+
+canvas.addEventListener('wheel', ev => {
+  ev.preventDefault();
+  const factor = ev.deltaY < 0 ? 1.12 : 1 / 1.12;
+  const before = toWorld(ev.clientX, ev.clientY);
+  view.scale = Math.min(Math.max(view.scale * factor, 0.25), 4);
+  const after = toWorld(ev.clientX, ev.clientY);
+  view.ox += (after.x - before.x) * view.scale;
+  view.oy += (after.y - before.y) * view.scale;
+  view.ox = ev.clientX - before.x * view.scale;
+  view.oy = ev.clientY - before.y * view.scale;
+  draw();
+}, {passive: false});
+
+const infoEl = document.getElementById('info');
+function showInfo(n){
+  if (!n){ infoEl.style.display = 'none'; return; }
+  const rows = [];
+  rows.push('<span class="type" style="background:' + (TYPE_COLORS[n.type] || '#999') + '">' + n.type + '</span>');
+  rows.push('<h2>' + n.label + '</h2>');
+  rows.push('<div class="kv">文件：' + n.path + '</div>');
+  if (n.updated) rows.push('<div class="kv">更新：' + n.updated + '</div>');
+  if (n.tags.length) rows.push('<div class="kv">标签：' + n.tags.join(' · ') + '</div>');
+  const nb = Array.from(neighbors[n.id]);
+  if (nb.length){
+    rows.push('<div class="kv">相连页面（' + nb.length + '）：</div><ul>');
+    nb.sort().forEach(id => rows.push('<li>' + (byId[id] ? byId[id].label : id) + '</li>'));
+    rows.push('</ul>');
+  }
+  infoEl.innerHTML = rows.join('');
+  infoEl.style.display = 'block';
+}
+
+// ---- 启动
+resize();
+seedLayout();
+simulate(420);
+view.ox = 0; view.oy = 0; view.scale = 1;
+
+const counts = {};
+GRAPH.nodes.forEach(n => counts[n.type] = (counts[n.type] || 0) + 1);
+document.getElementById('stats').innerHTML =
+  '节点 <b>' + GRAPH.nodes.length + '</b> · 边 <b>' + GRAPH.edges.length + '</b><br>' +
+  'EXTRACTED <b>' + GRAPH.edges.filter(e => e.kind === 'EXTRACTED').length + '</b> · ' +
+  'INFERRED <b>' + GRAPH.edges.filter(e => e.kind === 'INFERRED').length + '</b><br>' +
+  '社区 <b>' + new Set(GRAPH.nodes.map(n => n.community)).size + '</b> · 构建于 ' + GRAPH.built_at;
+
+draw();
+</script>
+</body>
+</html>
