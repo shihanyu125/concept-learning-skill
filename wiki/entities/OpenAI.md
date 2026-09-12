@@ -29,6 +29,6 @@ AI 公司，GPT 系列模型与 Agents SDK 的开发者，本 wiki 中 [[Agent]]
 - [[Anthropic]] — 另一家主要来源方
 - [[Agent]]、[[Context]]
 
-## 待补
+## 待补充
 
 可补充：RAG 相关的官方最佳实践文档、Responses API 与上下文管理的关系——目前 wiki 中 [[RetrievalAugmentedGeneration]] 的来源只有 [[Pinecone]] 一家，缺少模型厂商侧的一手材料。

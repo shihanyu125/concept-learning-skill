@@ -42,6 +42,7 @@ Agent 的运行是一个**循环**：观察当前情况 → 决定下一步 → 
 - [[Workflow]] — 最核心的对照概念
 - [[Context]] — Agent 的"工作台"与决策原料
 - [[Skill]] — 让通用 Agent 按需变成专业 Agent
+- [[agent-context-skill-relationship]] — 本 wiki 的综合页：把 Agent / [[Context|上下文]] / [[Skill]] 三者的定位、闭环与两条关键因果链串在一起
 - [[ToolUse]] — 三项增强里最直接体现"动手"的一项
 - [[Memory]] — 让"观察→决定→行动"的循环能跨步骤连续推进
 - [[RetrievalAugmentedGeneration]] — "检索"能力的主要落地方式

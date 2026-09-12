@@ -56,6 +56,7 @@ Skill 不是"装进模型"里的，而是**放在文件系统上**，按生效�
 ## 关联
 
 - [[Prompt]] — 最主要的对照概念：**你的一次性说明 vs AI 可自行取用的常备说明书**
+- [[agent-context-skill-relationship]] — 综合页：Skill 在 Agent / 上下文 / Skill 三角中的定位，以及"省空间"这条因果链
 - [[Memory]] — 另一组对照：**流程 vs 信息**（Skill 回答"怎么做"，记忆回答"你是谁"）
 - [[Automation]] — 常配套使用：流程沉淀在 Skill，调度登记在 Automation
 - [[Workflow]] — 三者常并列：Skill 的知识、Workflow 的流程、Automation 的时机

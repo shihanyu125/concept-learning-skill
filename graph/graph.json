@@ -8,9 +8,9 @@
   },
   "stats": {
     "nodes": 37,
-    "edges": 234,
-    "extracted": 220,
-    "inferred": 14,
+    "edges": 236,
+    "extracted": 223,
+    "inferred": 13,
     "communities": 7
   },
   "nodes": [
@@ -91,7 +91,7 @@
       "path": "concepts/ContextManagement.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 15
+      "degree": 16
     },
     {
       "id": "LLMWiki",
@@ -110,7 +110,7 @@
       "path": "concepts/LLMWiki.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 20
+      "degree": 21
     },
     {
       "id": "Memory",
@@ -265,7 +265,7 @@
       "path": "concepts/ToolUse.md",
       "updated": "2026-09-13",
       "community": 4,
-      "degree": 12
+      "degree": 14
     },
     {
       "id": "VectorDatabase",
@@ -730,6 +730,12 @@
     },
     {
       "source": "Agent",
+      "target": "agent-context-skill-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Agent",
       "target": "RetrievalAugmentedGeneration",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -844,6 +850,12 @@
     },
     {
       "source": "Context",
+      "target": "agent-context-skill-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Context",
       "target": "Skill",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -916,6 +928,12 @@
     },
     {
       "source": "ContextManagement",
+      "target": "ToolUse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ContextManagement",
       "target": "LLMWiki",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -982,6 +1000,12 @@
     },
     {
       "source": "LLMWiki",
+      "target": "ToolUse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LLMWiki",
       "target": "why-compile-not-retrieve",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -1043,6 +1067,12 @@
     {
       "source": "Memory",
       "target": "Token",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
+      "target": "ToolUse",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1234,6 +1264,12 @@
     },
     {
       "source": "Skill",
+      "target": "agent-context-skill-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Skill",
       "target": "Workflow",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -1283,12 +1319,6 @@
     {
       "source": "ToolUse",
       "target": "agent",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "ToolUse",
-      "target": "Memory",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1695,6 +1725,12 @@
       "confidence": 1.0
     },
     {
+      "source": "overview",
+      "target": "agent-context-skill-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "agent",
       "target": "Skill",
       "kind": "EXTRACTED",
@@ -1889,24 +1925,6 @@
     {
       "source": "vector-database",
       "target": "Context",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "agent-context-skill-relationship",
-      "target": "Agent",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "agent-context-skill-relationship",
-      "target": "Context",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "agent-context-skill-relationship",
-      "target": "Skill",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2108,13 +2126,6 @@
       "kind": "INFERRED",
       "confidence": 0.5,
       "reason": "共享来源 ['agent', 'concept-relationship']"
-    },
-    {
-      "source": "agent-context-skill-relationship",
-      "target": "overview",
-      "kind": "INFERRED",
-      "confidence": 0.5,
-      "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context', 'skill']"
     }
   ]
 }

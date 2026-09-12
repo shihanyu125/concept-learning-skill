@@ -57,7 +57,7 @@ last_updated: 2026-09-13
 - [[AndrejKarpathy]] — 模式的提出者
 - 来源页：[[llm-wiki-pattern]]
 
-## 待补
+## 待补充
 
 - `tools/heal.py` 的自修复策略（怎么判断"缺失的结构性概念"）值得单独摄一份资料进来
 - `tools/ingest.py` 的提示词设计（如何从一份长文档里决定该建哪些实体/概念页）是好问题，目前 wiki 答不出

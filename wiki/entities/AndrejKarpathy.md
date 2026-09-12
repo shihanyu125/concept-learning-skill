@@ -49,7 +49,7 @@ AI 研究者、工程师，**[[LLMWiki]] 模式的提出者**。本仓库整套�
 - [[ProgressiveDisclosure]] — 与 index.md 的设计思路相通
 - 来源页：[[karpathy-llm-wiki-gist]]、[[llm-wiki-pattern]]
 
-## 待补
+## 待补充
 
 - 原始 gist 的确切发布日与原始链接（目前只掌握 X 长帖链接与二手转述）
 - 他在其他场合对"知识编译"的进一步论述

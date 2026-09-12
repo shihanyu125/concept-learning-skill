@@ -107,6 +107,7 @@ Karpathy 本人划的边界线：**human owns verification（验证责任在人�
 - [[AndrejKarpathy]] — 该模式的提出者
 - [[LlmWikiAgent]] — 公开参考实现
 - [[Agent]]、[[Skill]]、[[Context]]、[[ProgressiveDisclosure]]
+- [[ToolUse]] — 给 Agent 的"外部知识层"要靠工具调用来读；wiki 是编译好的地址簿，工具是走过去的腿
 - [[RetrievalAugmentedGeneration]] — 主要对照对象（解释器 vs 编译器）
 - [[why-compile-not-retrieve]] — 本 wiki 关于这组对照的深入分析（含边界条件）
 - [[ConceptLearner]] — 本仓库已有的能力包，与本 wiki 是同一思路在不同层面的应用

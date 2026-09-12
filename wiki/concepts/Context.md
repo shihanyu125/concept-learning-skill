@@ -36,6 +36,7 @@ last_updated: 2026-09-13
 ## 关联
 
 - [[Agent]] — 上下文是 Agent 的工作记忆
+- [[agent-context-skill-relationship]] — 综合页：上下文在 Agent / Skill 三角中的位置，以及"上下文大小 = 眼界"这条因果链
 - [[Token]] — 上下文的计量单位；窗口大小就是 token 额度
 - [[ContextManagement]] — 窗口满了之后的应对手段（编辑 / 压缩 / 外置）
 - [[Skill]] — 靠 [[ProgressiveDisclosure]] 节省上下文

@@ -142,4 +142,31 @@ last_updated: 2026-09-13
 - **至此 wiki 所有 source 页的 `source_file` 均已指向 `raw/`（事实来源层）**，追溯链不再跨越到作品输出区
 - 记录缺口：向量数据库的选型与竞品对比（目前仍只有厂商单一视角）；`vector-database.html` 的"我的理解与核查笔记"一节仍为空白模板，待学习者补充后回填
 
+## [2026-09-13] health | 复检与 7 项人工交叉验证
+
+- 重新运行 `tools/health.py`：空页 0 / 目录同步 0 / 日志覆盖 0，报告覆盖 `wiki/health-report.md`
+- 脚本盲区人工复核 7 项：`raw/` ↔ source 页双向对应、双链大小写（GitHub 敏感）、markdown 链接、命名规范、`log.md` 引用、`type` 与目录匹配、空目录与残页
+- **修复**：`wiki/sources/vector-database.md` 的 frontmatter 被外部 Markdown 格式化器改写（六个字段丢失、YAML 引号被去、HTML 注释被删、行尾补空格），经 mtime 对比与复现测试确认非本仓库脚本所为，已用 `git checkout HEAD --` 恢复
+
+## [2026-09-13] lint | 首次内容体检（确定性部分 + 语义层人工检查）
+
+- 运行 `tools/lint.py`：断链 0 / 孤儿页 0 / 格式违规 0 / 缺页候选 0，报告覆盖 `wiki/lint-report.md`
+- **语义层检查**（`lint.py` 明确声明不覆盖的"矛盾 / 过时声明 / 缺失交叉引用 / 数据空白"）：通读全部 37 页，并把 wiki 里的断言逐条比对 `raw/` 原文
+- **核对通过**：8 个 source 页的 `source_file` 全部指向 `raw/`；5 份副本 md5 与 `raw/README.md` 指纹表一致；双链 0 条大小写错配；markdown 链接 0 条失效；`.workbuddy/` 的 git 跟踪与忽略规则正确；`agent.html` 等原文的引用句逐字可对上
+- **查出并修复的问题**：
+  1. `log.md` 本身**漏记 `lint` / `graph` / `health` 三类操作** → 本次一并补记（见本文件 health 与 graph 两条）
+  2. [[ToolUse]] 只有 1 条内容页入链、[[agent-context-skill-relationship]] 同样 → 在 [[Workflow]]、[[Memory]]、[[ContextManagement]]、[[LLMWiki]]（补 [[ToolUse]]）与 [[Agent]]、[[Context]]、[[Skill]]（补综合页）补双链
+  3. `wiki/index.md` 有两条 source 条目（`vector-database`、`concept-relationship`）漏标"事实来源已迁至 `raw/`" → 补齐
+  4. [[Automation]] 与 [[]] 漏收原文的"什么时候不该建自动化"（3.3 节）与"三个反直觉点"（第五节）→ 补收
+  5. 章节名两套写法（`## 待补` 7 处 / `## 待补充` 7 处）→ 统一为「待补充」
+  6. `AGENTS.md` 未说明 `health-report.md` / `lint-report.md` 两份生成物 → 补入目录布局、页面格式与 Lint 说明
+  7. **MCP** 被 3 个页面提到却无页面（已命中缺页判据，但 `tools/lint.py` 未报出）→ 在 [[overview]] 的空白清单第 1 条加注，材料足够后再建页
+- 另确认一处层次用词张力：`class2` 页称本仓库为"四层结构"，而模式本体是"三层（raw / wiki / schema）"→ 已在 `class2` 页补限定语，指向 [[LLMWiki]] 的"本站的落地差异"
+- **未发现事实性互斥矛盾**（不存在同一字段在两页取值不同的情况）
+
+## [2026-09-13] graph | 重建知识图谱（内容修订后）
+
+- 运行 `tools/build_graph.py`，重建 `graph/graph.json` + `graph/graph.html`
+- 规模：37 节点 / 236 边（EXTRACTED 223 / INFERRED 13）/ 7 社区；枢纽仍为 [[Context]]（26）、[[Agent]]（24）、[[overview]]（23）
+
 

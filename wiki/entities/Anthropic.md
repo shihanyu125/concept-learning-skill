@@ -30,6 +30,6 @@ AI 公司，Claude 系列模型的开发者，也是 [[Agent]]、[[Skill]]、[[C
 - [[OpenAI]] — 另一家主要来源方，两家文档在本 wiki 中常互为交叉印证
 - [[Agent]]、[[Skill]]、[[Context]]、[[Workflow]]、[[ProgressiveDisclosure]]
 
-## 待补
+## 待补充
 
 可补充：Claude 各代模型的窗口规格、MCP（Model Context Protocol）与 Skill 的关系——目前 wiki 尚无 MCP 相关页面。

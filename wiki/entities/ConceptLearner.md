@@ -46,7 +46,7 @@ last_updated: 2026-09-13
 - [[Skill]]、[[Workflow]]、[[ProgressiveDisclosure]]
 - [[agent]]、[[llm-context]]、[[skill]]、[[vector-database]]、[[concept-relationship]]
 
-## 待补
+## 待补充
 
 - 仓库 README 里记录的"踩坑与解决"经验尚未进 wiki，可作为一条 source 摄进来
 - 该 Skill 的 `SKILL.md` 元数据写法（`name` / `description` 具体如何写）尚未记录，而这是它能不能被触发的关键

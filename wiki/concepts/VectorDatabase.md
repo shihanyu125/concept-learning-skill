@@ -41,6 +41,6 @@ last_updated: 2026-09-13
 - Pinecone 官方文档《How Pinecone Works》、Pinecone Docs
 - 见 [[Pinecone]]
 
-## 待补
+## 待补充
 
 原资料的"我的理解与核查笔记"一节尚为空白模板，待学习者本人补充后回填。

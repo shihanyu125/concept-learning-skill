@@ -25,7 +25,7 @@ last_updated: 2026-09-13
 - [[RetrievalAugmentedGeneration]] — 其产品最主要的应用场景
 - 来源页：[[vector-database]]
 
-## 待补
+## 待补充
 
 - 竞品与替代方案（如 pgvector、Milvus、Qdrant、Chroma）目前 wiki 完全没有覆盖
 - 选型标准（什么规模该上专用向量库、什么规模用普通数据库的向量扩展就够）是个 wiki 答不出的问题

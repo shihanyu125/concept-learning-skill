@@ -11,6 +11,8 @@ wiki/         # 由 AI 维护的内容层
   index.md    # 所有页面的目录，每次 ingest 后更新
   log.md      # 只追加的操作日志
   overview.md # 跨所有来源的"活的"综述
+  health-report.md  # 由 tools/health.py 生成的体检报告（脚本覆盖重写，不入 index 五段）
+  lint-report.md    # 由 tools/lint.py 生成的体检报告（脚本覆盖重写，不入 index 五段）
   sources/    # 每份原始资料一页摘要（kebab-case.md）
   entities/   # 人物、公司、项目、产品（TitleCase.md）
   concepts/   # 概念、框架、方法、理论（TitleCase.md）
@@ -41,7 +43,7 @@ last_updated: YYYY-MM-DD
 补充约定：
 
 - `title` 用中文自然标题，加引号，避免冒号被 YAML 误解析。
-- `type` 只能取上面四个值之一。`index.md` / `log.md` / `overview.md` 是**元页面**，统一用 `type: synthesis` 并带 `meta` 标签。
+- `type` 只能取上面四个值之一。`index.md` / `log.md` / `overview.md` 是**元页面**，统一用 `type: synthesis` 并带 `meta` 标签；`health-report.md` / `lint-report.md` 是**脚本生成物**，同样用 `synthesis` + `meta`，但不列入 `index.md` 的五个段。
 - `sources` 语义：非 source 页面填"内容来自哪些来源页面"的 slug 列表（如 `[agent, llm-context]`）；source 页面自身即来源，填自身 slug。
 - source 页面额外允许两个字段：`date`（资料日期）、`source_file`（原始文件路径）。
 - `last_updated` 用 `YYYY-MM-DD`，每次实质修改该页都要更新。
@@ -75,6 +77,10 @@ last_updated: YYYY-MM-DD
 
 - **Query**：读 index → 读相关页 → 带 `[[双链]]` 引用作答 → 询问是否回填为 `syntheses/` 页。
 - **Lint**：查孤儿页（无入链）、断链、跨页矛盾、过期摘要、缺失的 entity/concept 页（被 3 个以上页面提到却没有自己的页面）、数据缺口（wiki 答不出的问题 → 建议补哪些资料）。
+  - **`tools/lint.py` 只覆盖其中的确定性子集**（断链 / 孤儿页 / frontmatter / 缺页候选）。**矛盾、过时声明、缺失交叉引用必须由 Agent 通读一遍**——脚本在报告里会明确列出这几项"未执行"。
+  - **「缺页候选」会漏报**（实测 MCP 被 3 个页面提到却没报出）。判据只数反复出现的候选词，对缩写与"用来定义主角的对照概念"不敏感，需人工再数一遍。
+  - `tools/health.py` 的「日志覆盖」**只查 source 页有没有 ingest 记录**，`lint` / `graph` / `health` 三类操作是否漏记要自己比对。
+  - 人工清单另见 `wiki/overview.md` 与项目记忆里登记的 7 项交叉验证。
 - **Build graph**：两遍构建。第一遍确定性解析所有 `[[wikilinks]]` → 标 `EXTRACTED`；第二遍语义推断隐含关系 → 标 `INFERRED`（带置信度）。用社区检测按主题聚类，输出 `graph/graph.json` + `graph/graph.html`。
 
 ## 命名约定

@@ -43,6 +43,7 @@ last_updated: 2026-09-13
 - [[Agent]] — 最主要的对照概念
 - [[Automation]] — 近邻：一个管触发时机，一个管执行流程
 - [[Skill]] — 三者常被并列讨论：Skill 沉淀"怎么做"的知识、Workflow 定义"怎么跑"的流程、Automation 登记"何时跑"
+- [[ToolUse]] — 最容易误判的一处：Workflow 同样会调用工具，分界不在"用不用工具"，而在"下一步调什么由代码写死、还是由模型决定"
 - [[ConceptLearner]] — 一个更接近"固定流程"的能力包：把学习步骤固化成可复用流程，这正是 Skill 与 Workflow 思路的交汇处
 - 来源页：[[agent]]、[[]]
 
