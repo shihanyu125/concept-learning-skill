@@ -541,7 +541,9 @@ def main() -> int:
         node["degree"] = sum(1 for e in edges if node["id"] in (e["source"], e["target"]))
 
     graph = {
-        "built_at": datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M"),
+        # 时间只精确到「日」：分钟级时间戳会让每次重建都产生无意义的 git 差异
+        # （内容一字未变、只有时间变了），也与 health/lint 报告的时间精度保持一致。
+        "built_at": datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d"),
         "builder": "tools/build_graph.py",
         "method": {
             "pass1": "确定性解析 [[双链]] → EXTRACTED",

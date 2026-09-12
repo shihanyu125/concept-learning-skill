@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-13 01:03",
+  "built_at": "2026-09-13",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
