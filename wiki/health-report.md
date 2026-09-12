@@ -8,7 +8,7 @@ last_updated: 2026-09-13
 
 # Health Report — 结构体检
 
-生成时间：2026-09-13 · 由 `tools/health.py` 生成（零 LLM 调用）· 共 26 个页面
+生成时间：2026-09-13 · 由 `tools/health.py` 生成（零 LLM 调用）· 共 37 个页面
 
 **问题总数：0**
 

@@ -4,11 +4,15 @@ type: source
 tags: [concept-material, vector-database, rag, learning-notes]
 sources: [vector-database]
 date: 2026-09-04
-source_file: learning-materials/vector-database.html
+source_file: raw/vector-database.html
 last_updated: 2026-09-13
 ---
 
 # 概念学习资料：向量数据库（Vector Database）
+
+> **来源说明**：本页依据的事实来源是 `raw/vector-database.html`（事实来源层，只读）。
+> 该文件同时也在 `learning-materials/vector-database.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`98f2bc4e1fa5b89cd7697fb635756772`）。
+> 引用时以 `raw/` 为准。
 
 ## Summary
 

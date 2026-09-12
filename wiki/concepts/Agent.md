@@ -15,8 +15,8 @@ Agent 是**能自己拿主意、自己动手做事的 AI 程序**。它不是一
 | 能力 | 作用 |
 |---|---|
 | 检索 Retrieval | 去外部查资料、查数据，不只靠脑内参数 |
-| 工具 Tools | 调用外部工具：搜网页、跑代码、查库、发邮件 |
-| 记忆 Memory | 跨步骤保持状态连贯 |
+| 工具 [[ToolUse]] | 调用外部工具：搜网页、跑代码、查库、发邮件 |
+| 记忆 [[Memory]] | 跨步骤保持状态连贯 |
 
 ## 核心机制
 
@@ -42,9 +42,13 @@ Agent 的运行是一个**循环**：观察当前情况 → 决定下一步 → 
 - [[Workflow]] — 最核心的对照概念
 - [[Context]] — Agent 的"工作台"与决策原料
 - [[Skill]] — 让通用 Agent 按需变成专业 Agent
+- [[ToolUse]] — 三项增强里最直接体现"动手"的一项
+- [[Memory]] — 让"观察→决定→行动"的循环能跨步骤连续推进
 - [[RetrievalAugmentedGeneration]] — "检索"能力的主要落地方式
 - [[VectorDatabase]] — 检索常见的地基
 - [[LLMWiki]] — 一个由 Agent 驱动、而非脚本驱动的知识系统实例
+- [[Automation]] — 触发方式上的近邻：它决定"何时启动"，Agent 决定"怎么推进"
+- [[ModelRouting]] — Agent 每轮循环都是一次模型调用，档位选择直接影响成本与效果
 - 来源页：[[agent]]、[[concept-relationship]]、[[llm-wiki-pattern]]
 
 ## 来源

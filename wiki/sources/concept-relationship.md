@@ -4,11 +4,15 @@ type: source
 tags: [concept-material, cross-concept, learning-notes]
 sources: [concept-relationship]
 date: 2026-09-04
-source_file: learning-materials/concept-relationship.md
+source_file: raw/concept-relationship.md
 last_updated: 2026-09-13
 ---
 
 # 概念关系说明：Agent、上下文、Skill 三者之间的关系
+
+> **来源说明**：本页依据的事实来源是 `raw/concept-relationship.md`（事实来源层，只读）。
+> 该文件同时也在 `learning-materials/concept-relationship.md`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`32e5ead78fa07f4de1507fcfb7c68cc0`）。
+> 引用时以 `raw/` 为准。
 
 ## Summary
 

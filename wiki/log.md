@@ -80,3 +80,66 @@ last_updated: 2026-09-13
 ## [2026-09-13] health | 首次结构体检
 
 - 运行 `tools/health.py`，结果见 `wiki/health-report.md`
+
+## [2026-09-13] ingest | 概念学习资料：Agent（智能体）— 改由 `raw/` 重新摄取
+
+- 来源：`raw/agent.html`（与 `learning-materials/agent.html` 经 md5 校验一致：`c51bd38ada5bbb63506492f572c79324`）
+- **说明**：这份资料此前已从 `learning-materials/` 摄取过，内容无变化；本次是**换到事实来源层后的重新摄取**，没有产生新的事实性结论
+- **新建 concept 页** `concepts/ToolUse.md`、`concepts/Memory.md` —— 这两项是原文明确列出的 Agent 三项核心增强能力，此前被 11～13 个页面提到却始终没有自己的页面（触发 lint 的"缺页"判据）
+- 修订 `concepts/Agent.md`：能力表与"关联"段补入 [[ToolUse]]、[[Memory]] 双链
+- 修订 `sources/agent.md`：`source_file` 由 `learning-materials/agent.html` 改为 `raw/agent.html`，并加来源说明段
+- 修订 `wiki/index.md`：Concepts 段新增两页；Sources 段标注来源已迁移
+- 修订 `wiki/overview.md`：线一的"三项增强"补上双链；"已知的空白"同步更新
+- 记录缺口：记忆的"分层与归属"、工具调用的协议与护栏做法，wiki 目前仍答不上，需补资料
+
+## [2026-09-13] ingest | 概念学习资料：大模型的上下文 — 改由 `raw/` 重新摄取
+
+- 来源：`raw/llm-context.html`（与 `learning-materials/llm-context.html` 经 md5 校验一致：`46f984074affa946ada6b031cfa3fb7d`）
+- **说明**：这份资料此前已从 `learning-materials/` 摄取过，内容无变化；本次是**换到事实来源层后的重新摄取**，没有产生新的事实性结论
+- **新建 concept 页** `concepts/Token.md` —— 被 9 个页面提到却始终没有自己的页面；它是原文第 2 节的核心（上下文窗口的计量单位）
+- **新建 concept 页** `concepts/ContextManagement.md` —— 原文所引两份官方文档（Anthropic 的 context editing、OpenAI 的 Managing the context window）真正在解决的问题；此前 `Context.md` 只讲了截断，没讲应对手段
+- 修订 `sources/llm-context.md`：`source_file` 由 `learning-materials/llm-context.html` 改为 `raw/llm-context.html`，加来源说明段与 [[Token]]、[[ContextManagement]]、[[Memory]] 双链；并在"学习者的疑问"下记录**部分收口的进展**
+- 修订 `concepts/Context.md`：补 [[Token]]、[[ContextManagement]]、[[Memory]] 双链，三条推论第 3 条指向应对手段
+- 修订 `concepts/Memory.md`、`concepts/ProgressiveDisclosure.md`：关联段补入与 [[ContextManagement]] 的分工说明
+- 修订 `entities/Anthropic.md`、`entities/OpenAI.md`：材料表补入新页双链
+- 修订 `wiki/index.md`、`wiki/overview.md`：Concepts 段新增两页；线二改写为"两层应对"；"已知的空白"由 8 条增至 9 条
+- 记录缺口：各家 context editing 的触发阈值与限制、context rot 的确切定义、三种上下文管理做法的成本对比，wiki 目前仍答不上
+
+## [2026-09-13] ingest | 概念学习资料：Skill（技能包）— 改由 `raw/` 重新摄取
+
+- 来源：`raw/skill.html`（与 `learning-materials/skill.html` 经 md5 校验一致：`8a4bee80537a0d6b96720bf5ee5c9130`）
+- **说明**：这份资料此前已从 `learning-materials/` 摄取过，内容无变化；本次是**换到事实来源层后的重新摄取**
+- **新建 concept 页** `concepts/Prompt.md` —— 被 4 个页面提到却始终没有自己的页面；且原文对 Skill 的定义整个建立在"Skill ≠ 一次性提示词"这条对照之上。页内给出**三条判据**（进入窗口的时机 / 结构 / 由谁触发），据此回答了学习者的疑问"把长提示词存成文件算不算 Skill"——**看的不是有没有文件，而是有没有元数据、由谁判断何时加载**
+- 修订 `concepts/Skill.md`：新增"存放在哪：个人级 / 项目级"一节（含本机实际路径 `~/.workbuddy/skills/` 与 `<项目>/.workbuddy/skills/`）；"Skill ≠ 一次性提示词"补 [[Prompt]] 双链
+- 修订 `sources/skill.md`：`source_file` 由 `learning-materials/skill.html` 改为 `raw/skill.html`，加来源说明段与 [[Prompt]] 双链；"学习者的疑问"记录**收口**与仍未收口的部分
+- 修订 `syntheses/agent-context-skill-relationship.md`：延伸阅读补 [[Prompt]]、[[ContextManagement]]
+- 修订 `wiki/overview.md`：线一补 Prompt/Skill 的控制权分界；"最值得注意的对照"由两组变三组；空白清单 9 条增至 10 条；疑问第 3 条标记为**收口**
+- 记录缺口：提示词工程（few-shot / 思维链 / 输出格式约束）与模型厂商侧的提示词分层机制，wiki 目前完全空白
+
+## [2026-09-13] ingest | 资料（）：记忆系统与 LLM Wiki
+
+- 来源：`raw/2026-09-12--.md`（**新资料**——本 wiki 首份非重复摄取；四个主题：记忆系统 / LLM Wiki / 自动化 / 选模型策略）
+- 新建 source 页 `sources/.md`
+- **新建 concept 页** `concepts/Automation.md` —— 此前 wiki 完全没有自动化相关页面（一直挂在 overview 的空白清单里）；收录一次性 / 周期性两种类型与六条设计原则
+- **新建 concept 页** `concepts/ModelRouting.md`（选模型策略）—— 同样从零建页；含轻量 / 默认 / 强推理三档取向、两个判断问题、两个误区
+- **新建 entity 页** `entities/WorkBuddy.md` —— 三层记忆、自动化、模型档位三个主题的共同载体；让这些概念有可追溯的落点（依据本仓库实际目录痕迹反推，非某份资料的直接产物）
+- **重写** `concepts/Memory.md`：补入"记忆分三层"（云端 / 用户级 / 工作区）、"日志与结论为何必须分离"、"什么该记 / 不该记"的口诀、"记忆 ≠ 技能"对照表。原先"待补充"段里明确在等这份材料的缺口**已关闭**
+- 修订 `concepts/Workflow.md`：新增"与自动化的区别"一节（一个管何时跑、一个管怎么跑）
+- 修订 `concepts/Skill.md`：补"Skill ≠ 记忆"（流程 vs 信息）；关联段补 [[Memory]]、[[Automation]]、[[Workflow]]、[[WorkBuddy]]
+- 修订 `concepts/Agent.md`：关联段补 [[Automation]]、[[ModelRouting]]
+- 修订 `concepts/LLMWiki.md`：补资料给出的"开卷考试临时翻书"类比；补与 [[Memory]] 的"同一条外置思路"关系；来源段标注本文件第二节为**重述**（未产生新事实）
+- 修订 `sources/llm-context.md`："能记住偏好"的疑问标记为**已实质回答**（三层记忆分工给出具体机制；保留 `human owns verification` 的验证责任）
+- 修订 `wiki/index.md`、`wiki/overview.md`：新增 3 页；overview 把记忆从线二拆为独立的线三、新增线四"运行层两个旋钮"；"最值得注意的对照"由三组增至四组；空白清单重排为 12 条
+- 记录缺口：`rrule` 调度语法与失败重试、模型档位与具体型号的对应、WorkBuddy 平台本身的完整能力清单
+
+## [2026-09-13] ingest | 向量数据库 / 概念关系说明 — 来源迁移到 `raw/`
+
+- 来源：`raw/vector-database.html`（与 `learning-materials/vector-database.html` 经 md5 校验一致：`98f2bc4e1fa5b89cd7697fb635756772`）
+- 来源：`raw/concept-relationship.md`（与 `learning-materials/concept-relationship.md` 经 md5 校验一致：`32e5ead78fa07f4de1507fcfb7c68cc0`）
+- **说明**：这两份此前已摄取过，内容无变化；本次只做**来源迁移**——把资料复制进事实来源层 `raw/`，并把 source 页的 `source_file` 由 `learning-materials/` 改指 `raw/`，**没有产生新的事实性结论**
+- 修订 `sources/vector-database.md`、`sources/concept-relationship.md`：`source_file` 改指 `raw/`，加来源说明段（含 md5）
+- 修订 `raw/README.md`：内容表补入两份新副本、更新指纹表、说明 `concept-relationship.html` 未复制的原因
+- **至此 wiki 所有 source 页的 `source_file` 均已指向 `raw/`（事实来源层）**，追溯链不再跨越到作品输出区
+- 记录缺口：向量数据库的选型与竞品对比（目前仍只有厂商单一视角）；`vector-database.html` 的"我的理解与核查笔记"一节仍为空白模板，待学习者补充后回填
+
+

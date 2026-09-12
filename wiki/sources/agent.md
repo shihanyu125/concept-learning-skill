@@ -4,11 +4,15 @@ type: source
 tags: [concept-material, ai-agent, learning-notes]
 sources: [agent]
 date: 2026-09-04
-source_file: learning-materials/agent.html
+source_file: raw/agent.html
 last_updated: 2026-09-13
 ---
 
 # 概念学习资料：Agent（智能体）
+
+> **来源说明**：本页依据的事实来源是 `raw/agent.html`（事实来源层，只读）。
+> 该文件同时也在 `learning-materials/agent.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`c51bd38ada5bbb63506492f572c79324`）。
+> 引用时以 `raw/` 为准。
 
 ## Summary
 

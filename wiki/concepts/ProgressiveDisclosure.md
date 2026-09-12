@@ -39,6 +39,8 @@ last_updated: 2026-09-13
 
 - [[Skill]] — 渐进式披露最主要的应用
 - [[Context]] — 它要节约的资源
+- [[ContextManagement]] — 补位的一环：内容**已经进了窗口之后**怎么办（本页管"别乱吃"，它管"吃多了怎么消化"）
+- [[Token]] — 节约上下文，省的就是 token
 - [[Agent]] — Agent 每个循环都在消耗上下文，因此受益
 - [[LLMWiki]] — wiki 的 index.md 也是同一思路：先看目录，再决定读哪页
 - 来源页：[[skill]]、[[concept-relationship]]

@@ -4,11 +4,15 @@ type: source
 tags: [concept-material, llm-context, learning-notes]
 sources: [llm-context]
 date: 2026-09-04
-source_file: learning-materials/llm-context.html
+source_file: raw/llm-context.html
 last_updated: 2026-09-13
 ---
 
 # 概念学习资料：大模型的上下文（Context）
+
+> **来源说明**：本页依据的事实来源是 `raw/llm-context.html`（事实来源层，只读）。
+> 该文件同时也在 `learning-materials/llm-context.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`46f984074affa946ada6b031cfa3fb7d`）。
+> 引用时以 `raw/` 为准。
 
 ## Summary
 
@@ -35,9 +39,12 @@ last_updated: 2026-09-13
 ## Connections
 
 - [[Context]] — 本文对应的概念页
+- [[Token]] — 本文第 2 节的核心：上下文的计量单位
+- [[ContextManagement]] — 本文所引官方文档真正在解决的问题：窗口满了之后怎么办
 - [[Agent]] — 上下文是 Agent 的工作记忆与决策原料
 - [[Skill]] — Skill 靠"渐进式披露"节省上下文空间
 - [[ProgressiveDisclosure]] — 应对上下文有限的核心策略
+- [[Memory]] — 与"长期记忆"的区分，是本文点明的易混淆点
 - [[OpenAI]] — 其《Conversation state》文档是本文主要来源
 - [[Anthropic]] — 其上下文管理与 context editing 是本文另一来源
 - [[LLMWiki]] — 本套 wiki 模式同样是"把知识编译到外部、避免每次重灌上下文"的思路
@@ -49,3 +56,9 @@ last_updated: 2026-09-13
 ## 学习者的疑问（待后续资料回答）
 
 既然上下文有容量限制，那市面上说"能记住你的偏好"的 AI，到底靠的是长期记忆机制，还是每次重新把历史塞进上下文？
+
+**目前进展（2026-09-13，本页重新摄取时）**：wiki 已建起 [[Memory]] 页，给出了判断框架——**模型本身是无状态的，任何"记住"最终都必须表现为"该内容又回到了上下文里"**；所以"长期记忆机制"与"重灌上下文"并非对立的两条路，而是同一条路上的两种存储与取回安排。
+
+**进展（2026-09-13，摄取资料后）**：缺的那手材料已经进来了（[[]]），三层记忆的分工给出了具体答案——**不存在"凭空记住"**：所谓记住，要么是内容被写进持久层、之后被**取回**进上下文（用户级 / 工作区记忆），要么是系统在服务端维护一份画像、每次对话重新注入（云端记忆）。**两者是同一机制在不同存储位置上的安排**，不是两种神秘能力。详见 [[Memory]] 的"记忆分三层"。
+
+**状态：已实质回答。** 唯一保留的是"人的验证"——本 wiki 依据来源做出的这层推论，尚未与厂商一手文档对照，按 `human owns verification` 原则仍不作定论。见 [[overview]] 的"已知的空白"。

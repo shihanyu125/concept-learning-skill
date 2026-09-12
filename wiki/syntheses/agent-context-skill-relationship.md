@@ -62,7 +62,8 @@ Skill 的存在意义之一就是**不让上下文被一次性塞满大段指令
 
 ## 延伸阅读
 
-- 单个概念：[[Agent]]、[[Context]]、[[Skill]]
-- 机制：[[ProgressiveDisclosure]]、[[Workflow]]
+- 单个概念：[[Agent]]、[[Context]]、[[Skill]]、[[Prompt]]
+  - 其中 [[Skill]] 与 [[Prompt]] 构成一组关键对照：**谁决定它什么时候进入上下文**
+- 机制：[[ProgressiveDisclosure]]、[[ContextManagement]]、[[Workflow]]、[[Token]]
 - 相关应用：[[RetrievalAugmentedGeneration]]、[[VectorDatabase]]、[[LLMWiki]]
 - 原始材料：[[concept-relationship]]、[[agent]]、[[llm-context]]、[[skill]]

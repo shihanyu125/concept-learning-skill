@@ -18,7 +18,7 @@ AI 公司，Claude 系列模型的开发者，也是 [[Agent]]、[[Skill]]、[[C
 |---|---|
 | [[Agent]] / [[Workflow]] | 工程指南《Building Effective Agents》(2024-12, Erik Schluntz & Barry Zhang) —— 定义了 Agent 与 Workflow 的分野、增强型 LLM 的三种能力 |
 | [[Skill]] / [[ProgressiveDisclosure]] | 公告《Introducing Agent Skills》(2025-10)；工程博客《Equipping agents for the real world with Agent Skills》；Claude Code 文档《Extend Claude with skills》 |
-| [[Context]] | 公告《Managing context on the Claude Developer Platform》（context editing 与记忆工具）；文档《Context windows》（含 context rot 现象） |
+| [[Context]] / [[ContextManagement]] | 公告《Managing context on the Claude Developer Platform》（context editing 与记忆工具，应对长任务超出窗口）；文档《Context windows》（含 context rot 现象与 token 计数） |
 
 ## 值得记住的两个立场
 

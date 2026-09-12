@@ -2,7 +2,7 @@
 title: "LLMWiki（LLM Wiki 模式）"
 type: concept
 tags: [llm-wiki, knowledge-management, methodology, meta]
-sources: [llm-wiki-pattern]
+sources: [llm-wiki-pattern, ]
 last_updated: 2026-09-13
 ---
 
@@ -27,6 +27,10 @@ last_updated: 2026-09-13
 
 - **[[RetrievalAugmentedGeneration|RAG]] 像"解释器"**：每次执行都重新解析一遍源码。
 - **LLM Wiki 像"编译器"**：先把知识预先编译成可直接执行的结构，之后直接跑。
+
+资料里给了一个更直白的说法（来源：[[]]）：
+
+> **RAG 像开卷考试临时翻书；LLM Wiki 像提前把书读薄、编成自己的一本。**
 
 所以本模式的关键动作不是"查询时检索"，而是"**先编译，再查询**"。
 
@@ -96,6 +100,7 @@ Karpathy 本人划的边界线：**human owns verification（验证责任在人�
 - 它整体由 [[Agent]] 驱动——不是脚本流水线，而是"读 → 判断 → 写"的智能体循环。
 - 参考实现本身就是一个 coding agent 的 [[Skill]]。
 - `index.md` 的设计正是 [[ProgressiveDisclosure]] 的体现：先看目录，再决定读哪页，避免把整个 wiki 灌进 [[Context]]。
+- 它和 [[Memory]] 是**同一条"外置"思路的两个对象**：memory 把"助手干过什么"外置到磁盘，wiki 把"我知道什么"外置到磁盘。区别在记的是工作还是知识。
 
 ## 关联
 
@@ -105,13 +110,14 @@ Karpathy 本人划的边界线：**human owns verification（验证责任在人�
 - [[RetrievalAugmentedGeneration]] — 主要对照对象（解释器 vs 编译器）
 - [[why-compile-not-retrieve]] — 本 wiki 关于这组对照的深入分析（含边界条件）
 - [[ConceptLearner]] — 本仓库已有的能力包，与本 wiki 是同一思路在不同层面的应用
-- 来源页：[[karpathy-llm-wiki-gist]]、[[llm-wiki-pattern]]
+- 来源页：[[karpathy-llm-wiki-gist]]、[[llm-wiki-pattern]]、[[]]
 
 ## 来源
 
 - Karpathy GitHub gist `llm-wiki` 及配套 X 长帖（原始材料整理见 `raw/karpathy-llm-wiki-gist.md`）
 - `raw/llm-wiki-pattern.md`
 - `SamurAIGPT/llm-wiki-agent`（MIT）
+- `raw/2026-09-12--.md` —— 该文件第二节对本模式的**重述**（含"开卷考试"类比），未产生新事实
 - 见 [[AndrejKarpathy]]、[[LlmWikiAgent]]
 
 ## 本站的落地差异（重要）
