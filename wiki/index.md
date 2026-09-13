@@ -26,6 +26,7 @@ last_updated: 2026-09-13
 - [LLM Wiki 模式](sources/llm-wiki-pattern.md) — 本仓库所安装模式的目录布局与四条工作流
 - [Karpathy 的 llm-wiki 原始材料](sources/karpathy-llm-wiki-gist.md) — 编译器 vs 解释器、三层架构、规模与边界（含待核实标注）
 - [资料（）：记忆系统与 LLM Wiki](sources/.md) — 四个主题：记忆系统的三层分工、LLM Wiki、自动化的六条原则、选模型的三档取向
+- [概念学习资料：普莫时代（PUMO）](sources/pumo-era.md) — 2025 年提出的最新时代环境框架：极化、难以想象、质变、过热（原始资料：[raw/pumo-era.md](../raw/pumo-era.md)）
 
 ## Entities
 
@@ -54,8 +55,11 @@ last_updated: 2026-09-13
 - [VectorDatabase（向量数据库）](concepts/VectorDatabase.md) — 按语义相似度检索的数据库
 - [RetrievalAugmentedGeneration（RAG）](concepts/RetrievalAugmentedGeneration.md) — 先检索、再生成；与 LLM Wiki 形成对照
 - [LLMWiki（LLM Wiki 模式）](concepts/LLMWiki.md) — 编译式知识库：先编译，再查询
+- [PumoEra（普莫时代 / PUMO）](concepts/PumoEra.md) — 2025 年提出的时代环境框架：极化、难以想象、质变、过热；首个传播学线概念
+- [KnowledgeEquity（知识公平）](concepts/KnowledgeEquity.md) — 公共知识库中被记录与呈现的机会不均等；维基偏差会传导成 AI 偏差
 
 ## Syntheses
 
 - [Agent、上下文、Skill 三者是什么关系？](syntheses/agent-context-skill-relationship.md) — 三者的定位、闭环与两条关键因果链
 - [为什么要「先编译」而不是「每次检索」？](syntheses/why-compile-not-retrieve.md) — 编译式 wiki 与 RAG 的差异、边界与不可让渡的原则
+- [维基百科研究课题：知识公平与四个研究方向](syntheses/wikipedia-research-directions.md) — 主题"新课题"的学术定位：2025 年热点文献 + 四个可操作切入点

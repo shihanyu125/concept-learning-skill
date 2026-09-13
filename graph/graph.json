@@ -7,10 +7,10 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 38,
-    "edges": 253,
-    "extracted": 240,
-    "inferred": 13,
+    "nodes": 42,
+    "edges": 279,
+    "extracted": 258,
+    "inferred": 21,
     "communities": 7
   },
   "nodes": [
@@ -31,7 +31,7 @@
       ],
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
-      "community": 6,
+      "community": 2,
       "degree": 26
     },
     {
@@ -50,7 +50,7 @@
       "path": "concepts/Automation.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 10
+      "degree": 12
     },
     {
       "id": "Context",
@@ -94,6 +94,25 @@
       "degree": 16
     },
     {
+      "id": "KnowledgeEquity",
+      "label": "知识公平（Knowledge Equity）",
+      "type": "concept",
+      "tags": [
+        "知识公平",
+        "维基百科",
+        "传播学",
+        "研究方向",
+        "llm偏差"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/KnowledgeEquity.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 10
+    },
+    {
       "id": "LLMWiki",
       "label": "LLMWiki（LLM Wiki 模式）",
       "type": "concept",
@@ -110,7 +129,7 @@
       "path": "concepts/LLMWiki.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 23
+      "degree": 27
     },
     {
       "id": "Memory",
@@ -149,7 +168,7 @@
       "path": "concepts/ModelRouting.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 13
+      "degree": 15
     },
     {
       "id": "ProgressiveDisclosure",
@@ -166,7 +185,7 @@
       ],
       "path": "concepts/ProgressiveDisclosure.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 19
     },
     {
@@ -186,8 +205,27 @@
       ],
       "path": "concepts/Prompt.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 13
+    },
+    {
+      "id": "PumoEra",
+      "label": "普莫时代（PUMO）",
+      "type": "concept",
+      "tags": [
+        "concept",
+        "传播学",
+        "社会学",
+        "环境框架",
+        "舆论"
+      ],
+      "sources": [
+        "pumo-era"
+      ],
+      "path": "concepts/PumoEra.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 5
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -206,7 +244,7 @@
       "path": "concepts/RetrievalAugmentedGeneration.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 18
+      "degree": 20
     },
     {
       "id": "Skill",
@@ -225,8 +263,8 @@
       ],
       "path": "concepts/Skill.md",
       "updated": "2026-09-13",
-      "community": 5,
-      "degree": 24
+      "community": 6,
+      "degree": 25
     },
     {
       "id": "Token",
@@ -282,7 +320,7 @@
       ],
       "path": "concepts/VectorDatabase.md",
       "updated": "2026-09-13",
-      "community": 6,
+      "community": 3,
       "degree": 9
     },
     {
@@ -301,7 +339,7 @@
       "path": "concepts/Workflow.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 13
+      "degree": 15
     },
     {
       "id": "AndrejKarpathy",
@@ -359,7 +397,7 @@
       ],
       "path": "entities/ConceptLearner.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 16
     },
     {
@@ -412,7 +450,7 @@
       ],
       "path": "entities/Pinecone.md",
       "updated": "2026-09-13",
-      "community": 6,
+      "community": 3,
       "degree": 5
     },
     {
@@ -431,7 +469,7 @@
       "path": "entities/WorkBuddy.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 12
+      "degree": 14
     },
     {
       "id": "health-report",
@@ -444,7 +482,7 @@
       "sources": [],
       "path": "health-report.md",
       "updated": "2026-09-13",
-      "community": 3,
+      "community": 4,
       "degree": 0
     },
     {
@@ -458,7 +496,7 @@
       "sources": [],
       "path": "index.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 1
     },
     {
@@ -472,7 +510,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 5,
       "degree": 0
     },
     {
@@ -487,7 +525,7 @@
       "path": "log.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 18
+      "degree": 22
     },
     {
       "id": "overview",
@@ -506,12 +544,13 @@
         "concept-relationship",
         "llm-wiki-pattern",
         "karpathy-llm-wiki-gist",
-        ""
+        "",
+        "pumo-era"
       ],
       "path": "overview.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 24
+      "degree": 26
     },
     {
       "id": "agent",
@@ -547,7 +586,7 @@
       "path": "sources/.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 15
+      "degree": 17
     },
     {
       "id": "concept-relationship",
@@ -563,7 +602,7 @@
       ],
       "path": "sources/concept-relationship.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 10
     },
     {
@@ -637,6 +676,24 @@
       "degree": 10
     },
     {
+      "id": "pumo-era",
+      "label": "概念学习资料：普莫时代（PUMO）",
+      "type": "source",
+      "tags": [
+        "source",
+        "概念学习",
+        "传播学",
+        "环境框架"
+      ],
+      "sources": [
+        "pumo-era"
+      ],
+      "path": "sources/pumo-era.md",
+      "updated": "2026-09-13",
+      "community": 1,
+      "degree": 4
+    },
+    {
       "id": "skill",
       "label": "概念学习资料：Skill（技能包）",
       "type": "source",
@@ -650,7 +707,7 @@
       ],
       "path": "sources/skill.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 9
     },
     {
@@ -668,7 +725,7 @@
       ],
       "path": "sources/vector-database.md",
       "updated": "2026-09-13",
-      "community": 6,
+      "community": 3,
       "degree": 6
     },
     {
@@ -690,7 +747,7 @@
       ],
       "path": "syntheses/agent-context-skill-relationship.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 21
     },
     {
@@ -711,6 +768,24 @@
       "path": "syntheses/why-compile-not-retrieve.md",
       "updated": "2026-09-13",
       "community": 0,
+      "degree": 10
+    },
+    {
+      "id": "wikipedia-research-directions",
+      "label": "维基百科研究课题：知识公平与四个研究方向",
+      "type": "synthesis",
+      "tags": [
+        "研究方向",
+        "维基百科",
+        "知识公平",
+        "课程延伸"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "syntheses/wikipedia-research-directions.md",
+      "updated": "2026-09-13",
+      "community": 1,
       "degree": 10
     }
   ],
@@ -970,6 +1045,30 @@
     {
       "source": "ContextManagement",
       "target": "llm-context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "KnowledgeEquity",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "KnowledgeEquity",
+      "target": "wikipedia-research-directions",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "KnowledgeEquity",
+      "target": "RetrievalAugmentedGeneration",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "KnowledgeEquity",
+      "target": "PumoEra",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1240,6 +1339,18 @@
     {
       "source": "Prompt",
       "target": "ConceptLearner",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "PumoEra",
+      "target": "pumo-era",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "PumoEra",
+      "target": "LLMWiki",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1682,6 +1793,30 @@
       "confidence": 1.0
     },
     {
+      "source": "log",
+      "target": "pumo-era",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "PumoEra",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "KnowledgeEquity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "wikipedia-research-directions",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "overview",
       "target": "Agent",
       "kind": "EXTRACTED",
@@ -1756,6 +1891,18 @@
     {
       "source": "overview",
       "target": "ModelRouting",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "PumoEra",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "pumo-era",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1870,6 +2017,18 @@
     {
       "source": "",
       "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "wikipedia-research-directions",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "KnowledgeEquity",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2018,6 +2177,12 @@
       "confidence": 1.0
     },
     {
+      "source": "pumo-era",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "skill",
       "target": "Context",
       "kind": "EXTRACTED",
@@ -2156,8 +2321,54 @@
       "confidence": 1.0
     },
     {
+      "source": "wikipedia-research-directions",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "wikipedia-research-directions",
+      "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "wikipedia-research-directions",
+      "target": "RetrievalAugmentedGeneration",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Automation",
+      "target": "KnowledgeEquity",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
       "source": "Automation",
       "target": "ModelRouting",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "Automation",
+      "target": "wikipedia-research-directions",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "KnowledgeEquity",
+      "target": "ModelRouting",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "ModelRouting",
+      "target": "wikipedia-research-directions",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['']"
@@ -2219,6 +2430,20 @@
       "reason": "共享来源 ['agent']"
     },
     {
+      "source": "KnowledgeEquity",
+      "target": "WorkBuddy",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "KnowledgeEquity",
+      "target": "Workflow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
       "source": "LLMWiki",
       "target": "ModelRouting",
       "kind": "INFERRED",
@@ -2245,6 +2470,20 @@
       "kind": "INFERRED",
       "confidence": 0.5,
       "reason": "共享来源 ['agent', 'concept-relationship']"
+    },
+    {
+      "source": "WorkBuddy",
+      "target": "wikipedia-research-directions",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "Workflow",
+      "target": "wikipedia-research-directions",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
     }
   ]
 }

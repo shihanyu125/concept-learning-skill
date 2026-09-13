@@ -196,3 +196,22 @@ last_updated: 2026-09-13
 - **动作二（参考实现落库）**：克隆 `SamurAIGPT/llm-wiki-agent` 到 `vendor/llm-wiki-agent/`（浅克隆，HEAD `5c5e056`），`.gitignore` 追加 `vendor/`——是别人的 MIT 代码，只作本地只读参考，不进 GitHub；`git check-ignore` 验证生效
 - **页面总数**：37 → **38**（新增 1 个 source 页）；concept 页仍 15 个
 - **性质**：本次 source 页是「学习资料」而非新事实来源，内容全部来自既有页，无新增概念
+
+## [2026-09-13] ingest | 概念学习资料：普莫时代（PUMO）——首个传播学线概念
+
+- **起因**：使用者提出想学「普莫社会」。该词在 wiki 中无页面；直接检索命中的是北美原住民 Pomo（无关）。确认其为新传语境概念后定位成功：**PUMO = 2025 年利希腾塔勒提出的时代环境框架（极化 / 难以想象 / 质变 / 过热）**，继 VUCA、BANI 之后的第三代。
+- **来源核实**：原论文 Lichtenthaler (2025), *From VUCA and BANI to a PUMO World*, IJITM 22(3/4), DOI 10.1142/S0219877025500129（经 EconBiz / World Scientific / RePEc 三方核对）；中文引入文献周敏、陈飞扬 (2026)《韧性之后：普莫时代国际传播韧性机制转化与反脆弱性前瞻》，《新闻界》2026(3)（北师大官网 PDF 全文可查）。
+- **新增原件**：`raw/pumo-era.md`（AI 依据多来源汇编的可核查材料，非原文复制；本仓库 raw/ 新增，未改动既有文件）。
+- **新建页面**：source 页 [[pumo-era]] + 概念页 [[PumoEra]]（TitleCase），互为双链；两者均与 [[LLMWiki]] 建链（说明 wiki 不限主题的适用范围）。
+- **配套产出**：九段式学习资料 `learning-materials/pumo.html`（作品输出区，未经 ingest，仅登记于 source 页）。
+- **更新**：index（Sources + Concepts 两段）、overview（来源数 8→9、新增"支线"段、修订记录、frontmatter sources）、raw/README.md（登记新原件）。
+- **规模**：wiki 页面 37→**39**（9 source / 7 entity / **16 concept** / 2 synthesis + 5 元页面）。距"本学期 50 个 concept 页"目标差 **34** 个。
+- **待核实标注**：「普莫」为中文音译、原意 "a PUMO world"；概念提出仅一年余、检验少；中文「普莫社会 / 普莫时代」两种表述并存。
+
+## [2026-09-13] query | 维基百科研究课题：知识公平与四个研究方向
+
+- **起因**：使用者确认相关话题（中文维基百科内容现状可作新课题）值得入库，并要求说明日后查看方式。
+- **新建页面**：概念页 [[KnowledgeEquity]]（知识公平：定义、偏差传导链、与 LLMWiki/RAG 的连接、研究切口）+ synthesis 页 [[wikipedia-research-directions]]（2025 年学界热点文献表 + 四个研究方向 + 落地建议）。
+- **隐私处理**：两页均只做**中性学术转述**，不引用主题原话、不含具体人物论断细节；文献细节不确定处标"待核实"。
+- **更新**：index（Concepts + Syntheses 两段）、资料 source 页"关联"段补双链（消孤儿页）。
+- **规模**：wiki 页面 39→**41**（16 concept + 3 synthesis）。concept 页计数口径不变：仍为 16 个，距 50 差 34。

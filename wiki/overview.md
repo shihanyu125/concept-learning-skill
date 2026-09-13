@@ -2,7 +2,7 @@
 title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
-sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, karpathy-llm-wiki-gist, ]
+sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, karpathy-llm-wiki-gist, , pumo-era]
 last_updated: 2026-09-13
 ---
 
@@ -45,6 +45,11 @@ last_updated: 2026-09-13
 - [[ModelRouting]] 管**能力档位**：轻量 / 默认 / 强推理三档。判断标准不是"任务重要吗"，而是"**需要多少推理**"。
   - 与 [[Token]]、[[Context]] 相连：档位成本的一部分就是 token 计费，这给省上下文添了一层**经济动机**。
 - 这两个旋钮是同一类东西：**它们都不改变任务本身，只改变任务"在什么条件下、以多大代价被执行"**。
+
+### 支线：传播学 / 社会环境框架（首次出现，非 AI 主题）
+
+- 2026-09-13 起新增：为回答"普莫社会是什么"摄取了第 9 份来源，建了概念页 [[PumoEra]]——2025 年利希腾塔勒提出的时代环境框架（极化 / 难以想象 / 质变 / 过热），接替乌卡、巴尼。见 [[pumo-era]]。
+- 这条线与 AI 四条线无直接内容交集，但**摄入它的动因是 AI 相关的**：wiki 模式不限主题（判据是"会不会反复用到"，见 [[LLMWiki]]），而学习动作本身由本仓库的 concept-learner 工作流完成。后续若继续学传播学概念（风险社会、景观社会等），可沿此线扩展。
 
 ## 四条线怎么接在一起
 
@@ -118,4 +123,5 @@ last_updated: 2026-09-13
 - **2026-09-13** 从 `raw/llm-context.html` 重新摄取上下文资料（内容与首次摄取一致，来源层改到 `raw/`）。补建概念页 [[Token]]、[[ContextManagement]]，概念页增至 12 个。
 - **2026-09-13** 从 `raw/skill.html` 重新摄取 Skill 资料（内容与首次摄取一致，来源层改到 `raw/`）。补建概念页 [[Prompt]]（此前被 4 个页面提到却没有自己的页面），概念页增至 13 个；[[Skill]] 补入"个人级 / 项目级存放"，并收录"三组对照"。
 - **2026-09-13** **摄取资料**（`raw/2026-09-12--.md`，本 wiki 首份**非重复**摄取）。新建概念页 [[Automation]]、[[ModelRouting]] 与实体页 [[WorkBuddy]]；重写 [[Memory]] 补入三层分工；线三拆出独立记忆线、新增线四"运行层两个旋钮"；"最值得注意的对照"由三组增至四组。概念页增至 15 个。
+- **2026-09-13** **摄取 `raw/pumo-era.md`（首个传播学/社会学线来源）**：为学习「普莫社会」新建概念页 [[PumoEra]] 与 source 页 [[pumo-era]]，概念页增至 16 个；overview 新增"支线"段。来源为 AI 汇编的可核查材料（原论文 DOI + 北师大周敏 2026 论文 PDF）。
 - **2026-09-13** **来源迁移收尾 + 首次语义层 lint**：把 `vector-database.html`、`concept-relationship.md` 也复制进 `raw/`——**至此 8 份来源全部指向事实来源层**；随后按 lint 判据做语义层检查，补链 [[ToolUse]]（此前只有 1 条入链）与 [[agent-context-skill-relationship]]、补齐 `index.md` 漏掉的两处来源标注、收录资料里此前未编译的"三个反直觉点"与"什么时候不该建自动化"；统一了 `## 待补` / `## 待补充` 两种章节名，并把 [[LLMWiki]] 的"模式三层 vs 本仓库四层"写清限定语。
