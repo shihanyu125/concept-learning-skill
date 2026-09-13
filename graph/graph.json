@@ -7,10 +7,10 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 57,
-    "edges": 416,
-    "extracted": 325,
-    "inferred": 91,
+    "nodes": 64,
+    "edges": 496,
+    "extracted": 383,
+    "inferred": 113,
     "communities": 8
   },
   "nodes": [
@@ -88,7 +88,44 @@
       "path": "concepts/BiasOfCommunication.md",
       "updated": "2026-09-13",
       "community": 0,
+      "degree": 17
+    },
+    {
+      "id": "CommonMeaningSpace",
+      "label": "共同意义空间",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "传播特点",
+        "跨文化传播",
+        "符号",
+        "要点"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/CommonMeaningSpace.md",
+      "updated": "2026-09-13",
+      "community": 2,
       "degree": 16
+    },
+    {
+      "id": "CommunicationStudies",
+      "label": "传播学（学科定义与研究对象）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "学科本体",
+        "社会信息系统",
+        "要点"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/CommunicationStudies.md",
+      "updated": "2026-09-13",
+      "community": 2,
+      "degree": 13
     },
     {
       "id": "Context",
@@ -148,7 +185,7 @@
       "path": "concepts/CultivationTheory.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "CultureIndustry",
@@ -167,7 +204,7 @@
       "path": "concepts/CultureIndustry.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 18
     },
     {
       "id": "EncodingDecoding",
@@ -186,7 +223,7 @@
       "path": "concepts/EncodingDecoding.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "Gatekeeping",
@@ -199,12 +236,32 @@
         "控制分析"
       ],
       "sources": [
-        "-guide"
+        "-guide",
+        ""
       ],
       "path": "concepts/Gatekeeping.md",
       "updated": "2026-09-13",
-      "community": 0,
-      "degree": 16
+      "community": 2,
+      "degree": 23
+    },
+    {
+      "id": "GoldenAgeOfCommunication",
+      "label": "传播学的黄金三十年（诞生于 20 世纪初的美国）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "学科史",
+        "黄金三十年",
+        "要点",
+        "时代必然性"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/GoldenAgeOfCommunication.md",
+      "updated": "2026-09-13",
+      "community": 2,
+      "degree": 15
     },
     {
       "id": "KnowledgeEquity",
@@ -255,12 +312,13 @@
         "传播模式"
       ],
       "sources": [
-        "-guide"
+        "-guide",
+        ""
       ],
       "path": "concepts/LasswellFormula.md",
       "updated": "2026-09-13",
-      "community": 0,
-      "degree": 16
+      "community": 2,
+      "degree": 23
     },
     {
       "id": "MediumIsTheMessage",
@@ -278,7 +336,7 @@
       "path": "concepts/MediumIsTheMessage.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "Memory",
@@ -331,12 +389,13 @@
         "耶鲁学派"
       ],
       "sources": [
-        "-guide"
+        "-guide",
+        ""
       ],
       "path": "concepts/PersuasionResearch.md",
       "updated": "2026-09-13",
-      "community": 0,
-      "degree": 16
+      "community": 2,
+      "degree": 23
     },
     {
       "id": "ProgressiveDisclosure",
@@ -392,7 +451,7 @@
       "path": "concepts/PseudoEnvironment.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 20
     },
     {
       "id": "PumoEra",
@@ -410,8 +469,8 @@
       ],
       "path": "concepts/PumoEra.md",
       "updated": "2026-09-13",
-      "community": 4,
-      "degree": 6
+      "community": 2,
+      "degree": 8
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -453,6 +512,25 @@
       "degree": 25
     },
     {
+      "id": "SocialInformationSystem",
+      "label": "社会信息系统（特点、双重偶然性与传播故障）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "社会信息系统",
+        "双重偶然性",
+        "传播障碍",
+        "传播隔阂"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/SocialInformationSystem.md",
+      "updated": "2026-09-13",
+      "community": 2,
+      "degree": 14
+    },
+    {
       "id": "SpiralOfSilence",
       "label": "沉默的螺旋（Spiral of Silence）",
       "type": "concept",
@@ -469,7 +547,26 @@
       "path": "concepts/SpiralOfSilence.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 17
+    },
+    {
+      "id": "SpiritualIntercourse",
+      "label": "精神交往理论（马克思、恩格斯）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "马克思",
+        "精神交往",
+        "用时间消灭空间",
+        "自学章节"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "concepts/SpiritualIntercourse.md",
+      "updated": "2026-09-13",
+      "community": 2,
+      "degree": 14
     },
     {
       "id": "Stereotype",
@@ -487,7 +584,7 @@
       "path": "concepts/Stereotype.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "Token",
@@ -540,12 +637,13 @@
         "意见领袖"
       ],
       "sources": [
-        "-guide"
+        "-guide",
+        ""
       ],
       "path": "concepts/TwoStepFlow.md",
       "updated": "2026-09-13",
-      "community": 0,
-      "degree": 16
+      "community": 2,
+      "degree": 23
     },
     {
       "id": "UsesAndGratifications",
@@ -563,7 +661,7 @@
       "path": "concepts/UsesAndGratifications.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "VectorDatabase",
@@ -742,7 +840,7 @@
       "sources": [],
       "path": "health-report.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 0
     },
     {
@@ -770,7 +868,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-09-13",
-      "community": 3,
+      "community": 4,
       "degree": 0
     },
     {
@@ -784,8 +882,8 @@
       "sources": [],
       "path": "log.md",
       "updated": "2026-09-13",
-      "community": 0,
-      "degree": 37
+      "community": 2,
+      "degree": 44
     },
     {
       "id": "overview",
@@ -810,8 +908,8 @@
       ],
       "path": "overview.md",
       "updated": "2026-09-13",
-      "community": 0,
-      "degree": 41
+      "community": 2,
+      "degree": 48
     },
     {
       "id": "-guide",
@@ -832,7 +930,7 @@
       "path": "sources/-guide.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 18
+      "degree": 20
     },
     {
       "id": "agent",
@@ -869,6 +967,25 @@
       "updated": "2026-09-13",
       "community": 7,
       "degree": 17
+    },
+    {
+      "id": "",
+      "label": "传播学学科材料（）：社会信息系统与传播学的诞生",
+      "type": "source",
+      "tags": [
+        "notes",
+        "传播学",
+        "社会信息系统",
+        "传播学史",
+        "四大奠基人"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "sources/.md",
+      "updated": "2026-09-13",
+      "community": 2,
+      "degree": 14
     },
     {
       "id": "concept-relationship",
@@ -972,7 +1089,7 @@
       ],
       "path": "sources/pumo-era.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 2,
       "degree": 4
     },
     {
@@ -1031,6 +1148,26 @@
       "updated": "2026-09-13",
       "community": 5,
       "degree": 21
+    },
+    {
+      "id": "communication-studies-founding-figures",
+      "label": "四大奠基人与施拉姆（人物—出身—理论对照）",
+      "type": "synthesis",
+      "tags": [
+        "传播学",
+        "学科史",
+        "四大奠基人",
+        "施拉姆",
+        "要点",
+        "对照表"
+      ],
+      "sources": [
+        ""
+      ],
+      "path": "syntheses/communication-studies-founding-figures.md",
+      "updated": "2026-09-13",
+      "community": 2,
+      "degree": 15
     },
     {
       "id": "why-compile-not-retrieve",
@@ -1229,6 +1366,96 @@
       "confidence": 1.0
     },
     {
+      "source": "CommonMeaningSpace",
+      "target": "BiasOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "CultureIndustry",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "CommunicationStudies",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "EncodingDecoding",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "LasswellFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "PersuasionResearch",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "UsesAndGratifications",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "SpiritualIntercourse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "Context",
       "target": "Token",
       "kind": "EXTRACTED",
@@ -1421,6 +1648,54 @@
       "confidence": 1.0
     },
     {
+      "source": "Gatekeeping",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "LasswellFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "CultivationTheory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "PumoEra",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "KnowledgeEquity",
       "target": "LLMWiki",
       "kind": "EXTRACTED",
@@ -1537,6 +1812,12 @@
     {
       "source": "LasswellFormula",
       "target": "TwoStepFlow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "communication-studies-founding-figures",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1669,6 +1950,12 @@
     {
       "source": "PersuasionResearch",
       "target": "CultivationTheory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "communication-studies-founding-figures",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1871,6 +2158,30 @@
       "confidence": 1.0
     },
     {
+      "source": "SocialInformationSystem",
+      "target": "Gatekeeping",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SocialInformationSystem",
+      "target": "SpiralOfSilence",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SocialInformationSystem",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SocialInformationSystem",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "SpiralOfSilence",
       "target": "-guide",
       "kind": "EXTRACTED",
@@ -1879,6 +2190,30 @@
     {
       "source": "SpiralOfSilence",
       "target": "AgendaSetting",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SpiritualIntercourse",
+      "target": "MediumIsTheMessage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SpiritualIntercourse",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SpiritualIntercourse",
+      "target": "CultureIndustry",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SpiritualIntercourse",
+      "target": "",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1969,6 +2304,12 @@
     {
       "source": "TwoStepFlow",
       "target": "Gatekeeping",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "TwoStepFlow",
+      "target": "communication-studies-founding-figures",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2399,6 +2740,48 @@
       "confidence": 1.0
     },
     {
+      "source": "log",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "CommunicationStudies",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "CommonMeaningSpace",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "SpiritualIntercourse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "overview",
       "target": "Agent",
       "kind": "EXTRACTED",
@@ -2580,6 +2963,48 @@
     },
     {
       "source": "overview",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "CommunicationStudies",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "CommonMeaningSpace",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "SpiritualIntercourse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
       "target": "VectorDatabase",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -2713,6 +3138,48 @@
     {
       "source": "",
       "target": "KnowledgeEquity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "LasswellFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "Gatekeeping",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "PersuasionResearch",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "TwoStepFlow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "-guide",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "",
+      "target": "PumoEra",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2963,6 +3430,24 @@
       "confidence": 1.0
     },
     {
+      "source": "communication-studies-founding-figures",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "communication-studies-founding-figures",
+      "target": "Stereotype",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "communication-studies-founding-figures",
+      "target": "-guide",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "why-compile-not-retrieve",
       "target": "ProgressiveDisclosure",
       "kind": "EXTRACTED",
@@ -3052,13 +3537,6 @@
     },
     {
       "source": "AgendaSetting",
-      "target": "LasswellFormula",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "AgendaSetting",
       "target": "MediumIsTheMessage",
       "kind": "INFERRED",
       "confidence": 1.0,
@@ -3066,21 +3544,7 @@
     },
     {
       "source": "AgendaSetting",
-      "target": "PersuasionResearch",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "AgendaSetting",
       "target": "Stereotype",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "AgendaSetting",
-      "target": "TwoStepFlow",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
@@ -3129,27 +3593,6 @@
     },
     {
       "source": "BiasOfCommunication",
-      "target": "Gatekeeping",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "BiasOfCommunication",
-      "target": "LasswellFormula",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "BiasOfCommunication",
-      "target": "PersuasionResearch",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "BiasOfCommunication",
       "target": "PseudoEnvironment",
       "kind": "INFERRED",
       "confidence": 1.0,
@@ -3171,17 +3614,31 @@
     },
     {
       "source": "BiasOfCommunication",
-      "target": "TwoStepFlow",
+      "target": "UsesAndGratifications",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
     },
     {
-      "source": "BiasOfCommunication",
-      "target": "UsesAndGratifications",
+      "source": "CommonMeaningSpace",
+      "target": "GoldenAgeOfCommunication",
       "kind": "INFERRED",
       "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "SpiritualIntercourse",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "communication-studies-founding-figures",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
     },
     {
       "source": "CultivationTheory",
@@ -3199,20 +3656,6 @@
     },
     {
       "source": "CultivationTheory",
-      "target": "Gatekeeping",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultivationTheory",
-      "target": "LasswellFormula",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultivationTheory",
       "target": "PseudoEnvironment",
       "kind": "INFERRED",
       "confidence": 1.0,
@@ -3227,13 +3670,6 @@
     },
     {
       "source": "CultivationTheory",
-      "target": "TwoStepFlow",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultivationTheory",
       "target": "UsesAndGratifications",
       "kind": "INFERRED",
       "confidence": 1.0,
@@ -3241,28 +3677,7 @@
     },
     {
       "source": "CultureIndustry",
-      "target": "Gatekeeping",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultureIndustry",
-      "target": "LasswellFormula",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultureIndustry",
       "target": "MediumIsTheMessage",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultureIndustry",
-      "target": "PersuasionResearch",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
@@ -3290,13 +3705,6 @@
     },
     {
       "source": "CultureIndustry",
-      "target": "TwoStepFlow",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "CultureIndustry",
       "target": "UsesAndGratifications",
       "kind": "INFERRED",
       "confidence": 1.0,
@@ -3304,28 +3712,7 @@
     },
     {
       "source": "EncodingDecoding",
-      "target": "Gatekeeping",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "EncodingDecoding",
-      "target": "LasswellFormula",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "EncodingDecoding",
       "target": "MediumIsTheMessage",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "EncodingDecoding",
-      "target": "PersuasionResearch",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
@@ -3353,38 +3740,10 @@
     },
     {
       "source": "Gatekeeping",
-      "target": "MediumIsTheMessage",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "Gatekeeping",
       "target": "PersuasionResearch",
       "kind": "INFERRED",
       "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "Gatekeeping",
-      "target": "SpiralOfSilence",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "Gatekeeping",
-      "target": "Stereotype",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "Gatekeeping",
-      "target": "UsesAndGratifications",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
+      "reason": "共享来源 ['-guide', '']"
     },
     {
       "source": "KnowledgeEquity",
@@ -3394,48 +3753,6 @@
       "reason": "共享来源 ['']"
     },
     {
-      "source": "LasswellFormula",
-      "target": "MediumIsTheMessage",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "LasswellFormula",
-      "target": "PseudoEnvironment",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "LasswellFormula",
-      "target": "SpiralOfSilence",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "LasswellFormula",
-      "target": "Stereotype",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "LasswellFormula",
-      "target": "UsesAndGratifications",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "MediumIsTheMessage",
-      "target": "PersuasionResearch",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
       "source": "MediumIsTheMessage",
       "target": "PseudoEnvironment",
       "kind": "INFERRED",
@@ -3452,13 +3769,6 @@
     {
       "source": "MediumIsTheMessage",
       "target": "Stereotype",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "MediumIsTheMessage",
-      "target": "TwoStepFlow",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
@@ -3478,43 +3788,8 @@
       "reason": "共享来源 ['']"
     },
     {
-      "source": "PersuasionResearch",
-      "target": "PseudoEnvironment",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "PersuasionResearch",
-      "target": "SpiralOfSilence",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "PersuasionResearch",
-      "target": "Stereotype",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "PersuasionResearch",
-      "target": "UsesAndGratifications",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
       "source": "PseudoEnvironment",
       "target": "SpiralOfSilence",
-      "kind": "INFERRED",
-      "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
-    },
-    {
-      "source": "PseudoEnvironment",
-      "target": "TwoStepFlow",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
@@ -3525,6 +3800,20 @@
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "SocialInformationSystem",
+      "target": "SpiritualIntercourse",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "SocialInformationSystem",
+      "target": "communication-studies-founding-figures",
+      "kind": "INFERRED",
+      "confidence": 1.0,
+      "reason": "共享来源 ['']"
     },
     {
       "source": "SpiralOfSilence",
@@ -3535,17 +3824,17 @@
     },
     {
       "source": "SpiralOfSilence",
-      "target": "TwoStepFlow",
+      "target": "UsesAndGratifications",
       "kind": "INFERRED",
       "confidence": 1.0,
       "reason": "共享来源 ['-guide']"
     },
     {
-      "source": "SpiralOfSilence",
-      "target": "UsesAndGratifications",
+      "source": "SpiritualIntercourse",
+      "target": "communication-studies-founding-figures",
       "kind": "INFERRED",
       "confidence": 1.0,
-      "reason": "共享来源 ['-guide']"
+      "reason": "共享来源 ['']"
     },
     {
       "source": "ConceptLearner",
@@ -3583,6 +3872,27 @@
       "reason": "共享来源 ['agent', 'concept-relationship', 'llm-context']"
     },
     {
+      "source": "AgendaSetting",
+      "target": "LasswellFormula",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "AgendaSetting",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "AgendaSetting",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
       "source": "Anthropic",
       "target": "Memory",
       "kind": "INFERRED",
@@ -3597,11 +3907,207 @@
       "reason": "共享来源 ['']"
     },
     {
+      "source": "BiasOfCommunication",
+      "target": "Gatekeeping",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "BiasOfCommunication",
+      "target": "LasswellFormula",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "BiasOfCommunication",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "BiasOfCommunication",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "Gatekeeping",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "LasswellFormula",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "Gatekeeping",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "CommunicationStudies",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
       "source": "ContextManagement",
       "target": "agent",
       "kind": "INFERRED",
       "confidence": 0.5,
       "reason": "共享来源 ['agent']"
+    },
+    {
+      "source": "CultivationTheory",
+      "target": "Gatekeeping",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CultivationTheory",
+      "target": "LasswellFormula",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CultivationTheory",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CultureIndustry",
+      "target": "Gatekeeping",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CultureIndustry",
+      "target": "LasswellFormula",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CultureIndustry",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "CultureIndustry",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "EncodingDecoding",
+      "target": "Gatekeeping",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "EncodingDecoding",
+      "target": "LasswellFormula",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "EncodingDecoding",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "Gatekeeping",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "Gatekeeping",
+      "target": "MediumIsTheMessage",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "Gatekeeping",
+      "target": "SpiralOfSilence",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "Gatekeeping",
+      "target": "SpiritualIntercourse",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "Gatekeeping",
+      "target": "Stereotype",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "Gatekeeping",
+      "target": "UsesAndGratifications",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
     },
     {
       "source": "KnowledgeEquity",
@@ -3625,6 +4131,69 @@
       "reason": "共享来源 ['']"
     },
     {
+      "source": "LasswellFormula",
+      "target": "MediumIsTheMessage",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "PseudoEnvironment",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "SocialInformationSystem",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "SpiralOfSilence",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "SpiritualIntercourse",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "Stereotype",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "LasswellFormula",
+      "target": "UsesAndGratifications",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "MediumIsTheMessage",
+      "target": "PersuasionResearch",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "MediumIsTheMessage",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
       "source": "ModelRouting",
       "target": "Workflow",
       "kind": "INFERRED",
@@ -3637,6 +4206,76 @@
       "kind": "INFERRED",
       "confidence": 0.5,
       "reason": "共享来源 ['agent', 'llm-context']"
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "PseudoEnvironment",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "SocialInformationSystem",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "SpiralOfSilence",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "SpiritualIntercourse",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "Stereotype",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "PersuasionResearch",
+      "target": "UsesAndGratifications",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "PseudoEnvironment",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "SocialInformationSystem",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
+    },
+    {
+      "source": "SpiralOfSilence",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['-guide']"
+    },
+    {
+      "source": "SpiritualIntercourse",
+      "target": "TwoStepFlow",
+      "kind": "INFERRED",
+      "confidence": 0.5,
+      "reason": "共享来源 ['']"
     },
     {
       "source": "ToolUse",
