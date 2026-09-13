@@ -179,4 +179,20 @@ last_updated: 2026-09-13
   - `wiki/index.md` 的 5 条 source 条目由纯文本路径改为 markdown 链接；`concept-relationship` 一条并列标出网页版
 - **规模不变**：wiki 页面总数仍 37（8 source / 7 entity / 15 concept / 2 synthesis + 5 元页面），concept 页仍 15 个
 
+## [2026-09-13] query | 「LLM Wiki 只能装课程内容吗」——答案回填进 [[LLMWiki]]
 
+- **问题**：使用者问「这个 LLM Wiki 是只能放这门课相关的东西，还是任何想了解的专业知识都可以放进去」
+- **取证**：查 `raw/README.md`（投放物定义：论文 / 文章 / 笔记 / 会议纪要 / 书籍摘录 / 网页存档，**格式不限**）、`raw/karpathy-llm-wiki-gist.md`（示例 Farzapedia = 个人材料编译成个人百科）、`raw/2026-09-12--.md` 2.5 节（"适合会反复用到的知识"）
+- **结论**：模式本身**无主题限制**；真正判据是 ① 会不会反复用到 ② 有没有可靠来源。唯一真实约束是 Karpathy 那句"高规模不需复杂 RAG"**以主题聚焦为前提**；另叠加本仓库的公开性限制（个人内容不入 `wiki/`）
+- **动作**：在 [[LLMWiki]] 的「核心机制」下新增小节「适用范围：不限主题，判据是'会不会反复用到'」，置于「规模与边界」之前
+- **页面总数不变**（仍 37），无新概念页、无新来源页——这是一次 Query 型回填，不产生新来源
+
+
+
+## [2026-09-13] ingest | 概念学习资料：LLM Wiki（concept-learner 第 6 份产出）补档 + 参考实现落库 vendor/
+
+- **背景**：核对历史任务「用 skill 讲解 LLM Wiki，并安装 llm-wiki-agent」完成度时发现两处缺口——① `learning-materials/` 缺 LLM Wiki 那份概念学习资料（其余 4 个概念都有）；② 参考实现仓库只在规范里被"参考"，从未真正落地到本地
+- **动作一（资料补齐）**：按 `concept-learner` 九段式生成 `learning-materials/llm-wiki.html`（第 6 份概念学习资料，与前 5 份同款版式）；复制进 `raw/llm-wiki.html`（md5 `68c14456035af308e3a3397d2e7ac926`，与原件一致）；`raw/README.md` 登记表与指纹表各加 1 行；新建 [[llm-wiki-learning-material]] source 页；[[LLMWiki]] 关联段补双链；index 补条目
+- **动作二（参考实现落库）**：克隆 `SamurAIGPT/llm-wiki-agent` 到 `vendor/llm-wiki-agent/`（浅克隆，HEAD `5c5e056`），`.gitignore` 追加 `vendor/`——是别人的 MIT 代码，只作本地只读参考，不进 GitHub；`git check-ignore` 验证生效
+- **页面总数**：37 → **38**（新增 1 个 source 页）；concept 页仍 15 个
+- **性质**：本次 source 页是「学习资料」而非新事实来源，内容全部来自既有页，无新增概念
