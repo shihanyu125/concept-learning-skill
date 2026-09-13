@@ -28,6 +28,7 @@ last_updated: 2026-09-13
 - [资料（）：记忆系统与 LLM Wiki](sources/.md) — 四个主题：记忆系统的三层分工、LLM Wiki、自动化的六条原则、选模型的三档取向
 - [概念学习资料：普莫时代（PUMO）](sources/pumo-era.md) — 2025 年提出的最新时代环境框架：极化、难以想象、质变、过热（原始资料：[raw/pumo-era.md](../raw/pumo-era.md)）
 - [学习导读：《传播学经典理论》](sources/-guide.md) — 张国良主编经典选编文集的 AI 汇编导读：六大板块 × 14 个核心概念 + 六周学习路线（原始资料：[raw/-guide.md](../raw/-guide.md)；配套页面 learning-materials/communication-classics-guide.html）
+- [传播学学科材料（）：社会信息系统与传播学的诞生](sources/.md) — 一堂课讲完学科底座：共同意义空间 → 传播学的定义 → 社会信息系统 → 黄金三十年 → 四大奠基人（原始资料：[raw/.md](../raw/.md)，**整理**，不含规则与主题事务）
 
 ## Entities
 
@@ -72,9 +73,15 @@ last_updated: 2026-09-13
 - [MediumIsTheMessage（媒介即讯息）](concepts/MediumIsTheMessage.md) — 改变社会的是媒介本身，不是它运送的内容；麦克卢汉 1964
 - [EncodingDecoding（编码 / 解码）](concepts/EncodingDecoding.md) — 传者装意义、观者按立场拆；三种解码姿态；霍尔 1973
 - [CultureIndustry（文化工业）](concepts/CultureIndustry.md) — 文化被流水线化成罐头：包装不同、配方一致；法兰克福学派 1947
+- [CommunicationStudies（传播学：学科定义与研究对象）](concepts/CommunicationStudies.md) — 研究社会信息系统及其运行规律的科学；人内→大众传播的谱系
+- [SocialInformationSystem（社会信息系统）](concepts/SocialInformationSystem.md) — 学科对象的说明书：开放性、双重偶然性、两类故障、自我修复
+- [CommonMeaningSpace（共同意义空间）](concepts/CommonMeaningSpace.md) — 传播成立的前提：没有共同地面就"传而不通"
+- [GoldenAgeOfCommunication（传播学的黄金三十年）](concepts/GoldenAgeOfCommunication.md) — 为何诞生于 20 世纪初的美国：技术/政治/经济/社会/学术五条件
+- [SpiritualIntercourse（精神交往理论）](concepts/SpiritualIntercourse.md) — 马克思、恩格斯：物质交往决定精神交往；用时间消灭空间
 
 ## Syntheses
 
 - [Agent、上下文、Skill 三者是什么关系？](syntheses/agent-context-skill-relationship.md) — 三者的定位、闭环与两条关键因果链
 - [为什么要「先编译」而不是「每次检索」？](syntheses/why-compile-not-retrieve.md) — 编译式 wiki 与 RAG 的差异、边界与不可让渡的原则
 - [维基百科研究课题：知识公平与四个研究方向](syntheses/wikipedia-research-directions.md) — 主题"新课题"的学术定位：2025 年热点文献 + 四个可操作切入点
+- [四大奠基人与施拉姆（人物—出身—理论对照）](syntheses/communication-studies-founding-figures.md) — 传播学史的人物线：谁是谁、谁属于哪个学科、合起来干了什么

@@ -2,7 +2,7 @@
 title: "两级传播与意见领袖（Two-Step Flow）"
 type: concept
 tags: [传播学, 经典理论, 拉扎斯菲尔德, 有限效果论, 意见领袖]
-sources: [-guide]
+sources: [-guide, ]
 last_updated: 2026-09-13
 ---
 
@@ -28,3 +28,4 @@ last_updated: 2026-09-13
 
 - KOL / 直播带货 / 社群营销的理论源头（广告学专业高频要点）。
 - 与 [[Gatekeeping]] 相连：意见领袖也是人际层的守门人；与 [[PersuasionResearch]] 同属效果研究传统但路径不同（田野调查 vs 实验室）。
+- **人物线**：伊里调查与《人民的选择》出自社会学家**拉扎斯菲尔德**，他本意是检验媒介对投票的影响，却意外发现人际影响的中介作用——见 [[communication-studies-founding-figures|四大奠基人与施拉姆]]。

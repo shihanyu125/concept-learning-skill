@@ -2,7 +2,7 @@
 title: "守门人（Gatekeeping）"
 type: concept
 tags: [传播学, 经典理论, 卢因, 控制分析]
-sources: [-guide]
+sources: [-guide, ]
 last_updated: 2026-09-13
 ---
 
@@ -28,3 +28,4 @@ last_updated: 2026-09-13
 
 - 传统媒体时代：编辑、制片人是守门人。
 - 平台时代：守门人从"编辑"换成了"算法 + 审核规则"——守门没消失，只是换了人。这与 [[AgendaSetting]]（守门的结果体现为议程）和 [[PseudoEnvironment]]（守门塑造转述世界）连成一条因果链。
+- **人物线**：把关人理论出自社会心理学家**卢因**，是"四大奠基人 + 1"中的第二位（他另提出群体动力论，后者为传播学引入群体传播视角）——见 [[communication-studies-founding-figures|四大奠基人与施拉姆]]。
