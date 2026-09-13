@@ -215,3 +215,14 @@ last_updated: 2026-09-13
 - **隐私处理**：两页均只做**中性学术转述**，不引用主题原话、不含具体人物论断细节；文献细节不确定处标"待核实"。
 - **更新**：index（Concepts + Syntheses 两段）、资料 source 页"关联"段补双链（消孤儿页）。
 - **规模**：wiki 页面 39→**41**（16 concept + 3 synthesis）。concept 页计数口径不变：仍为 16 个，距 50 差 34。
+
+## [2026-09-13] ingest | 学习导读：《传播学经典理论》——传播学线第二次扩展
+
+- **起因**：使用者想学张国良主编《传播学经典理论》（复旦大学出版社）但未购书（"买了也没时间读"）。按规则**先落 raw 再 ingest**（新概念页只允许来自 raw/ 资料摄取）。
+- **新增原件**：`raw/-guide.md`——AI 依据传播学界公认经典脉络汇编的导读，**非原书内容复制**；撰写时未能联网核对原书目录（网络搜索未获授权），"本书收录了哪一篇"的判断均属合理推断，全部标"待核实"。
+- **新建页面**：source 页 [[-guide]] + **14 个概念页**（TitleCase）：[[PseudoEnvironment]]、[[Stereotype]]、[[LasswellFormula]]、[[Gatekeeping]]、[[TwoStepFlow]]、[[PersuasionResearch]]、[[UsesAndGratifications]]、[[AgendaSetting]]、[[SpiralOfSilence]]、[[CultivationTheory]]、[[BiasOfCommunication]]、[[MediumIsTheMessage]]、[[EncodingDecoding]]、[[CultureIndustry]]。全部与 source 页互链，概念间按理论脉络补双链（拟态环境↔议程设置、守门人↔议程设置、英尼斯→麦克卢汉、文化工业↔编码解码等）。
+- **配套产出**：学习导读页面 `learning-materials/communication-classics-guide.html`（六大板块版图 + 14 概念速览表 + 六周学习路线 + AI 帮读五步 + 自测题；作品输出区，未经 ingest，仅登记于 source 页）。
+- **更新**：index（Sources + Concepts 两段）、overview（frontmatter sources、来源数 8→10、支线段扩展、修订记录）、raw/README.md（登记新原件）。
+- **规模**：wiki 页面 42→**57**（11 source / 7 entity / **31 concept** / 3 synthesis + 5 元页面）。距"本学期 50 个 concept 页"目标差 **19** 个。
+- **待核实标注（重要）**：原书出版年份、收录篇目、导言体例；施拉姆《传播学》中译年份；"睡眠者效应""卑鄙世界综合症"等术语译名；科恩名言出处细节。**引原文前必须查原书。**
+- **后续可做**：为高频学者补 entity 页（李普曼、拉斯韦尔、拉扎斯菲尔德、施拉姆、麦克卢汉、霍尔等，本次为控制规模未建）；按学习路线每学完一批回填学习进度；联网后核对原书目录并修订"待核实"项。

@@ -27,6 +27,7 @@ last_updated: 2026-09-13
 - [Karpathy 的 llm-wiki 原始材料](sources/karpathy-llm-wiki-gist.md) — 编译器 vs 解释器、三层架构、规模与边界（含待核实标注）
 - [资料（）：记忆系统与 LLM Wiki](sources/.md) — 四个主题：记忆系统的三层分工、LLM Wiki、自动化的六条原则、选模型的三档取向
 - [概念学习资料：普莫时代（PUMO）](sources/pumo-era.md) — 2025 年提出的最新时代环境框架：极化、难以想象、质变、过热（原始资料：[raw/pumo-era.md](../raw/pumo-era.md)）
+- [学习导读：《传播学经典理论》](sources/-guide.md) — 张国良主编经典选编文集的 AI 汇编导读：六大板块 × 14 个核心概念 + 六周学习路线（原始资料：[raw/-guide.md](../raw/-guide.md)；配套页面 learning-materials/communication-classics-guide.html）
 
 ## Entities
 
@@ -57,6 +58,20 @@ last_updated: 2026-09-13
 - [LLMWiki（LLM Wiki 模式）](concepts/LLMWiki.md) — 编译式知识库：先编译，再查询
 - [PumoEra（普莫时代 / PUMO）](concepts/PumoEra.md) — 2025 年提出的时代环境框架：极化、难以想象、质变、过热；首个传播学线概念
 - [KnowledgeEquity（知识公平）](concepts/KnowledgeEquity.md) — 公共知识库中被记录与呈现的机会不均等；维基偏差会传导成 AI 偏差
+- [PseudoEnvironment（拟态环境）](concepts/PseudoEnvironment.md) — 我们活在媒介转述的世界里；李普曼 1922
+- [Stereotype（刻板成见）](concepts/Stereotype.md) — 先有图样再看世界，滤镜决定你能看见什么；李普曼 1922
+- [LasswellFormula（拉斯韦尔 5W 模式与三功能）](concepts/LasswellFormula.md) — 传播学的研究地图：谁→说什么→渠道→对谁→效果；1948
+- [Gatekeeping（守门人）](concepts/Gatekeeping.md) — 信息到你面前前总有"采购员"把关；卢因 1947
+- [TwoStepFlow（两级传播与意见领袖）](concepts/TwoStepFlow.md) — 媒介先说服身边更懂的人，再由他影响你；有限效果论起点
+- [PersuasionResearch（劝服研究 / 耶鲁学派）](concepts/PersuasionResearch.md) — 用实验拆解"怎么说才更说服人"；霍夫兰 1953
+- [UsesAndGratifications（使用与满足）](concepts/UsesAndGratifications.md) — 别问媒介对你做了什么，问你对媒介做了什么；卡茨 1974
+- [AgendaSetting（议程设置）](concepts/AgendaSetting.md) — 媒介不能决定你怎么想，但很能决定你想什么；1972
+- [SpiralOfSilence（沉默的螺旋）](concepts/SpiralOfSilence.md) — 怕孤立使少数派闭嘴、多数声浪越滚越大；1980
+- [CultivationTheory（培养理论）](concepts/CultivationTheory.md) — 电视不改变你一时想法，它把你"泡"出世界观；格伯纳
+- [BiasOfCommunication（传播的偏向）](concepts/BiasOfCommunication.md) — 文明用什么媒介就长成什么形状；英尼斯 1951
+- [MediumIsTheMessage（媒介即讯息）](concepts/MediumIsTheMessage.md) — 改变社会的是媒介本身，不是它运送的内容；麦克卢汉 1964
+- [EncodingDecoding（编码 / 解码）](concepts/EncodingDecoding.md) — 传者装意义、观者按立场拆；三种解码姿态；霍尔 1973
+- [CultureIndustry（文化工业）](concepts/CultureIndustry.md) — 文化被流水线化成罐头：包装不同、配方一致；法兰克福学派 1947
 
 ## Syntheses
 

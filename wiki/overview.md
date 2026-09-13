@@ -2,7 +2,7 @@
 title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
-sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, karpathy-llm-wiki-gist, , pumo-era]
+sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, karpathy-llm-wiki-gist, , pumo-era, -guide]
 last_updated: 2026-09-13
 ---
 
@@ -14,7 +14,7 @@ last_updated: 2026-09-13
 
 一句话：**都在回答同一个问题——怎么让 AI 不只是"聊得好"，而是"真能干活、且越干越省力"。**
 
-已摄取 8 份来源，可归为四条线：
+已摄取 10 份来源，可归为五条线：
 
 ### 线一：AI 的"做事能力"从哪来
 
@@ -50,6 +50,8 @@ last_updated: 2026-09-13
 
 - 2026-09-13 起新增：为回答"普莫社会是什么"摄取了第 9 份来源，建了概念页 [[PumoEra]]——2025 年利希腾塔勒提出的时代环境框架（极化 / 难以想象 / 质变 / 过热），接替乌卡、巴尼。见 [[pumo-era]]。
 - 这条线与 AI 四条线无直接内容交集，但**摄入它的动因是 AI 相关的**：wiki 模式不限主题（判据是"会不会反复用到"，见 [[LLMWiki]]），而学习动作本身由本仓库的 concept-learner 工作流完成。后续若继续学传播学概念（风险社会、景观社会等），可沿此线扩展。
+- **同日扩展（第 10 份来源）**：为学习张国良主编《传播学经典理论》，摄取 AI 汇编导读，一次建立 14 个传播学经典概念页——[[PseudoEnvironment]]、[[Stereotype]]、[[LasswellFormula]]、[[Gatekeeping]]、[[TwoStepFlow]]、[[PersuasionResearch]]、[[UsesAndGratifications]]、[[AgendaSetting]]、[[SpiralOfSilence]]、[[CultivationTheory]]、[[BiasOfCommunication]]、[[MediumIsTheMessage]]、[[EncodingDecoding]]、[[CultureIndustry]]。这条支线至此从"单个概念"扩展为"学科理论地图"，覆盖效果研究、宏观效果、媒介环境与批判学派四大传统。见 [[-guide]]。
+  - **注意**：该来源是 AI 汇编材料（非原书复制），原书篇目未联网核对，各概念页均有"待核实"标注；引原文前必须查原书。
 
 ## 四条线怎么接在一起
 
@@ -125,3 +127,4 @@ last_updated: 2026-09-13
 - **2026-09-13** **摄取资料**（`raw/2026-09-12--.md`，本 wiki 首份**非重复**摄取）。新建概念页 [[Automation]]、[[ModelRouting]] 与实体页 [[WorkBuddy]]；重写 [[Memory]] 补入三层分工；线三拆出独立记忆线、新增线四"运行层两个旋钮"；"最值得注意的对照"由三组增至四组。概念页增至 15 个。
 - **2026-09-13** **摄取 `raw/pumo-era.md`（首个传播学/社会学线来源）**：为学习「普莫社会」新建概念页 [[PumoEra]] 与 source 页 [[pumo-era]]，概念页增至 16 个；overview 新增"支线"段。来源为 AI 汇编的可核查材料（原论文 DOI + 北师大周敏 2026 论文 PDF）。
 - **2026-09-13** **来源迁移收尾 + 首次语义层 lint**：把 `vector-database.html`、`concept-relationship.md` 也复制进 `raw/`——**至此 8 份来源全部指向事实来源层**；随后按 lint 判据做语义层检查，补链 [[ToolUse]]（此前只有 1 条入链）与 [[agent-context-skill-relationship]]、补齐 `index.md` 漏掉的两处来源标注、收录资料里此前未编译的"三个反直觉点"与"什么时候不该建自动化"；统一了 `## 待补` / `## 待补充` 两种章节名，并把 [[LLMWiki]] 的"模式三层 vs 本仓库四层"写清限定语。
+- **2026-09-13** **摄取 `raw/-guide.md`（传播学线第二次扩展，规模最大一次）**：为学习张国良主编《传播学经典理论》先落 AI 汇编导读原件再 ingest，新建 source 页 [[-guide]] 与 **14 个概念页**（拟态环境 / 刻板成见 / 5W / 守门人 / 两级传播 / 劝服研究 / 使用与满足 / 议程设置 / 沉默的螺旋 / 培养理论 / 传播的偏向 / 媒介即讯息 / 编码解码 / 文化工业），概念页 17→**31**。配套学习页面 `learning-materials/communication-classics-guide.html`（作品输出区，仅登记未 ingest）。来源为 AI 汇编材料，原书篇目未联网核对，全部标"待核实"。
