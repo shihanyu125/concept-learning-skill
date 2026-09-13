@@ -17,11 +17,11 @@ last_updated: 2026-09-13
 
 ## Sources
 
-- [概念学习资料：Agent（智能体）](sources/agent.md) — Agent = 增强型 LLM，叠加检索/工具/记忆；关键在"下一步由谁决定"（事实来源已迁至 `raw/agent.html`）
-- [概念学习资料：大模型的上下文](sources/llm-context.md) — 上下文窗口的定义、token 计量、截断行为（事实来源已迁至 `raw/llm-context.html`）
-- [概念学习资料：Skill（技能包）](sources/skill.md) — Skill 的文件夹结构、YAML 元数据与渐进式披露（事实来源已迁至 `raw/skill.html`）
-- [概念学习资料：向量数据库](sources/vector-database.md) — 按"意思有多接近"检索的数据库，RAG 的地基（事实来源已迁至 `raw/vector-database.html`）
-- [概念关系说明：Agent、上下文、Skill 三者关系](sources/concept-relationship.md) — 不解释单个概念，而是把三者串成闭环（事实来源已迁至 `raw/concept-relationship.md`）
+- [概念学习资料：Agent（智能体）](sources/agent.md) — Agent = 增强型 LLM，叠加检索/工具/记忆；关键在"下一步由谁决定"（原始资料：[raw/agent.html](../raw/agent.html)）
+- [概念学习资料：大模型的上下文](sources/llm-context.md) — 上下文窗口的定义、token 计量、截断行为（原始资料：[raw/llm-context.html](../raw/llm-context.html)）
+- [概念学习资料：Skill（技能包）](sources/skill.md) — Skill 的文件夹结构、YAML 元数据与渐进式披露（原始资料：[raw/skill.html](../raw/skill.html)）
+- [概念学习资料：向量数据库](sources/vector-database.md) — 按"意思有多接近"检索的数据库，RAG 的地基（原始资料：[raw/vector-database.html](../raw/vector-database.html)）
+- [概念关系说明：Agent、上下文、Skill 三者关系](sources/concept-relationship.md) — 不解释单个概念，而是把三者串成闭环（原始资料：[raw/concept-relationship.md](../raw/concept-relationship.md) ｜ [网页版](../raw/concept-relationship.html)）
 - [LLM Wiki 模式](sources/llm-wiki-pattern.md) — 本仓库所安装模式的目录布局与四条工作流
 - [Karpathy 的 llm-wiki 原始材料](sources/karpathy-llm-wiki-gist.md) — 编译器 vs 解释器、三层架构、规模与边界（含待核实标注）
 - [资料（）：记忆系统与 LLM Wiki](sources/.md) — 四个主题：记忆系统的三层分工、LLM Wiki、自动化的六条原则、选模型的三档取向

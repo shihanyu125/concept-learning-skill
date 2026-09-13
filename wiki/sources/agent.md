@@ -12,6 +12,7 @@ last_updated: 2026-09-13
 
 > **来源说明**：本页依据的事实来源是 `raw/agent.html`（事实来源层，只读）。
 > 该文件同时也在 `learning-materials/agent.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`c51bd38ada5bbb63506492f572c79324`）。
+> 原始资料（点开即读）：[raw/agent.html](../../raw/agent.html) ｜ [learning-materials/agent.html](../../learning-materials/agent.html)
 > 引用时以 `raw/` 为准。
 
 ## Summary

@@ -12,6 +12,7 @@ last_updated: 2026-09-13
 
 > **来源说明**：本页依据的事实来源是 `raw/skill.html`（事实来源层，只读）。
 > 该文件同时也在 `learning-materials/skill.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`8a4bee80537a0d6b96720bf5ee5c9130`）。
+> 原始资料（点开即读）：[raw/skill.html](../../raw/skill.html) ｜ [learning-materials/skill.html](../../learning-materials/skill.html)
 > 引用时以 `raw/` 为准。
 
 ## Summary

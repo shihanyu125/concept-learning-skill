@@ -169,4 +169,14 @@ last_updated: 2026-09-13
 - 运行 `tools/build_graph.py`，重建 `graph/graph.json` + `graph/graph.html`
 - 规模：37 节点 / 236 边（EXTRACTED 223 / INFERRED 13）/ 7 社区；枢纽仍为 [[Context]]（26）、[[Agent]]（24）、[[overview]]（23）
 
+## [2026-09-13] ingest | 概念学习资料网页版补档 —— `concept-relationship.html` 纳入 `raw/`
+
+- **背景**：`learning-materials/` 的 5 份概念学习资料中，4 份 `.html`（`agent` / `llm-context` / `skill` / `vector-database`）早已复制进 `raw/` 并完成摄取；**`concept-relationship.html` 此前只存在于作品输出区**，未进入事实来源层
+- **处理**：`cp -p learning-materials/concept-relationship.html raw/concept-relationship.html`（保留原始 mtime 2026-09-04 20:06）；md5 校验一致（`4aa97b7285dad64d351c8bf62749c915`）
+- **`raw/README.md`**：内容登记表加一行、指纹表加一行、修正末尾"未复制"的说明 → 至此 `learning-materials/` 5 份资料的**全部格式变体（6 个文件）**在 `raw/` 中均有存档
+- **wiki 侧不新建页**：该 `.html` 与既有 [[concept-relationship]] source 页的内容完全重合（同一份内容的两种呈现），重写摘要的产出为零 → 改为**加强可达性**：
+  - 5 份 concept-material source 页的「来源说明」各补一行「原始资料（点开即读）」可点击链接，同时指向 `raw/`（事实来源层）与 `learning-materials/`（作品输出区）
+  - `wiki/index.md` 的 5 条 source 条目由纯文本路径改为 markdown 链接；`concept-relationship` 一条并列标出网页版
+- **规模不变**：wiki 页面总数仍 37（8 source / 7 entity / 15 concept / 2 synthesis + 5 元页面），concept 页仍 15 个
+
 

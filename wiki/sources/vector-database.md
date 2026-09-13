@@ -12,6 +12,7 @@ last_updated: 2026-09-13
 
 > **来源说明**：本页依据的事实来源是 `raw/vector-database.html`（事实来源层，只读）。
 > 该文件同时也在 `learning-materials/vector-database.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`98f2bc4e1fa5b89cd7697fb635756772`）。
+> 原始资料（点开即读）：[raw/vector-database.html](../../raw/vector-database.html) ｜ [learning-materials/vector-database.html](../../learning-materials/vector-database.html)
 > 引用时以 `raw/` 为准。
 
 ## Summary

@@ -12,7 +12,9 @@ last_updated: 2026-09-13
 
 > **来源说明**：本页依据的事实来源是 `raw/concept-relationship.md`（事实来源层，只读）。
 > 该文件同时也在 `learning-materials/concept-relationship.md`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`32e5ead78fa07f4de1507fcfb7c68cc0`）。
+> 同一份内容另有**网页版**，已一并存入 `raw/concept-relationship.html`（md5 `4aa97b7285dad64d351c8bf62749c915`）——两版内容相同，只是格式不同；本页摘要的编写依据是 `.md` 版。
 > 引用时以 `raw/` 为准。
+> 原始资料（点开即读）：[raw/concept-relationship.md](../../raw/concept-relationship.md) ｜ [raw/concept-relationship.html](../../raw/concept-relationship.html) ｜ [learning-materials/concept-relationship.md](../../learning-materials/concept-relationship.md) ｜ [learning-materials/concept-relationship.html](../../learning-materials/concept-relationship.html)
 
 ## Summary
 

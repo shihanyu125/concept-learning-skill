@@ -12,6 +12,7 @@ last_updated: 2026-09-13
 
 > **来源说明**：本页依据的事实来源是 `raw/llm-context.html`（事实来源层，只读）。
 > 该文件同时也在 `learning-materials/llm-context.html`——那是**作品输出区**，内容可能被继续修订；两处内容经 md5 校验一致（`46f984074affa946ada6b031cfa3fb7d`）。
+> 原始资料（点开即读）：[raw/llm-context.html](../../raw/llm-context.html) ｜ [learning-materials/llm-context.html](../../learning-materials/llm-context.html)
 > 引用时以 `raw/` 为准。
 
 ## Summary
