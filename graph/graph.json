@@ -8,8 +8,8 @@
   },
   "stats": {
     "nodes": 37,
-    "edges": 236,
-    "extracted": 223,
+    "edges": 244,
+    "extracted": 231,
     "inferred": 13,
     "communities": 7
   },
@@ -31,8 +31,8 @@
       ],
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
-      "community": 4,
-      "degree": 24
+      "community": 6,
+      "degree": 25
     },
     {
       "id": "Automation",
@@ -71,7 +71,7 @@
       "path": "concepts/Context.md",
       "updated": "2026-09-13",
       "community": 5,
-      "degree": 26
+      "degree": 27
     },
     {
       "id": "ContextManagement",
@@ -110,7 +110,7 @@
       "path": "concepts/LLMWiki.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 21
+      "degree": 22
     },
     {
       "id": "Memory",
@@ -226,7 +226,7 @@
       "path": "concepts/Skill.md",
       "updated": "2026-09-13",
       "community": 5,
-      "degree": 22
+      "degree": 23
     },
     {
       "id": "Token",
@@ -264,7 +264,7 @@
       ],
       "path": "concepts/ToolUse.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 2,
       "degree": 14
     },
     {
@@ -300,7 +300,7 @@
       ],
       "path": "concepts/Workflow.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 1,
       "degree": 13
     },
     {
@@ -395,7 +395,7 @@
       ],
       "path": "entities/OpenAI.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 14
     },
     {
@@ -444,7 +444,7 @@
       "sources": [],
       "path": "health-report.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 0
     },
     {
@@ -472,7 +472,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-09-13",
-      "community": 3,
+      "community": 4,
       "degree": 0
     },
     {
@@ -487,7 +487,7 @@
       "path": "log.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 9
+      "degree": 17
     },
     {
       "id": "overview",
@@ -511,7 +511,7 @@
       "path": "overview.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 23
+      "degree": 24
     },
     {
       "id": "agent",
@@ -527,7 +527,7 @@
       ],
       "path": "sources/agent.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 2,
       "degree": 13
     },
     {
@@ -547,7 +547,7 @@
       "path": "sources/.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 14
+      "degree": 15
     },
     {
       "id": "concept-relationship",
@@ -564,7 +564,7 @@
       "path": "sources/concept-relationship.md",
       "updated": "2026-09-13",
       "community": 5,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "karpathy-llm-wiki-gist",
@@ -598,7 +598,7 @@
       ],
       "path": "sources/llm-context.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 5,
       "degree": 14
     },
     {
@@ -674,7 +674,7 @@
       "path": "syntheses/agent-context-skill-relationship.md",
       "updated": "2026-09-13",
       "community": 5,
-      "degree": 20
+      "degree": 21
     },
     {
       "id": "why-compile-not-retrieve",
@@ -1601,6 +1601,54 @@
     {
       "source": "log",
       "target": "ModelRouting",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "agent-context-skill-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "overview",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "concept-relationship",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
