@@ -28,10 +28,11 @@
 | `vector-database.html` | html | 概念学习资料之四：向量数据库。**副本**，原件仍在 `learning-materials/vector-database.html` |
 | `concept-relationship.md` | md | 概念关系说明：Agent / 上下文 / Skill 三者如何串成闭环。**副本**，原件仍在 `learning-materials/concept-relationship.md` |
 | `concept-relationship.html` | html | 上述关系说明的**网页版**（与 `.md` 同一份内容的两种呈现）。**副本**，原件仍在 `learning-materials/concept-relationship.html` |
+| `llm-wiki.html` | html | 概念学习资料之六：LLM Wiki（本仓库自身的组织模式）。**副本**，原件仍在 `learning-materials/llm-wiki.html` |
 
 ### 关于那些"副本"（重要）
 
-上表中带"**副本**"标记的 5 个文件，都是从 `learning-materials/` **复制**过来的，**原始文件仍然保留在原处、未被移动或删除**。
+上表中带"**副本**"标记的 6 个文件，都是从 `learning-materials/` **复制**过来的，**原始文件仍然保留在原处、未被移动或删除**。
 
 之所以要复制进 `raw/`，是因为 `raw/` 才是这套模式的**事实来源层**：wiki 里每一页的 `source_file` 字段都要能指向 `raw/` 中的一份资料。而 `learning-materials/` 属于"作品输出区"，内容可能被继续修订——把来源钉在 `raw/`（只读）上，追溯链才稳定。
 
@@ -45,6 +46,7 @@
 | `vector-database.html` | `98f2bc4e1fa5b89cd7697fb635756772` |
 | `concept-relationship.md` | `32e5ead78fa07f4de1507fcfb7c68cc0` |
 | `concept-relationship.html` | `4aa97b7285dad64d351c8bf62749c915` |
+| `llm-wiki.html` | `68c14456035af308e3a3397d2e7ac926` |
 
 > 注：`concept-relationship.html` 是 `concept-relationship.md` 的网页版（同一份内容的两种呈现），已一并纳入本目录。wiki 中对应的 source 页 `source_file` 仍引用 `.md` 版本（那是 wiki 摘要的编写依据），`.html` 作为同一来源的另一种格式并列存放。
-> 至此，`learning-materials/` 里 5 份概念学习资料（4 份 `.html` + 1 份 `.md`）连同其网页版共 6 份文件，已全部在 `raw/` 中有对应存档；wiki 所有 source 页的 `source_file` 均指向 `raw/`。
+> 至此，`learning-materials/` 里 6 份概念学习资料（5 份 `.html` + 1 份 `.md`）连同其网页版共 7 份文件，已全部在 `raw/` 中有对应存档；wiki 所有 source 页的 `source_file` 均指向 `raw/`。
