@@ -29,6 +29,7 @@
 | `concept-relationship.md` | md | 概念关系说明：Agent / 上下文 / Skill 三者如何串成闭环。**副本**，原件仍在 `learning-materials/concept-relationship.md` |
 | `concept-relationship.html` | html | 上述关系说明的**网页版**（与 `.md` 同一份内容的两种呈现）。**副本**，原件仍在 `learning-materials/concept-relationship.html` |
 | `llm-wiki.html` | html | 概念学习资料之六：LLM Wiki（本仓库自身的组织模式）。**副本**，原件仍在 `learning-materials/llm-wiki.html` |
+| `pumo-era.md` | md | 普莫时代（PUMO）概念的原始材料汇编（2025 年利希腾塔勒原论文 + 周敏、陈飞扬 2026 中文论文的可核查事实）。**新增原件**（非副本，非原文复制，由 AI 依据多来源汇编并附全部核查链接），对应概念学习资料 `learning-materials/pumo.html` |
 
 ### 关于那些"副本"（重要）
 
