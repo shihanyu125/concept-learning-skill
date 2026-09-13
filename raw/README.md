@@ -27,6 +27,7 @@
 | `skill.html` | html | 概念学习资料之三：Skill。**副本**，原件仍在 `learning-materials/skill.html` |
 | `vector-database.html` | html | 概念学习资料之四：向量数据库。**副本**，原件仍在 `learning-materials/vector-database.html` |
 | `concept-relationship.md` | md | 概念关系说明：Agent / 上下文 / Skill 三者如何串成闭环。**副本**，原件仍在 `learning-materials/concept-relationship.md` |
+| `concept-relationship.html` | html | 上述关系说明的**网页版**（与 `.md` 同一份内容的两种呈现）。**副本**，原件仍在 `learning-materials/concept-relationship.html` |
 
 ### 关于那些"副本"（重要）
 
@@ -43,5 +44,7 @@
 | `skill.html` | `8a4bee80537a0d6b96720bf5ee5c9130` |
 | `vector-database.html` | `98f2bc4e1fa5b89cd7697fb635756772` |
 | `concept-relationship.md` | `32e5ead78fa07f4de1507fcfb7c68cc0` |
+| `concept-relationship.html` | `4aa97b7285dad64d351c8bf62749c915` |
 
-> 注：`learning-materials/` 里另有 `concept-relationship.html`（上述 `.md` 的网页版），**未**复制进本目录——wiki 中对应的 source 页引用的是 `.md` 版本。至此，wiki 所有 source 页的 `source_file` 均已指向 `raw/`。
+> 注：`concept-relationship.html` 是 `concept-relationship.md` 的网页版（同一份内容的两种呈现），已一并纳入本目录。wiki 中对应的 source 页 `source_file` 仍引用 `.md` 版本（那是 wiki 摘要的编写依据），`.html` 作为同一来源的另一种格式并列存放。
+> 至此，`learning-materials/` 里 5 份概念学习资料（4 份 `.html` + 1 份 `.md`）连同其网页版共 6 份文件，已全部在 `raw/` 中有对应存档；wiki 所有 source 页的 `source_file` 均指向 `raw/`。
