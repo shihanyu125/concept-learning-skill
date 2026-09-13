@@ -7,9 +7,9 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 37,
-    "edges": 244,
-    "extracted": 231,
+    "nodes": 38,
+    "edges": 253,
+    "extracted": 240,
     "inferred": 13,
     "communities": 7
   },
@@ -32,7 +32,7 @@
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
       "community": 6,
-      "degree": 25
+      "degree": 26
     },
     {
       "id": "Automation",
@@ -70,8 +70,8 @@
       ],
       "path": "concepts/Context.md",
       "updated": "2026-09-13",
-      "community": 5,
-      "degree": 27
+      "community": 2,
+      "degree": 28
     },
     {
       "id": "ContextManagement",
@@ -90,7 +90,7 @@
       ],
       "path": "concepts/ContextManagement.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 16
     },
     {
@@ -110,7 +110,7 @@
       "path": "concepts/LLMWiki.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 22
+      "degree": 23
     },
     {
       "id": "Memory",
@@ -130,7 +130,7 @@
       ],
       "path": "concepts/Memory.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 20
     },
     {
@@ -206,7 +206,7 @@
       "path": "concepts/RetrievalAugmentedGeneration.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 17
+      "degree": 18
     },
     {
       "id": "Skill",
@@ -226,7 +226,7 @@
       "path": "concepts/Skill.md",
       "updated": "2026-09-13",
       "community": 5,
-      "degree": 23
+      "degree": 24
     },
     {
       "id": "Token",
@@ -244,7 +244,7 @@
       ],
       "path": "concepts/Token.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 11
     },
     {
@@ -337,7 +337,7 @@
       ],
       "path": "entities/Anthropic.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 2,
       "degree": 15
     },
     {
@@ -360,7 +360,7 @@
       "path": "entities/ConceptLearner.md",
       "updated": "2026-09-13",
       "community": 5,
-      "degree": 15
+      "degree": 16
     },
     {
       "id": "LlmWikiAgent",
@@ -487,7 +487,7 @@
       "path": "log.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 17
+      "degree": 18
     },
     {
       "id": "overview",
@@ -582,7 +582,7 @@
       "path": "sources/karpathy-llm-wiki-gist.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "llm-context",
@@ -598,8 +598,25 @@
       ],
       "path": "sources/llm-context.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 2,
       "degree": 14
+    },
+    {
+      "id": "llm-wiki-learning-material",
+      "label": "概念学习资料：LLM Wiki（concept-learner 第 6 份产出）",
+      "type": "source",
+      "tags": [
+        "llm-wiki",
+        "learning-material",
+        "meta"
+      ],
+      "sources": [
+        "llm-wiki-learning-material"
+      ],
+      "path": "sources/llm-wiki-learning-material.md",
+      "updated": "2026-09-13",
+      "community": 0,
+      "degree": 9
     },
     {
       "id": "llm-wiki-pattern",
@@ -617,7 +634,7 @@
       "path": "sources/llm-wiki-pattern.md",
       "updated": "2026-09-13",
       "community": 0,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "skill",
@@ -976,6 +993,12 @@
     },
     {
       "source": "LLMWiki",
+      "target": "karpathy-llm-wiki-gist",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LLMWiki",
       "target": "LlmWikiAgent",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -1018,13 +1041,13 @@
     },
     {
       "source": "LLMWiki",
-      "target": "karpathy-llm-wiki-gist",
+      "target": "llm-wiki-pattern",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
     {
       "source": "LLMWiki",
-      "target": "llm-wiki-pattern",
+      "target": "llm-wiki-learning-material",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1653,6 +1676,12 @@
       "confidence": 1.0
     },
     {
+      "source": "log",
+      "target": "llm-wiki-learning-material",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "overview",
       "target": "Agent",
       "kind": "EXTRACTED",
@@ -1931,6 +1960,48 @@
     {
       "source": "llm-context",
       "target": "overview",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "karpathy-llm-wiki-gist",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "llm-wiki-pattern",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "ConceptLearner",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "Skill",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "Agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "llm-wiki-learning-material",
+      "target": "RetrievalAugmentedGeneration",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
