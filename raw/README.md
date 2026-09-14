@@ -9,7 +9,6 @@
 - **AI 只读不写**：Agent 摄取（ingest）时只读取这里的文件，不会改动它们。
 - **格式不限**：`.md` 直接读；`.pdf` `.docx` `.pptx` `.xlsx` `.html` `.txt` `.csv` `.json` `.epub` `.mp3` 等由 Agent 先转成 Markdown 再摄取。
 - **建议命名**：用能一眼看懂内容的 `kebab-case` 名字，例如 `attention-is-all-you-need.md`。这个文件名会成为 wiki 里 source 页的 slug。
-  - **学科材料统一格式**：`<课程或学科>-notes-<第几次课>.md`。现有两例：`.md`、`.md`。
   - **不要**用日期开头，也不要用中文或含大写字母的文件名——日期写进文件正文与 frontmatter 的 `date` 字段即可；含中文/大写的名字在大小写敏感的文件系统上容易出问题。
 
 ## 怎么用
@@ -24,7 +23,6 @@
 |---|---|---|
 | `llm-wiki-pattern.md` | md | 本套 LLM Wiki 模式自身的说明（Karpathy 思路 + 参考实现 SamurAIGPT/llm-wiki-agent），即本仓库的"安装说明书" |
 | `karpathy-llm-wiki-gist.md` | md | Karpathy 原始材料（gist `llm-wiki` + X 长帖）的**二手整理**：三层架构、编译器 vs 解释器、index/log 分工、规模与边界、已知瓶颈。**含待核实标注** |
-| `.md` | md | 资料，四个主题：记忆系统（三层分工）、LLM Wiki（编译器 vs 解释器）、自动化（一次性/周期性）、选模型策略（轻量/默认/强推理） |
 | `agent.html` | html | 概念学习资料之一：Agent。**副本**，原件仍在 `learning-materials/agent.html` |
 | `llm-context.html` | html | 概念学习资料之二：大模型的上下文。**副本**，原件仍在 `learning-materials/llm-context.html` |
 | `skill.html` | html | 概念学习资料之三：Skill。**副本**，原件仍在 `learning-materials/skill.html` |
@@ -33,8 +31,6 @@
 | `concept-relationship.html` | html | 上述关系说明的**网页版**（与 `.md` 同一份内容的两种呈现）。**副本**，原件仍在 `learning-materials/concept-relationship.html` |
 | `llm-wiki.html` | html | 概念学习资料之六：LLM Wiki（本仓库自身的组织模式）。**副本**，原件仍在 `learning-materials/llm-wiki.html` |
 | `pumo-era.md` | md | 普莫时代（PUMO）概念的原始材料汇编（2025 年利希腾塔勒原论文 + 周敏、陈飞扬 2026 中文论文的可核查事实）。**新增原件**（非副本，非原文复制，由 AI 依据多来源汇编并附全部核查链接），对应概念学习资料 `learning-materials/pumo.html` |
-| `-guide.md` | md | 《传播学经典理论》（张国良主编）的学习导读汇编：六大板块 × 14 个核心概念 + 六周学习路线。**新增原件**（非原书复制，由 AI 依据公认经典脉络汇编；原书篇目未联网核对，含"待核实"清单），对应学习页面 `learning-materials/communication-classics-guide.html` |
-| `.md` | md | 《传播学》学科材料的**整理**：共同意义空间 → 传播学的定义与研究对象 → 社会信息系统的特点与故障 → 马克思精神交往 → 传播学诞生于美国的五个条件（黄金三十年）→ 四大奠基人与施拉姆 → AI 与社会信息系统。**新增原件**（非原文复制：只摘录学术性内容，规则、、主题管理与已剔除，文末附"来源口径"说明） |
 
 > **编号说明**：上表中「之一～之六」是 `concept-learner` 的**产出顺序**，与 wiki 侧 `index.md`、`log.md` 里"concept-learner 第 6 份产出"的口径一致：Agent → 大模型的上下文 → Skill → 向量数据库 → 概念关系说明 → LLM Wiki。
 > 其中**之一～之四是单概念九段式资料，之五是关系梳理（体裁不同），之六回到九段式**。
@@ -58,13 +54,8 @@
 | `llm-wiki.html` | `68c14456035af308e3a3397d2e7ac926` |
 
 > 注：`concept-relationship.html` 是 `concept-relationship.md` 的网页版（同一份内容的两种呈现），已一并纳入本目录。wiki 中对应的 source 页 `source_file` 仍引用 `.md` 版本（那是 wiki 摘要的编写依据），`.html` 作为同一来源的另一种格式并列存放。
-> 至此，`learning-materials/` 里 6 份概念学习资料（5 份 `.html` + 1 份 `.md`）连同其网页版共 7 份文件，已全部在 `raw/` 中有对应存档；wiki 所有 source 页的 `source_file` 均指向 `raw/`。
 
 ## 变更记录
 
-- **2026-09-14 · 文件名规范化**：`2026-09-12--.md` → **`.md`**（对齐 `.md` 的 `<课程>-notes-<第几次课>.md` 格式）。
-  - **文件内容一字未改**，仅改文件名。
-  - 同步更新了 19 个文件里的全部引用，含 wiki 里的 16 处 `[[双链]]`、source 页的 `source_file` 字段、`wiki/index.md`、`wiki/log.md`、`wiki/overview.md`、`learning-materials/llm-wiki.html`、`raw/llm-wiki.html` 与知识图谱产物。
-  - 对应的 wiki source 页也由 `.md` 更名为 `.md`（slug 与原始文件名对齐）。
-  - **理由**：原名含中文、含大写字母、且以日期开头，既与本节"建议命名"自相矛盾，也与另一份学科材料的写法不一致；在大小写敏感的文件系统上还有隐患。
+- **2026-09-14 · 文件名规范化**：把以日期开头、含中文或含大写字母的旧文件名统一为 `kebab-case`（**文件内容一字未改**），并同步更新了全部引用（wiki 双链、`source_file`、`index` / `log` / `overview` 与知识图谱产物）。
 - **2026-09-14 · 编号补齐**：当前内容表此前有"之六"却无"之五"，序号断档——现补上"之五：概念关系说明"，并新增上方「编号说明」交代编号口径。
