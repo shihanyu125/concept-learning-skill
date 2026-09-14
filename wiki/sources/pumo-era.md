@@ -16,7 +16,7 @@ last_updated: 2026-09-13
 
 ## 核心内容
 
-**一句话**：普莫（PUMO）是 2025 年德国学者利希腾塔勒提出的最新一代时代环境框架——继乌卡（VUCA）、巴尼（BANI）之后，用**极化（Polarized）、难以想象（Unthinkable）、质变（Metamorphic）、过热（Overheated）**四要素概括当今世界环境，2026 年由北师大周敏团队引入国际传播研究。
+**一句话**：普莫（PUMO）是 2025 年德国学者利希腾塔勒提出的最新一代时代环境框架——继乌卡（VUCA）、巴尼（BANI）之后，用**极化（Polarized）、难以想象（Unthinkable）、质变（Metamorphic）、过热（Overheated）**四要素概括当今世界环境，2026 年由北师大周敏团队引入[[InternationalCommunication|国际传播]]研究。
 
 **四要素要点**：
 

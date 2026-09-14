@@ -74,7 +74,7 @@ last_updated: 2026-09-13
 
 ## 待补充
 
-- **工具调用的具体协议与格式**（如 function calling 的报文结构、MCP 这类工具接入标准）——wiki 目前完全没有相关页面。见 [[overview]] 的"已知的空白"。
+- **工具调用的具体协议与格式**（如 function calling 的报文结构）——仍缺。此前与本条并列的"MCP 这类工具接入标准"**已于 2026-09-14 独立成页**，见 [[MCP]]（含 host/client/server 三角色与 tools/resources/prompts 三原语）。
 - **权限与护栏（guardrails）的工程做法**——[[OpenAI]] 的 Agent definitions 提及"模型 + 指令 + 工具/护栏/交接"，但未展开。
 - **多工具场景下的选择策略**——现有来源只提到"工具"这一能力，未涉及取舍。
 

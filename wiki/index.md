@@ -3,7 +3,7 @@ title: "Wiki Index"
 type: synthesis
 tags: [meta, index]
 sources: []
-last_updated: 2026-09-13
+last_updated: 2026-09-14
 ---
 
 # Wiki Index
@@ -47,6 +47,7 @@ last_updated: 2026-09-13
 - [Token（词元）](concepts/Token.md) — 上下文的计量单位；"还剩多少余量"就是靠它算的
 - [ContextManagement（上下文管理）](concepts/ContextManagement.md) — 窗口满了之后怎么办：编辑 / 压缩 / 外置
 - [ToolUse（工具调用）](concepts/ToolUse.md) — 让模型从"只会说"变成"真能动手"的那座桥
+- [MCP（Model Context Protocol）](concepts/MCP.md) — AI 接外部世界的"通用插座"；host/client/server 三角色 + tools/resources/prompts 三原语
 - [Memory（记忆）](concepts/Memory.md) — 让 AI 跨步骤保持连贯；分云端 / 用户级 / 工作区三层
 - [Skill（技能包）](concepts/Skill.md) — 打包好的专业能力文件夹，按需加载；分个人级与项目级存放
 - [Prompt（提示词）](concepts/Prompt.md) — 一次性输入，用完即散；与 Skill 的分界在于"谁决定它何时进入上下文"
@@ -61,9 +62,11 @@ last_updated: 2026-09-13
 - [KnowledgeEquity（知识公平）](concepts/KnowledgeEquity.md) — 公共知识库中被记录与呈现的机会不均等；维基偏差会传导成 AI 偏差
 - [PseudoEnvironment（拟态环境）](concepts/PseudoEnvironment.md) — 我们活在媒介转述的世界里；李普曼 1922
 - [Stereotype（刻板成见）](concepts/Stereotype.md) — 先有图样再看世界，滤镜决定你能看见什么；李普曼 1922
+- [PublicOpinion（舆论 / 公众舆论）](concepts/PublicOpinion.md) — 舆论是"头脑里的图景"而非民意；附《公众舆论》公版原文逐字核验；李普曼 1922
 - [LasswellFormula（拉斯韦尔 5W 模式与三功能）](concepts/LasswellFormula.md) — 传播学的研究地图：谁→说什么→渠道→对谁→效果；1948
 - [Gatekeeping（守门人）](concepts/Gatekeeping.md) — 信息到你面前前总有"采购员"把关；卢因 1947
 - [TwoStepFlow（两级传播与意见领袖）](concepts/TwoStepFlow.md) — 媒介先说服身边更懂的人，再由他影响你；有限效果论起点
+- [OpinionLeader（意见领袖）](concepts/OpinionLeader.md) — 在某件具体事上"身边人会去问"的那个人；与守门人、KOL 的分工
 - [PersuasionResearch（劝服研究 / 耶鲁学派）](concepts/PersuasionResearch.md) — 用实验拆解"怎么说才更说服人"；霍夫兰 1953
 - [UsesAndGratifications（使用与满足）](concepts/UsesAndGratifications.md) — 别问媒介对你做了什么，问你对媒介做了什么；卡茨 1974
 - [AgendaSetting（议程设置）](concepts/AgendaSetting.md) — 媒介不能决定你怎么想，但很能决定你想什么；1972
@@ -76,8 +79,10 @@ last_updated: 2026-09-13
 - [CommunicationStudies（传播学：学科定义与研究对象）](concepts/CommunicationStudies.md) — 研究社会信息系统及其运行规律的科学；人内→大众传播的谱系
 - [SocialInformationSystem（社会信息系统）](concepts/SocialInformationSystem.md) — 学科对象的说明书：开放性、双重偶然性、两类故障、自我修复
 - [CommonMeaningSpace（共同意义空间）](concepts/CommonMeaningSpace.md) — 传播成立的前提：没有共同地面就"传而不通"
+- [TypesOfCommunication（传播的类型与层次）](concepts/TypesOfCommunication.md) — 人内 / 人际 / 群体 / 组织 / 大众：传播不是单个动作，而是层层放大的系统
 - [GoldenAgeOfCommunication（传播学的黄金三十年）](concepts/GoldenAgeOfCommunication.md) — 为何诞生于 20 世纪初的美国：技术/政治/经济/社会/学术五条件
 - [SpiritualIntercourse（精神交往理论）](concepts/SpiritualIntercourse.md) — 马克思、恩格斯：物质交往决定精神交往；用时间消灭空间
+- [InternationalCommunication（国际传播）](concepts/InternationalCommunication.md) — 以国家为主体的跨国界传播：两个方向、三个特征、普莫时代的韧性
 
 ## Syntheses
 

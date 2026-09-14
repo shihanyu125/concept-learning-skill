@@ -40,6 +40,7 @@ last_updated: 2026-09-13
 ## 关联
 
 - [[CommunicationStudies]] — 定义句里的"社会信息系统"
+- [[TypesOfCommunication]] — 这个系统在各层（人内 / 人际 / 群体 / 组织 / 大众）的具体形态
 - [[CommonMeaningSpace]] — 对付"传而不通"的第一块地基
 - [[GoldenAgeOfCommunication]] — 系统失序 → 学科诞生
 - [[Gatekeeping]] — 信息链条上的把关环节

@@ -335,3 +335,20 @@ last_updated: 2026-09-13
 - **动作二（元数据）**：`wiki/overview.md` 的 `sources` 字段此前只列 10 个 slug，漏了 `llm-wiki-learning-material` 与 ``；已补齐并把 `last_updated` 改为 2026-09-14。
 - **动作三（过时计数）**：同页正文原写"已摄取 11 份来源"，与实际 12 份不符；支线一节的来源序号（第 9 / 第 10 / 第 11 份）随之各偏小 1。已按 `wiki/sources/` 实际页面数与 `git log --diff-filter=A` 的建立顺序更正为 12 份并顺延序号，另补记此前漏记的第 9 份来源条目。校正后与 `README.md` 的"12 个 source"一致。
 - **校验**：`tools/health.py`、`tools/lint.py` 复跑全绿；另重建知识图谱以纳入新增的双链。
+
+## [2026-09-14] ingest | 用户批准 5 条概念候选 —— 新建 5 个概念页（传播学线与 AI 线各补一块）
+
+- **性质**：**零新来源的扩建摄取**。本仓库 `raw/` 无新增文件（14 个文件与 12 个 source 页的对应关系不变），材料来自既有 source 页 + 外部一手材料。
+- **前置**：用户 2026-09-14 对当日每日维护征询的 5 条候选**逐条点头**（此前规则是"只提请求、不落盘"）。五条已先写入本机私有清单的「已批准 · 待建页」区，再开始建页。
+- **新建 5 个概念页**（concept 36 → 41）：
+  - `concepts/PublicOpinion.md`（舆论 / 公众舆论）——材料：`raw/-guide.md` 与 Project Gutenberg 电子书 #6456《Public Opinion》(1922) 公版全文。**逐字核验**：定义段（"the pictures inside the heads … are their public opinions"）与三角关系段两处英文引用均从全文摘出，仅合并硬换行、未改字；同批核对确认 #76966 是同一作者的《幻影公众》(1925)，两本未混。
+  - `concepts/TypesOfCommunication.md`（传播的类型与层次）——材料：传播学学科材料整理（三层五类表出自主题明示重点那一节）+ 经典理论导读。
+  - `concepts/OpinionLeader.md`（意见领袖）——把原挂在两级传播页内的**角色**部分拆出独立成页，含与两级传播 / 守门人 / KOL 的三张辨析表；原页保留"结构"主线并互链。
+  - `concepts/InternationalCommunication.md`（国际传播）——材料：程曼丽《信息全球化时代的国际传播》（定义、两部分组成、三个特征逐字引用）、北师大周敏与陈飞扬 2026《新闻界》论文 PDF（下载后按页提取文本核对）、`raw/pumo-era.md`。
+  - `concepts/MCP.md`（Model Context Protocol）——材料：MCP 官方文档两篇与 Anthropic 2024-11-25 开源公告（官方定义、host/client/server 三角色、tools/resources/prompts 三原语均逐字摘出）。
+- **来源层说明**：上列外部一手材料（官方文档、期刊论文、公版全文、央视网刊文）**均未进入 `raw/`**——`raw/` 是公开层，新增文件须先经用户同意。故 `concepts/MCP.md` 的 `sources` 字段为空，其余新页的 `sources` 只列既有 source 页 slug；各页「来源」段均已写明 URL、抓取日期与核验方式。
+- **回填双链 12 处**：`overview.md`、`index.md`、`entities/Anthropic.md`、`concepts/ToolUse.md`、`concepts/PseudoEnvironment.md`、`concepts/Stereotype.md`、`concepts/TwoStepFlow.md`、`concepts/SpiralOfSilence.md`、`concepts/PumoEra.md`、`sources/pumo-era.md`、`sources/-guide.md`、`syntheses/communication-studies-founding-figures.md`。
+- **关闭的缺口**：`overview.md` 空白清单第 1 条（MCP，"被页面提到却无页"）标记为已收口；`entities/Anthropic.md` 与 `concepts/ToolUse.md` 两处「待补充」段中原指向 MCP 的条目改写为已建页。
+- **元页面**：`index.md` 的 Concepts 段新增 5 条并同步 `last_updated`；`overview.md` 支线新增"同日第四次扩展"段与一条修订记录；两份体检报告以 `--save` 刷新。
+- **待核实**：各新页文末均列待核实项（意见领袖的类型学与测量方法、国际传播的中文译名对应、MCP 是否已移交外部标准组织、公版书中文译本页码等），**未联网核实者一律未写入正文**。
+- **下一步**：其余仍待用户逐条点头的历史候选，本轮**未建立任何页面**；按约定，候选名称**不写入公开层**（只存本机私有目录）。

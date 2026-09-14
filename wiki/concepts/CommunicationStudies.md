@@ -47,6 +47,7 @@ last_updated: 2026-09-13
 ## 关联
 
 - [[SocialInformationSystem]] — 这个学科对象的"机器说明书"：特点与故障
+- [[TypesOfCommunication]] — 这个系统的微观—宏观谱系（人内 / 人际 / 群体 / 组织 / 大众）
 - [[GoldenAgeOfCommunication]] — 这门学科在什么时空、因何诞生
 - [[CommonMeaningSpace]] — 传播成立的前提条件（传而不通的根源）
 - [[communication-studies-founding-figures]] — 谁把这门学科立了起来

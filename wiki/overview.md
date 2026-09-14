@@ -55,6 +55,9 @@ last_updated: 2026-09-14
 - **同日第三次扩展（第 12 份来源）**：摄取《传播学》学科材料（）的**整理**，新建 source 页 [[]]、**5 个概念页**（[[CommunicationStudies]] 学科本体 / [[SocialInformationSystem]] 系统机制 / [[CommonMeaningSpace]] 传播前提 / [[GoldenAgeOfCommunication]] 学科史 / [[SpiritualIntercourse]] 另一条理论源头）与 **1 个 synthesis 页**（[[communication-studies-founding-figures]] 人物线）。
   - **这条支线此前是"有理论、无总纲"**：14 个经典理论页悬在半空，缺一页讲"这门学科是什么"、缺时间轴、缺人物。本次一次性补齐——**学科线 + 时间线 + 人物线**三者互链，理论页从此有了挂载点。
   - **内容口径（重要）**：该 source 页是学科材料的**整理**，只保留定义、理论、学科史、学者贡献与学术论证；**规则、、主题管理、一律未收录**。此口径适用于**所有课程**的学科材料入库。
+- **同日第四次扩展（2026-09-14，无新来源，只扩建页面）**：经用户逐条批准，一次新建 **5 个概念页**——[[PublicOpinion]]（舆论 / 公众舆论，附《公众舆论》公版原文逐字核验）、[[TypesOfCommunication]]（传播的类型与层次）、[[OpinionLeader]]（意见领袖）、[[InternationalCommunication]]（国际传播）、[[MCP]]（AI 线的协议层缺口）。概念页 36→**41**。
+  - 这一次的特殊之处：**横跨两条线**。前四个把传播学线的"起点（李普曼的先驱概念）—骨架（传播分层）—中介（意见领袖）—当下（国际传播）"补成闭环；第五个补的是 AI 线挂了最久的缺口（[[Anthropic]] 页的"待补充"、[[ToolUse]] 的"待补充"、本条空白清单第 1 条三处同时指向它）。
+  - **来源层说明**：[[MCP]] 与 [[InternationalCommunication]] 的部分材料（官方文档、期刊论文、公版全文）**未进入 `raw/`**（公开层新增需先经用户同意），已在各页「来源」段写明 URL 与核验方式。
 
 ## 四条线怎么接在一起
 
@@ -104,8 +107,8 @@ last_updated: 2026-09-14
 
 按价值排序：
 
-1. **MCP（Model Context Protocol）** —— 与 [[Skill]]、[[ToolUse]] 强相关，wiki 目前完全没有相关页面。见 [[Anthropic]]。
-   - **注（2026-09-13）**：这一条是人工复核出来的——它被 3 个页面提到却无页面，已命中"缺页"判据，但 `tools/lint.py` 的「缺页候选」仍报 0（该判据对 MCP 这类缩写不敏感）。**"缺页候选 0"不等于没有缺口**，每次 lint 都要人工再数一遍候选词。
+1. **MCP（Model Context Protocol）** —— ✅ **已收口（2026-09-14）**：见 [[MCP]]。与 [[Skill]]、[[ToolUse]] 强相关，页内给出"连接层 vs 流程层"的分工，并说明它在本 wiki 载体上的日常形态。材料为 MCP 官方文档与 [[Anthropic]] 公告（外部一手来源，**尚未进入 `raw/`**，故该页 `sources` 字段为空）。
+   - **注（2026-09-13 首次记录，2026-09-14 复核仍在）**：这一条是人工复核出来的——它被 3 个页面提到却无页面，已命中"缺页"判据，但 `tools/lint.py` 的「缺页候选」仍报 0（该判据对 MCP 这类缩写不敏感）。**"缺页候选 0"不等于没有缺口**，每次 lint 都要人工再数一遍候选词。
 2. **上下文管理的具体做法** —— [[ContextManagement]] 只搭了框架（截断 / 编辑 / 压缩 / 外置四种思路）。缺：各家 context editing 的触发阈值与限制、"context rot" 的确切定义与实测表现、三种做法的成本对比。见 [[Anthropic]]、[[OpenAI]]。
 3. **提示词工程的系统方法** —— [[Prompt]] 已建页，但少样本示例、思维链、输出格式约束等具体做法，以及模型厂商侧的**提示词分层**（系统 / 开发者 / 用户）机制，仍完全空白。
 4. **工具调用的协议与护栏** —— [[ToolUse]] 目前只讲了"是什么"，没讲报文格式（function calling）、权限控制与 guardrails 的工程做法。
@@ -134,3 +137,4 @@ last_updated: 2026-09-14
 - **2026-09-13** **摄取 `raw/.md`（传播学线第三次扩展：从"理论地图"补成"完整学科"）**：课程笔记首次入库，**按学术口径整理**（剔除规则、、主题管理与）。新建 source 页 [[]]、**5 个概念页**（[[CommunicationStudies]]、[[SocialInformationSystem]]、[[CommonMeaningSpace]]、[[GoldenAgeOfCommunication]]、[[SpiritualIntercourse]]）与 **1 个 synthesis 页**（[[communication-studies-founding-figures]]），概念页 31→**36**。补上了此前的结构性失衡——14 个理论页之外，第一次有了**学科总纲（学科线）**、**时间轴（时间线）**与**人物锚点（人物线）**，三者与四位奠基人的既有理论页（[[LasswellFormula]]、[[Gatekeeping]]、[[PersuasionResearch]]、[[TwoStepFlow]]）互链成网。主题明示的重点均标 。
 - **2026-09-13** 接入第 9 份来源 [[llm-wiki-learning-material]]（concept-learner 第 6 份产出《LLM Wiki》学习资料）：新建 source 页并补 [[LLMWiki]] 的适用范围小节。**本条为 2026-09-14 补记**——此前修订记录漏记，导致下方"支线"一节的来源序号与总计数整体偏小 1。
 - **2026-09-14** **元数据与计数校正**：`sources` 字段补入 `llm-wiki-learning-material`、``（此前只列 10 个 slug）；正文来源总数由 11 更正为 12，支线三处序号顺延（pumo → 第 10 份、经典导读 → 第 11 份、传播学学科材料 → 第 12 份）。计数依据为 `wiki/sources/` 实际页面数与 `git log --diff-filter=A` 的建立顺序，与 `README.md` 的"12 个 source"一致。
+- **2026-09-14** **第四次扩展：一次新建 5 个概念页**（[[PublicOpinion]]、[[TypesOfCommunication]]、[[OpinionLeader]]、[[InternationalCommunication]]、[[MCP]]），概念页 36→**41**。本轮**没有新增来源**，全部材料来自既有 source 页 + 外部一手材料（MCP 官方文档与 Anthropic 公告、《公众舆论》Gutenberg 公版全文、程曼丽论国际传播、周敏 2026 论文 PDF）。同时收口了空白清单第 1 条（MCP），并回填 12 处双链、更新 [[Anthropic]] 与 [[ToolUse]] 的"待补充"段。
