@@ -3,7 +3,7 @@ title: "Wiki Index"
 type: synthesis
 tags: [meta, index]
 sources: []
-last_updated: 2026-09-14
+last_updated: 2026-09-15
 ---
 
 # Wiki Index
@@ -25,10 +25,7 @@ last_updated: 2026-09-14
 - [概念学习资料：LLM Wiki](sources/llm-wiki-learning-material.md) — 本仓库自身组织模式的九段式学习资料，concept-learner 第 6 份产出（原始资料：[raw/llm-wiki.html](../raw/llm-wiki.html)）
 - [LLM Wiki 模式](sources/llm-wiki-pattern.md) — 本仓库所安装模式的目录布局与四条工作流
 - [Karpathy 的 llm-wiki 原始材料](sources/karpathy-llm-wiki-gist.md) — 编译器 vs 解释器、三层架构、规模与边界（含待核实标注）
-- [资料（）：记忆系统与 LLM Wiki](sources/.md) — 四个主题：记忆系统的三层分工、LLM Wiki、自动化的六条原则、选模型的三档取向
 - [概念学习资料：普莫时代（PUMO）](sources/pumo-era.md) — 2025 年提出的最新时代环境框架：极化、难以想象、质变、过热（原始资料：[raw/pumo-era.md](../raw/pumo-era.md)）
-- [学习导读：《传播学经典理论》](sources/-guide.md) — 张国良主编经典选编文集的 AI 汇编导读：六大板块 × 14 个核心概念 + 六周学习路线（原始资料：[raw/-guide.md](../raw/-guide.md)；配套页面 learning-materials/communication-classics-guide.html）
-- [传播学学科材料（）：社会信息系统与传播学的诞生](sources/.md) — 一堂课讲完学科底座：共同意义空间 → 传播学的定义 → 社会信息系统 → 黄金三十年 → 四大奠基人（原始资料：[raw/.md](../raw/.md)，**整理**，不含规则与主题事务）
 
 ## Entities
 
@@ -88,5 +85,4 @@ last_updated: 2026-09-14
 
 - [Agent、上下文、Skill 三者是什么关系？](syntheses/agent-context-skill-relationship.md) — 三者的定位、闭环与两条关键因果链
 - [为什么要「先编译」而不是「每次检索」？](syntheses/why-compile-not-retrieve.md) — 编译式 wiki 与 RAG 的差异、边界与不可让渡的原则
-- [维基百科研究课题：知识公平与四个研究方向](syntheses/wikipedia-research-directions.md) — 主题"新课题"的学术定位：2025 年热点文献 + 四个可操作切入点
 - [四大奠基人与施拉姆（人物—出身—理论对照）](syntheses/communication-studies-founding-figures.md) — 传播学史的人物线：谁是谁、谁属于哪个学科、合起来干了什么

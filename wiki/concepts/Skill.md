@@ -2,8 +2,8 @@
 title: "Skill（Agent Skill / 技能包）"
 type: concept
 tags: [agent-skill, skill-md, reuse, core-concept]
-sources: [skill, concept-relationship, ]
-last_updated: 2026-09-13
+sources: [skill, concept-relationship]
+last_updated: 2026-09-15
 ---
 
 # Skill（技能包）
@@ -66,12 +66,11 @@ Skill 不是"装进模型"里的，而是**放在文件系统上**，按生效�
 - [[Agent]] — Skill 让通用 Agent 临时变专业
 - [[LLMWiki]] — 参考实现本身就是一个 coding agent skill
 - [[WorkBuddy]] — 个人级 / 项目级两个存放位置所属的平台
-- 来源页：[[skill]]、[[concept-relationship]]、[[]]
+- 来源页：[[skill]]、[[concept-relationship]]
 
 ## 来源
 
 - Anthropic《Introducing Agent Skills》(2025-10)
 - Anthropic 工程博客《Equipping agents for the real world with Agent Skills》
 - Claude Code 文档《Extend Claude with skills》
-- `raw/.md` — "记忆 ≠ 技能"的对照
 - 见 [[Anthropic]]

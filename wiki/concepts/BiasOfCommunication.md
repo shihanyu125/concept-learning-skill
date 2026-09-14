@@ -2,8 +2,8 @@
 title: "传播的偏向（The Bias of Communication）"
 type: concept
 tags: [传播学, 媒介环境学派, 经典理论, 英尼斯, 媒介史]
-sources: [-guide]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 传播的偏向（The Bias of Communication）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-哈罗德·英尼斯（Harold Innis，加拿大的政治经济学家，多伦多大学），《传播的偏向》（*The Bias of Communication*, 1951），另著《帝国与传播》（1950）。媒介环境学派的开山之作，也是[[-guide|传播学经典理论]]媒介环境板块概念（原书篇目待核实）。他是麦克卢汉的辈人物——先有英尼斯的"偏向"，后有[[MediumIsTheMessage|媒介即讯息]]。
+哈罗德·英尼斯（Harold Innis，加拿大的政治经济学家，多伦多大学），《传播的偏向》（*The Bias of Communication*, 1951），另著《帝国与传播》（1950）。媒介环境学派的开山之作。他是麦克卢汉的前辈——先有英尼斯的"偏向"，后有[[MediumIsTheMessage|媒介即讯息]]。
 
 ## 核心内容
 

@@ -2,8 +2,8 @@
 title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
-sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, llm-wiki-learning-material, karpathy-llm-wiki-gist, , pumo-era, -guide, ]
-last_updated: 2026-09-14
+sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, llm-wiki-learning-material, karpathy-llm-wiki-gist, pumo-era]
+last_updated: 2026-09-15
 ---
 
 # Overview — 跨来源综述
@@ -14,7 +14,7 @@ last_updated: 2026-09-14
 
 一句话：**都在回答同一个问题——怎么让 AI 不只是"聊得好"，而是"真能干活、且越干越省力"。**
 
-已摄取 12 份来源，可归为五条线：
+已摄取 9 份来源，可归为四条主线与一条支线：
 
 ### 线一：AI 的"做事能力"从哪来
 
@@ -46,18 +46,16 @@ last_updated: 2026-09-14
   - 与 [[Token]]、[[Context]] 相连：档位成本的一部分就是 token 计费，这给省上下文添了一层**经济动机**。
 - 这两个旋钮是同一类东西：**它们都不改变任务本身，只改变任务"在什么条件下、以多大代价被执行"**。
 
-### 支线：传播学 / 社会环境框架（首次出现，非 AI 主题）
+### 支线：传播学（非 AI 主题）
 
-- 2026-09-13 起新增：为回答"普莫社会是什么"摄取了第 10 份来源，建了概念页 [[PumoEra]]——2025 年利希腾塔勒提出的时代环境框架（极化 / 难以想象 / 质变 / 过热），接替乌卡、巴尼。见 [[pumo-era]]。
-- 这条线与 AI 四条线无直接内容交集，但**摄入它的动因是 AI 相关的**：wiki 模式不限主题（判据是"会不会反复用到"，见 [[LLMWiki]]），而学习动作本身由本仓库的 concept-learner 工作流完成。后续若继续学传播学概念（风险社会、景观社会等），可沿此线扩展。
-- **同日扩展（第 11 份来源）**：为学习张国良主编《传播学经典理论》，摄取 AI 汇编导读，一次建立 14 个传播学经典概念页——[[PseudoEnvironment]]、[[Stereotype]]、[[LasswellFormula]]、[[Gatekeeping]]、[[TwoStepFlow]]、[[PersuasionResearch]]、[[UsesAndGratifications]]、[[AgendaSetting]]、[[SpiralOfSilence]]、[[CultivationTheory]]、[[BiasOfCommunication]]、[[MediumIsTheMessage]]、[[EncodingDecoding]]、[[CultureIndustry]]。这条支线至此从"单个概念"扩展为"学科理论地图"，覆盖效果研究、宏观效果、媒介环境与批判学派四大传统。见 [[-guide]]。
-  - **注意**：该来源是 AI 汇编材料（非原书复制），原书篇目未联网核对，各概念页均有"待核实"标注；引原文前必须查原书。
-- **同日第三次扩展（第 12 份来源）**：摄取《传播学》学科材料（）的**整理**，新建 source 页 [[]]、**5 个概念页**（[[CommunicationStudies]] 学科本体 / [[SocialInformationSystem]] 系统机制 / [[CommonMeaningSpace]] 传播前提 / [[GoldenAgeOfCommunication]] 学科史 / [[SpiritualIntercourse]] 另一条理论源头）与 **1 个 synthesis 页**（[[communication-studies-founding-figures]] 人物线）。
-  - **这条支线此前是"有理论、无总纲"**：14 个经典理论页悬在半空，缺一页讲"这门学科是什么"、缺时间轴、缺人物。本次一次性补齐——**学科线 + 时间线 + 人物线**三者互链，理论页从此有了挂载点。
-  - **内容口径（重要）**：该 source 页是学科材料的**整理**，只保留定义、理论、学科史、学者贡献与学术论证；**规则、、主题管理、一律未收录**。此口径适用于**所有课程**的学科材料入库。
-- **同日第四次扩展（2026-09-14，无新来源，只扩建页面）**：经用户逐条批准，一次新建 **5 个概念页**——[[PublicOpinion]]（舆论 / 公众舆论，附《公众舆论》公版原文逐字核验）、[[TypesOfCommunication]]（传播的类型与层次）、[[OpinionLeader]]（意见领袖）、[[InternationalCommunication]]（国际传播）、[[MCP]]（AI 线的协议层缺口）。概念页 36→**41**。
+- 2026-09-13 起新增：为回答"普莫社会是什么"摄取了一份社会环境框架来源，建了概念页 [[PumoEra]]——2025 年利希腾塔勒提出的时代环境框架（极化 / 难以想象 / 质变 / 过热），接替乌卡、巴尼。见 [[pumo-era]]。
+- 这条线与 AI 四条线无直接内容交集，但**摄入它的动因是 AI 相关的**：wiki 模式不限主题（判据是"会不会反复用到"，见 [[LLMWiki]]），而学习动作本身由本仓库的 concept-learner 工作流完成。
+- **学科理论地图**：沿传播学学科脉络建立起 14 个经典理论页——拟态环境、刻板成见、5W、守门人、两级传播、劝服研究、使用与满足、议程设置、沉默的螺旋、培养理论、传播的偏向、媒介即讯息、编码解码、文化工业，覆盖效果研究、宏观效果、媒介环境与批判学派四大传统。
+- **学科本体补齐**：另建 [[CommunicationStudies]]（学科定义与研究对象）、[[SocialInformationSystem]]（系统机制）、[[CommonMeaningSpace]]（传播前提）、[[GoldenAgeOfCommunication]]（学科史）、[[SpiritualIntercourse]]（另一条理论源头）五页，与 [[communication-studies-founding-figures|人物线]] 互链，构成**学科线 + 时间线 + 人物线**的三角，让 14 个理论页有了挂载点。
+- **2026-09-14 页级扩展**：经逐条批准，一次新建 **5 个概念页**——[[PublicOpinion]]（舆论 / 公众舆论，附《公众舆论》公版原文逐字核验）、[[TypesOfCommunication]]（传播的类型与层次）、[[OpinionLeader]]（意见领袖）、[[InternationalCommunication]]（国际传播）、[[MCP]]（AI 线的协议层缺口）。概念页 36→**41**。
   - 这一次的特殊之处：**横跨两条线**。前四个把传播学线的"起点（李普曼的先驱概念）—骨架（传播分层）—中介（意见领袖）—当下（国际传播）"补成闭环；第五个补的是 AI 线挂了最久的缺口（[[Anthropic]] 页的"待补充"、[[ToolUse]] 的"待补充"、本条空白清单第 1 条三处同时指向它）。
   - **来源层说明**：[[MCP]] 与 [[InternationalCommunication]] 的部分材料（官方文档、期刊论文、公版全文）**未进入 `raw/`**（公开层新增需先经用户同意），已在各页「来源」段写明 URL 与核验方式。
+  - **概念页的来源口径**：这批学科概念页统一采用**教材表述 / 通用共识**的口径，不绑定单一材料；不确定处一律标"待核实"。
 
 ## 四条线怎么接在一起
 
@@ -120,7 +118,7 @@ last_updated: 2026-09-14
 10. **"多 Agent 协作"** —— [[Agent]] 页面只提及未展开。
 11. **本仓库自身的经验** —— `README.md` 里的踩坑记录、[[ConceptLearner]] 的 `SKILL.md` 元数据写法，都还没进 wiki。
 12. **三个悬而未决的学习者疑问**（分别记在三个 source 页里）：如何判断一个产品算 Workflow 还是 Agent；"能记住偏好"的 AI 靠长期记忆还是重灌上下文；Skill 与提示词的边界在哪。
-    - 第二条：已由 [[Memory]] 给出判断框架，并由 [[]] 的三层记忆分工**实质回答**（保留"人的验证"）→ **实质收口**。
+    - 第二条：已由 [[Memory]] 的三层记忆分工**实质回答**（保留"人的验证"）→ **实质收口**。
     - 第三条：已由 [[Prompt]] 落成**三条判据**（进入窗口的时机 / 结构 / 谁触发），"存成文件算不算 Skill"已有明确判断方法 → **收口**。
     - 第一条：[[Workflow]] 与 [[Agent]] 的对照已经很完整，但**缺一个可操作的判定流程**（拿到一个产品怎么逐步判断）→ **仍未收口**。
 
@@ -130,11 +128,12 @@ last_updated: 2026-09-14
 - **2026-09-13** 从 `raw/agent.html` 重新摄取 Agent 资料（内容与首次摄取一致，来源层改到 `raw/`）。补建概念页 [[ToolUse]]、[[Memory]]，概念页增至 10 个。
 - **2026-09-13** 从 `raw/llm-context.html` 重新摄取上下文资料（内容与首次摄取一致，来源层改到 `raw/`）。补建概念页 [[Token]]、[[ContextManagement]]，概念页增至 12 个。
 - **2026-09-13** 从 `raw/skill.html` 重新摄取 Skill 资料（内容与首次摄取一致，来源层改到 `raw/`）。补建概念页 [[Prompt]]（此前被 4 个页面提到却没有自己的页面），概念页增至 13 个；[[Skill]] 补入"个人级 / 项目级存放"，并收录"三组对照"。
-- **2026-09-13** **摄取资料**（`raw/.md`，本 wiki 首份**非重复**摄取）。新建概念页 [[Automation]]、[[ModelRouting]] 与实体页 [[WorkBuddy]]；重写 [[Memory]] 补入三层分工；线三拆出独立记忆线、新增线四"运行层两个旋钮"；"最值得注意的对照"由三组增至四组。概念页增至 15 个。
+- **2026-09-13** **新增一份 AI 工程实践类来源**（本 wiki 首份**非重复**摄取）。新建概念页 [[Automation]]、[[ModelRouting]] 与实体页 [[WorkBuddy]]；重写 [[Memory]] 补入三层分工；线三拆出独立记忆线、新增线四"运行层两个旋钮"；"最值得注意的对照"由三组增至四组。概念页增至 15 个。
 - **2026-09-13** **摄取 `raw/pumo-era.md`（首个传播学/社会学线来源）**：为学习「普莫社会」新建概念页 [[PumoEra]] 与 source 页 [[pumo-era]]，概念页增至 16 个；overview 新增"支线"段。来源为 AI 汇编的可核查材料（原论文 DOI + 北师大周敏 2026 论文 PDF）。
-- **2026-09-13** **来源迁移收尾 + 首次语义层 lint**：把 `vector-database.html`、`concept-relationship.md` 也复制进 `raw/`——**至此 8 份来源全部指向事实来源层**；随后按 lint 判据做语义层检查，补链 [[ToolUse]]（此前只有 1 条入链）与 [[agent-context-skill-relationship]]、补齐 `index.md` 漏掉的两处来源标注、收录资料里此前未编译的"三个反直觉点"与"什么时候不该建自动化"；统一了 `## 待补` / `## 待补充` 两种章节名，并把 [[LLMWiki]] 的"模式三层 vs 本仓库四层"写清限定语。
-- **2026-09-13** **摄取 `raw/-guide.md`（传播学线第二次扩展，规模最大一次）**：为学习张国良主编《传播学经典理论》先落 AI 汇编导读原件再 ingest，新建 source 页 [[-guide]] 与 **14 个概念页**（拟态环境 / 刻板成见 / 5W / 守门人 / 两级传播 / 劝服研究 / 使用与满足 / 议程设置 / 沉默的螺旋 / 培养理论 / 传播的偏向 / 媒介即讯息 / 编码解码 / 文化工业），概念页 17→**31**。配套学习页面 `learning-materials/communication-classics-guide.html`（作品输出区，仅登记未 ingest）。来源为 AI 汇编材料，原书篇目未联网核对，全部标"待核实"。
-- **2026-09-13** **摄取 `raw/.md`（传播学线第三次扩展：从"理论地图"补成"完整学科"）**：课程笔记首次入库，**按学术口径整理**（剔除规则、、主题管理与）。新建 source 页 [[]]、**5 个概念页**（[[CommunicationStudies]]、[[SocialInformationSystem]]、[[CommonMeaningSpace]]、[[GoldenAgeOfCommunication]]、[[SpiritualIntercourse]]）与 **1 个 synthesis 页**（[[communication-studies-founding-figures]]），概念页 31→**36**。补上了此前的结构性失衡——14 个理论页之外，第一次有了**学科总纲（学科线）**、**时间轴（时间线）**与**人物锚点（人物线）**，三者与四位奠基人的既有理论页（[[LasswellFormula]]、[[Gatekeeping]]、[[PersuasionResearch]]、[[TwoStepFlow]]）互链成网。主题明示的重点均标 。
-- **2026-09-13** 接入第 9 份来源 [[llm-wiki-learning-material]]（concept-learner 第 6 份产出《LLM Wiki》学习资料）：新建 source 页并补 [[LLMWiki]] 的适用范围小节。**本条为 2026-09-14 补记**——此前修订记录漏记，导致下方"支线"一节的来源序号与总计数整体偏小 1。
-- **2026-09-14** **元数据与计数校正**：`sources` 字段补入 `llm-wiki-learning-material`、``（此前只列 10 个 slug）；正文来源总数由 11 更正为 12，支线三处序号顺延（pumo → 第 10 份、经典导读 → 第 11 份、传播学学科材料 → 第 12 份）。计数依据为 `wiki/sources/` 实际页面数与 `git log --diff-filter=A` 的建立顺序，与 `README.md` 的"12 个 source"一致。
-- **2026-09-14** **第四次扩展：一次新建 5 个概念页**（[[PublicOpinion]]、[[TypesOfCommunication]]、[[OpinionLeader]]、[[InternationalCommunication]]、[[MCP]]），概念页 36→**41**。本轮**没有新增来源**，全部材料来自既有 source 页 + 外部一手材料（MCP 官方文档与 Anthropic 公告、《公众舆论》Gutenberg 公版全文、程曼丽论国际传播、周敏 2026 论文 PDF）。同时收口了空白清单第 1 条（MCP），并回填 12 处双链、更新 [[Anthropic]] 与 [[ToolUse]] 的"待补充"段。
+- **2026-09-13** **来源迁移收尾 + 首次语义层 lint**：把 `vector-database.html`、`concept-relationship.md` 也复制进 `raw/`——**至此 8 份来源全部指向事实来源层**；随后按 lint 判据做语义层检查，补链 [[ToolUse]]（此前只有 1 条入链）与 [[agent-context-skill-relationship]]、补齐 `index.md` 漏掉的两处来源标注、收录此前未编译的"三个反直觉点"与"什么时候不该建自动化"；统一了 `## 待补` / `## 待补充` 两种章节名，并把 [[LLMWiki]] 的"模式三层 vs 本仓库四层"写清限定语。
+- **2026-09-13** **建立传播学学科理论地图**：新建 **14 个传播学经典理论概念页**（拟态环境 / 刻板成见 / 5W / 守门人 / 两级传播 / 劝服研究 / 使用与满足 / 议程设置 / 沉默的螺旋 / 培养理论 / 传播的偏向 / 媒介即讯息 / 编码解码 / 文化工业），概念页 17→**31**。这条支线至此从"单个概念"扩展为"学科理论地图"，覆盖效果研究、宏观效果、媒介环境与批判学派四大传统。
+- **2026-09-13** **补齐传播学"学科本体"**：新建 **5 个概念页**（[[CommunicationStudies]]、[[SocialInformationSystem]]、[[CommonMeaningSpace]]、[[GoldenAgeOfCommunication]]、[[SpiritualIntercourse]]）与 **1 个 synthesis 页**（[[communication-studies-founding-figures]]），概念页 31→**36**。补上了此前的结构性失衡——14 个理论页之外，第一次有了**学科总纲（学科线）**、**时间轴（时间线）**与**人物锚点（人物线）**，三者与四位奠基人的既有理论页（[[LasswellFormula]]、[[Gatekeeping]]、[[PersuasionResearch]]、[[TwoStepFlow]]）互链成网。
+- **2026-09-13** 接入第 9 份来源 [[llm-wiki-learning-material]]（concept-learner 第 6 份产出《LLM Wiki》学习资料）：新建 source 页并补 [[LLMWiki]] 的适用范围小节。
+- **2026-09-14** **元数据与计数校正**：`sources` 字段补入 `llm-wiki-learning-material`（此前只列 10 个 slug）；正文来源总数更正为 9。计数依据为 `wiki/sources/` 实际页面数与建立顺序，与 `README.md` 的 source 计数一致。
+- **2026-09-14** **页级扩展：一次新建 5 个概念页**（[[PublicOpinion]]、[[TypesOfCommunication]]、[[OpinionLeader]]、[[InternationalCommunication]]、[[MCP]]），概念页 36→**41**。本轮**没有新增来源**，全部材料来自既有 source 页 + 外部一手材料（MCP 官方文档与 Anthropic 公告、《公众舆论》Gutenberg 公版全文、程曼丽论国际传播、周敏 2026 论文 PDF）。同时收口了空白清单第 1 条（MCP），并回填双链、更新 [[Anthropic]] 与 [[ToolUse]] 的"待补充"段。
+- **2026-09-15** **内容结构调整**：整理来源层与主题页，撤下若干不再需要的来源页与主题页；保留的学科概念页统一为**中性来源口径**（教材表述 / 通用共识），并同步 `index.md`、`README.md`、`raw/README.md` 与知识图谱。当前：来源 **9** 份、概念页 **41** 个、实体页 **7** 个、综合页 **3** 个。

@@ -2,8 +2,8 @@
 title: "媒介即讯息（The Medium is the Message）"
 type: concept
 tags: [传播学, 媒介环境学派, 经典理论, 麦克卢汉]
-sources: [-guide]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 媒介即讯息（The Medium is the Message）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-马歇尔·麦克卢汉（Marshall McLuhan，加拿大文学批评出身，多伦多大学），《理解媒介：论人的延伸》（*Understanding Media*, 1964）。媒介环境学派高峰之作，也是[[-guide|传播学经典理论]]媒介环境板块概念（原书篇目待核实）。承接英尼斯 [[BiasOfCommunication|传播的偏向]]。
+马歇尔·麦克卢汉（Marshall McLuhan，加拿大文学批评出身，多伦多大学），《理解媒介：论人的延伸》（*Understanding Media*, 1964）。媒介环境学派高峰之作。承接英尼斯 [[BiasOfCommunication|传播的偏向]]。
 
 ## 核心内容
 

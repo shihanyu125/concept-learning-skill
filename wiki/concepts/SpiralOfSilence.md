@@ -2,8 +2,8 @@
 title: "沉默的螺旋（Spiral of Silence）"
 type: concept
 tags: [传播学, 宏观效果, 经典理论, 舆论, 诺埃勒-诺依曼]
-sources: [-guide]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 沉默的螺旋（Spiral of Silence）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-伊丽莎白·诺埃勒-诺依曼（Elisabeth Noelle-Neumann，德国政治学家、舆论研究者，阿伦斯巴赫民意研究所创始人），1980 年《沉默的螺旋：舆论——我们的社会皮肤》。宏观效果理论的代表，也是[[-guide|传播学经典理论]]宏观效果板块概念（原书篇目待核实）。
+伊丽莎白·诺埃勒-诺依曼（Elisabeth Noelle-Neumann，德国政治学家、舆论研究者，阿伦斯巴赫民意研究所创始人），1980 年《沉默的螺旋：舆论——我们的社会皮肤》。宏观效果理论的代表。
 
 ## 核心内容（三个命题）
 

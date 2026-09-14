@@ -2,8 +2,8 @@
 title: "刻板成见（Stereotype）"
 type: concept
 tags: [传播学, 受众, 经典理论, 李普曼]
-sources: [-guide]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 刻板成见（Stereotype）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-同出李普曼《公众舆论》（*Public Opinion*, 1922，书目与原文见 [[PublicOpinion|舆论 / 公众舆论]]），与[[PseudoEnvironment|拟态环境]]是同一本书的两大发现，也是[[-guide|传播学经典理论]]先驱板块的核心概念（原书篇目待核实）。
+同出李普曼《公众舆论》（*Public Opinion*, 1922，书目与原文见 [[PublicOpinion|舆论 / 公众舆论]]），与[[PseudoEnvironment|拟态环境]]是同一本书的两大发现。
 
 ## 核心内容
 

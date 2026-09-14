@@ -3,7 +3,7 @@ title: "ModelRouting（选模型策略）"
 type: concept
 tags: [model-routing, cost, latency, agent-platform]
 sources: []
-last_updated: 2026-09-13
+last_updated: 2026-09-15
 ---
 
 # ModelRouting（选模型策略）
@@ -54,7 +54,6 @@ last_updated: 2026-09-13
 - [[Prompt]] — "能不能写清楚"是同一把判断尺子
 - [[Token]]、[[Context]] — 成本与上下文长度的关系
 - [[WorkBuddy]] — 该策略所属的平台
-- 来源页：[[]]
 
 ## 待补充
 
@@ -64,5 +63,4 @@ last_updated: 2026-09-13
 
 ## 来源
 
-- `raw/.md` 第四节（2026-09-12）
 - 与 [[Agent]] / [[Token]] 的成本关系属**推论**，非来源原文，已如实标出。

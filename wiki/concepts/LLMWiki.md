@@ -2,8 +2,8 @@
 title: "LLMWiki（LLM Wiki 模式）"
 type: concept
 tags: [llm-wiki, knowledge-management, methodology, meta]
-sources: [llm-wiki-pattern, ]
-last_updated: 2026-09-13
+sources: [llm-wiki-pattern]
+last_updated: 2026-09-15
 ---
 
 # LLMWiki（LLM Wiki 模式）
@@ -28,7 +28,7 @@ last_updated: 2026-09-13
 - **[[RetrievalAugmentedGeneration|RAG]] 像"解释器"**：每次执行都重新解析一遍源码。
 - **LLM Wiki 像"编译器"**：先把知识预先编译成可直接执行的结构，之后直接跑。
 
-资料里给了一个更直白的说法（来源：[[]]）：
+一个更直白的说法是：
 
 > **RAG 像开卷考试临时翻书；LLM Wiki 像提前把书读薄、编成自己的一本。**
 
@@ -79,7 +79,7 @@ tools/  独立可跑的脚本
 
 真正的准入判据不是"属不属于这个主题"，而是两条：
 
-1. **会不会反复用到。** 资料里明确写了这条（来源：[[]]）："它适合**会反复用到的知识**。一次性问答不值得建页。"——因为建页与维护都有成本。
+1. **会不会反复用到。** 一条通行的判据是："它适合**会反复用到的知识**。一次性问答不值得建页。"——因为建页与维护都有成本。
 2. **有没有可靠来源。** 每页的 `sources` 要能追溯回 `raw/` 里的一份资料；纯凭印象的内容不入库。
 
 **但有一个真实约束**：Karpathy 观察到"高规模下不一定需要复杂 RAG"是**有前提**的——主题聚焦、规模未膨胀。知识域一变杂，目录式导航的收益就下降，最终仍需正式检索机制配合（见下一节）。
@@ -129,14 +129,14 @@ Karpathy 本人划的边界线：**human owns verification（验证责任在人�
 - [[RetrievalAugmentedGeneration]] — 主要对照对象（解释器 vs 编译器）
 - [[why-compile-not-retrieve]] — 本 wiki 关于这组对照的深入分析（含边界条件）
 - [[ConceptLearner]] — 本仓库已有的能力包，与本 wiki 是同一思路在不同层面的应用
-- 来源页：[[karpathy-llm-wiki-gist]]、[[llm-wiki-pattern]]、[[]]、[[llm-wiki-learning-material]]
+- [[KnowledgeEquity]] — 编译式知识库在全球尺度上的镜像问题：谁的知识被收录、谁被漏掉
+- 来源页：[[karpathy-llm-wiki-gist]]、[[llm-wiki-pattern]]、[[llm-wiki-learning-material]]
 
 ## 来源
 
 - Karpathy GitHub gist `llm-wiki` 及配套 X 长帖（原始材料整理见 `raw/karpathy-llm-wiki-gist.md`）
 - `raw/llm-wiki-pattern.md`
 - `SamurAIGPT/llm-wiki-agent`（MIT）
-- `raw/.md` —— 该文件第二节对本模式的**重述**（含"开卷考试"类比），未产生新事实
 - 见 [[AndrejKarpathy]]、[[LlmWikiAgent]]
 
 ## 本站的落地差异（重要）

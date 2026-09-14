@@ -2,8 +2,8 @@
 title: "培养理论（Cultivation Theory）"
 type: concept
 tags: [传播学, 宏观效果, 经典理论, 电视研究, 格伯纳]
-sources: [-guide]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 培养理论（Cultivation Theory）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-乔治·格伯纳（George Gerbner，美国传播学者，宾夕法尼亚大学安南伯格传播学院）主持"文化指标"项目（1969 年起），系列成果以《与电视生活——暴力画像研究》等为代表（"Living with Television"，1976 前后）。宏观效果理论代表，也是[[-guide|传播学经典理论]]宏观效果板块概念（原书篇目与译名待核实）。
+乔治·格伯纳（George Gerbner，美国传播学者，宾夕法尼亚大学安南伯格传播学院）主持"文化指标"项目（1969 年起），系列成果以《与电视生活——暴力画像研究》等为代表（"Living with Television"，1976 前后）。宏观效果理论代表。
 
 ## 核心内容
 

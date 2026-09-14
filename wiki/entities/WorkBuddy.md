@@ -2,8 +2,8 @@
 title: "WorkBuddy"
 type: entity
 tags: [entity, product, agent-platform]
-sources: [, skill]
-last_updated: 2026-09-13
+sources: [skill]
+last_updated: 2026-09-15
 ---
 
 # WorkBuddy
@@ -43,7 +43,7 @@ last_updated: 2026-09-13
 - [[Automation]] — 内置的定时任务机制
 - [[ModelRouting]] — 内置的模型档位选择
 - [[ConceptLearner]] — 装在本仓库 `.workbuddy/skills/` 下的项目级 Skill
-- 来源页：[[]]、[[skill]]
+- 来源页：[[skill]]
 
 ## 待补充
 
@@ -52,7 +52,6 @@ last_updated: 2026-09-13
 
 ## 来源
 
-- `raw/.md`（三层记忆的路径、自动化与模型档位的存在）
 - `raw/skill.html` 及其概念页 [[Skill]]（个人级 / 项目级存放位置）
 - 本仓库实际结构观测：`.workbuddy/skills/concept-learner/`、`.workbuddy/memory/`、`~/.workbuddy/skills/`
 - 说明：本页是**从仓库实际证据反推**的实体页，不是某份资料的直接产物；来源中未出现的能力一律未写。

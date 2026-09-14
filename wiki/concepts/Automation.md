@@ -3,7 +3,7 @@ title: "Automation（自动化）"
 type: concept
 tags: [automation, scheduling, agent-platform, workflow]
 sources: []
-last_updated: 2026-09-13
+last_updated: 2026-09-15
 ---
 
 # Automation（自动化）
@@ -70,7 +70,6 @@ last_updated: 2026-09-13
 - [[Agent]] — 自动化是触发方式，Agent 是执行方式
 - [[Skill]] — 流程沉淀在 Skill，调度登记在自动化
 - [[WorkBuddy]] — 该能力所属的平台
-- 来源页：[[]]
 
 ## 待补充
 
@@ -80,5 +79,4 @@ last_updated: 2026-09-13
 
 ## 来源
 
-- `raw/.md` 第三节（2026-09-12）
 - 与 [[Workflow]]、[[Agent]]、[[Skill]] 的对照属**类比推论**（把两个概念的既有定义并置后得出的分工），非来源原文，已如实标出。

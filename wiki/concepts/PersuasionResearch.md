@@ -2,8 +2,8 @@
 title: "劝服研究（耶鲁学派）"
 type: concept
 tags: [传播学, 经典理论, 霍夫兰, 态度改变, 耶鲁学派]
-sources: [-guide, ]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 劝服研究（Persuasion Research / 耶鲁学派）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-卡尔·霍夫兰（Carl Hovland，美国实验心理学家）主持耶鲁大学"传播与态度改变研究项目"。起点是二战期间为军队制作教育纪录片的评估研究（成果如《大众传播实验》，1949），系统成果以《传播与劝服》（*Communication and Persuasion*, 1953）为代表。是[[-guide|传播学经典理论]]奠基人板块概念（原书篇目待核实）。
+卡尔·霍夫兰（Carl Hovland，美国实验心理学家）主持耶鲁大学"传播与态度改变研究项目"。起点是二战期间为军队制作教育纪录片的评估研究（成果如《大众传播实验》，1949），系统成果以《传播与劝服》（*Communication and Persuasion*, 1953）为代表。
 
 ## 核心内容
 

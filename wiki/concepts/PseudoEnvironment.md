@@ -2,8 +2,8 @@
 title: "拟态环境（Pseudo-Environment）"
 type: concept
 tags: [传播学, 效果研究, 经典理论, 李普曼]
-sources: [-guide]
-last_updated: 2026-09-13
+sources: []
+last_updated: 2026-09-15
 ---
 
 # 拟态环境（Pseudo-Environment）
@@ -12,7 +12,7 @@ last_updated: 2026-09-13
 
 ## 诞生背景
 
-沃尔特·李普曼（Walter Lippmann，美国政论家、记者）在《公众舆论》（*Public Opinion*, 1922）中提出——这本书本身就是本 wiki 的一页，见 [[PublicOpinion|舆论 / 公众舆论]]（含公版原文逐字核验）。这部著作通常被视为传播学效果研究的源头之一，也是[[-guide|传播学经典理论]]收录的先驱级文本（原书具体篇目待核实）。
+沃尔特·李普曼（Walter Lippmann，美国政论家、记者）在《公众舆论》（*Public Opinion*, 1922）中提出——这本书本身就是本 wiki 的一页，见 [[PublicOpinion|舆论 / 公众舆论]]（含公版原文逐字核验）。这部著作通常被视为传播学效果研究的源头之一。
 
 ## 核心内容
 
