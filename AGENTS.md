@@ -109,7 +109,7 @@ last_updated: YYYY-MM-DD
 grep "^## \[" wiki/log.md | tail -10
 ```
 
-`<operation>` 取值范围：`ingest` / `query` / `health` / `lint` / `graph` / `scaffold`
+`<operation>` 取值范围：`ingest` / `query` / `health` / `lint` / `graph` / `scaffold` / `maintain`（结构维护：文件重命名、路径规范化、说明文件与元数据同步——**不改动任何页面的事实内容**）
 
 ## 铁律
 
