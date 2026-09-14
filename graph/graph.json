@@ -8,8 +8,8 @@
   },
   "stats": {
     "nodes": 64,
-    "edges": 496,
-    "extracted": 383,
+    "edges": 497,
+    "extracted": 384,
     "inferred": 113,
     "communities": 8
   },
@@ -839,7 +839,7 @@
       ],
       "sources": [],
       "path": "health-report.md",
-      "updated": "2026-09-13",
+      "updated": "2026-09-14",
       "community": 3,
       "degree": 0
     },
@@ -867,7 +867,7 @@
       ],
       "sources": [],
       "path": "lint-report.md",
-      "updated": "2026-09-13",
+      "updated": "2026-09-14",
       "community": 4,
       "degree": 0
     },
@@ -901,15 +901,17 @@
         "vector-database",
         "concept-relationship",
         "llm-wiki-pattern",
+        "llm-wiki-learning-material",
         "karpathy-llm-wiki-gist",
         "",
         "pumo-era",
-        "-guide"
+        "-guide",
+        ""
       ],
       "path": "overview.md",
-      "updated": "2026-09-13",
+      "updated": "2026-09-14",
       "community": 2,
-      "degree": 48
+      "degree": 49
     },
     {
       "id": "-guide",
@@ -1052,9 +1054,9 @@
         "llm-wiki-learning-material"
       ],
       "path": "sources/llm-wiki-learning-material.md",
-      "updated": "2026-09-13",
+      "updated": "2026-09-14",
       "community": 1,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "llm-wiki-pattern",
@@ -3048,6 +3050,12 @@
     {
       "source": "overview",
       "target": "agent-context-skill-relationship",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "llm-wiki-learning-material",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
