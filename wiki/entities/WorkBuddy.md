@@ -52,7 +52,7 @@ last_updated: 2026-09-13
 
 ## 来源
 
-- `raw/2026-09-12--.md`（三层记忆的路径、自动化与模型档位的存在）
+- `raw/.md`（三层记忆的路径、自动化与模型档位的存在）
 - `raw/skill.html` 及其概念页 [[Skill]]（个人级 / 项目级存放位置）
 - 本仓库实际结构观测：`.workbuddy/skills/concept-learner/`、`.workbuddy/memory/`、`~/.workbuddy/skills/`
 - 说明：本页是**从仓库实际证据反推**的实体页，不是某份资料的直接产物；来源中未出现的能力一律未写。

@@ -50,5 +50,5 @@ last_updated: 2026-09-13
 ## 来源
 
 - Anthropic《Building Effective Agents》——对 Agent 与 Workflow 的区分是该文反复强调的核心
-- `raw/2026-09-12--.md` — "自动化 vs Workflow"的对照（属类比推论，非该文原文直述）
+- `raw/.md` — "自动化 vs Workflow"的对照（属类比推论，非该文原文直述）
 - 见 [[Anthropic]]、[[Agent]]

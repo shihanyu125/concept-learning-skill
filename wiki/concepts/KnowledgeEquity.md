@@ -60,5 +60,5 @@ last_updated: 2026-09-13
 
 ## 来源
 
-- `raw/2026-09-12--.md`（资料，2026-09-12）——话题起因
+- `raw/.md`（资料，2026-09-12）——话题起因
 - 2025 年学界研究：EMNLP 2025（LLM 学者识别偏差）、AI & Society（维基可持续性）、WWW 2025（性别仪表盘、政治倾向测量）、Wikimedia 基金会"Knowledge Equity"战略——见 [[wikipedia-research-directions]]；标"待核实"处均已注明

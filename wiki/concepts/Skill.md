@@ -73,5 +73,5 @@ Skill 不是"装进模型"里的，而是**放在文件系统上**，按生效�
 - Anthropic《Introducing Agent Skills》(2025-10)
 - Anthropic 工程博客《Equipping agents for the real world with Agent Skills》
 - Claude Code 文档《Extend Claude with skills》
-- `raw/2026-09-12--.md` — "记忆 ≠ 技能"的对照
+- `raw/.md` — "记忆 ≠ 技能"的对照
 - 见 [[Anthropic]]

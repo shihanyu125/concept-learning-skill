@@ -136,7 +136,7 @@ Karpathy 本人划的边界线：**human owns verification（验证责任在人�
 - Karpathy GitHub gist `llm-wiki` 及配套 X 长帖（原始材料整理见 `raw/karpathy-llm-wiki-gist.md`）
 - `raw/llm-wiki-pattern.md`
 - `SamurAIGPT/llm-wiki-agent`（MIT）
-- `raw/2026-09-12--.md` —— 该文件第二节对本模式的**重述**（含"开卷考试"类比），未产生新事实
+- `raw/.md` —— 该文件第二节对本模式的**重述**（含"开卷考试"类比），未产生新事实
 - 见 [[AndrejKarpathy]]、[[LlmWikiAgent]]
 
 ## 本站的落地差异（重要）
