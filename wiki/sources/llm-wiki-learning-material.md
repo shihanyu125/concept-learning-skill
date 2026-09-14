@@ -5,7 +5,7 @@ tags: [llm-wiki, learning-material, meta]
 sources: [llm-wiki-learning-material]
 date: 2026-09-13
 source_file: raw/llm-wiki.html
-last_updated: 2026-09-13
+last_updated: 2026-09-14
 ---
 
 # 概念学习资料：LLM Wiki（concept-learner 第 6 份产出）
@@ -38,5 +38,5 @@ last_updated: 2026-09-13
 
 ## 来源说明
 
-- 原始资料（点开即读）：[raw/llm-wiki.html](../raw/llm-wiki.html)（副本；原件 [learning-materials/llm-wiki.html](../learning-materials/llm-wiki.html)，md5 `68c14456035af308e3a3397d2e7ac926`）
+- 原始资料（点开即读）：[raw/llm-wiki.html](../../raw/llm-wiki.html)（副本；原件 [learning-materials/llm-wiki.html](../../learning-materials/llm-wiki.html)，md5 `68c14456035af308e3a3397d2e7ac926`）
 - 该资料自身的可核查外链：Karpathy X 长帖、`SamurAIGPT/llm-wiki-agent`（MIT）
