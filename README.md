@@ -7,8 +7,9 @@
 ## 仓库用途
 
 - 保存一个**可复用的项目级 Skill**：`concept-learner`，用于把任意陌生概念学透、沉淀成结构化学习资料。
-- 保存由该 Skill 生成、并经本人核查的**三份概念学习资料**：Agent、大模型的上下文、Skill（另有一份额外资料「向量数据库」，用于验证 Skill 的可复用性）。
-- 保存一份**概念关系说明**，讲清三个概念如何协作。
+- 保存由该 Skill 生成、并经本人核查的**概念学习资料**：**6 份**——Agent、大模型的上下文、Skill、向量数据库（用于验证 Skill 的可复用性）、概念关系说明（体裁为关系梳理）、LLM Wiki。
+- 保存一条**传播学线的学习产出**：普莫时代（PUMO）资料、李普曼学习页面、《传播学经典理论》学习导读。
+- 保存一套 **LLM Wiki 个人知识库**（`raw/` / `wiki/` / `graph/` / `tools/` 四层结构）：把学过的概念编译成互相双链的页面，并画出知识图谱。
 
 ## 目录结构
 
@@ -17,17 +18,41 @@ concept-learning-skill/
 ├── .workbuddy/
 │   └── skills/
 │       └── concept-learner/
-│           └── SKILL.md          # 项目级 Skill（核心）
-├── learning-materials/
-│   ├── agent.html                # 概念 1：Agent（智能体）
-│   ├── llm-context.html          # 概念 2：大模型的上下文
-│   ├── skill.html                # 概念 3：Skill（技能）
-│   ├── vector-database.html      # 额外资料：向量数据库（验证 Skill 可复用）
-│   ├── concept-relationship.md   # 概念关系说明（含 Mermaid 图）
-│   └── concept-relationship.html # 概念关系说明（网页版）
-├── README.md                     # 本文件
-└── .gitignore                    # 排除敏感文件
+│           └── SKILL.md            # 项目级 Skill（作业核心交付物）
+├── AGENTS.md                       # LLM Wiki 的规范文件（schema 与工作流）
+├── raw/                            # 不可变的事实来源层（只读，只新增）
+├── wiki/                           # AI 维护的内容层
+│   ├── index.md                    #   所有页面的总目录
+│   ├── log.md                      #   只追加的操作日志
+│   ├── overview.md                 #   跨来源的"活的"综述
+│   ├── sources/                    #   每份原始资料一页摘要
+│   ├── entities/                   #   人物、公司、项目、产品
+│   ├── concepts/                   #   概念、框架、方法、理论
+│   └── syntheses/                  #   回答过的提问，回填成页面
+├── graph/                          # 知识图谱产物
+│   ├── graph.json                  #   节点 / 边数据
+│   └── graph.html                  #   浏览器打开即可交互的可视化
+├── tools/                          # 零依赖的 Python 脚本
+│   ├── health.py                   #   结构体检（零 LLM 调用）
+│   ├── lint.py                     #   内容体检（确定性部分）
+│   ├── build_graph.py              #   生成知识图谱
+│   └── wiki_lib.py                 #   三个脚本共用的解析库
+├── learning-materials/             # 作品输出区：学习页面与概念关系说明
+│   ├── agent.html                  #   概念 1：Agent（智能体）
+│   ├── llm-context.html            #   概念 2：大模型的上下文
+│   ├── skill.html                  #   概念 3：Skill（技能）
+│   ├── vector-database.html        #   概念 4：向量数据库（验证 Skill 可复用）
+│   ├── concept-relationship.md     #   概念 5：概念关系说明（含 Mermaid 图）
+│   ├── concept-relationship.html   #   概念 5 的网页版
+│   ├── llm-wiki.html               #   概念 6：LLM Wiki
+│   ├── pumo.html                   #   传播学线：普莫时代（PUMO）
+│   ├── lippmann.html               #   传播学线：学习页面（李普曼）
+│   └── communication-classics-guide.html  # 传播学线：《传播学经典理论》导读
+├── README.md                       # 本文件
+└── .gitignore                      # 排除敏感文件
 ```
+
+> 各目录职责的详细说明见下文《LLM Wiki 个人知识库》一节。
 
 ## 三个概念的关系（一图速览）
 
@@ -55,13 +80,24 @@ flowchart TB
 
 ## 已生成的学习资料
 
-| 概念 | 文件 | 一句话概括 |
+**AI 概念线 —— `concept-learner` 的 6 份产出**
+
+| # | 概念 | 文件 | 一句话概括 |
+|---|------|------|-----------|
+| 1 | Agent（智能体） | `learning-materials/agent.html` | 能自己拿主意、自己动手做事的 AI 程序 |
+| 2 | 大模型的上下文 | `learning-materials/llm-context.html` | 模型一次性能「看到」的全部内容的容量 |
+| 3 | Skill（技能） | `learning-materials/skill.html` | 打包好的、按需加载的专业能力文件夹 |
+| 4 | 向量数据库 | `learning-materials/vector-database.html` | 按「意思相近」检索、支撑 Agent 检索能力的数据库（用来验证 Skill 可复用） |
+| 5 | 概念关系说明 | `learning-materials/concept-relationship.md`（及 `.html` 网页版） | Agent 干活、上下文是工作台、Skill 是工具手册 |
+| 6 | LLM Wiki | `learning-materials/llm-wiki.html` | 先「编译」成页面、再查询的个人知识库模式 |
+
+**传播学线 —— 本仓库额外的学习产出**
+
+| 主题 | 文件 | 一句话概括 |
 |------|------|-----------|
-| Agent（智能体） | `learning-materials/agent.html` | 能自己拿主意、自己动手做事的 AI 程序 |
-| 大模型的上下文 | `learning-materials/llm-context.html` | 模型一次性能「看到」的全部内容的容量 |
-| Skill（技能） | `learning-materials/skill.html` | 打包好的、按需加载的专业能力文件夹 |
-| 向量数据库（额外） | `learning-materials/vector-database.html` | 按「意思相近」检索、支撑 Agent 检索能力的数据库 |
-| 三者关系 | `learning-materials/concept-relationship.md`（及 `.html` 网页版） | Agent 干活、上下文是工作台、Skill 是工具手册 |
+| 普莫时代（PUMO） | `learning-materials/pumo.html` | 2025 年提出的时代环境框架：极化、难以想象、质变、过热 |
+| ：李普曼 | `learning-materials/lippmann.html` | 拟态环境与刻板成见——我们活在媒介转述的世界里 |
+| 《传播学经典理论》导读 | `learning-materials/communication-classics-guide.html` | 六大板块 × 14 个核心概念 + 六周学习路线 |
 
 ## 使用 AI 后的核查与修改记录
 
@@ -126,7 +162,7 @@ wiki/
 
 根目录另有一份 `AGENTS.md`，写的是这套 wiki 的**规范**：frontmatter 必填字段、命名约定、四类工作流、以及几条"铁律"（`raw/` 只读、`wiki/` 由 AI 维护、不伪造来源等）。
 
-**当前规模**（2026-09-13）：**37 个页面** —— 8 个 source、7 个 entity、15 个 concept、2 个 synthesis，另加 5 个元页面；知识图谱 **37 节点 / 236 条边 / 7 个社区**。
+**当前规模**（2026-09-14）：**64 个页面** —— 12 个 source、7 个 entity、36 个 concept、4 个 synthesis，另加 5 个元页面（`index` / `log` / `overview` 与两份体检报告）；知识图谱 **64 节点 / 496 条边**（383 条确定性抽取 + 113 条语义推断）/ **8 个社区**。
 
 ### 3. 怎么调用：五个触发词
 
@@ -200,14 +236,17 @@ wiki/
 
 ### 5. 每日自动维护任务
 
-我在 WorkBuddy 里配置了一个**每天 21:00** 执行的定时任务「知识库每日维护」，让它自己把这件事持续做下去（这是本地应用的一项设置，不在仓库代码里）。它做四件事：
+我在 WorkBuddy 里配置了一个**每天 23:19** 执行的定时任务「知识库每日维护与概念征询」，让它自己把这件事持续做下去（这是本地应用的一项设置，**不在仓库代码里**）。它做五件事：
 
-1. 跑 `tools/health.py` 做结构体检，有问题先修好再往下走；顺手比对 `log.md` 的操作序列与 git 记录，补上漏记的操作
+1. 跑 `tools/health.py` 与 `tools/lint.py` 做体检，有问题先修好再往下走；顺手比对 `log.md` 的操作序列与 git 记录，补上漏记的操作
 2. 检查 `raw/` 里还没被摄取的新资料并 ingest（**没有新资料就如实说明，不硬造内容**）
-3. 写一份当日简报（`wiki/daily-YYYY-MM-DD.md`）：新增/更新了哪些页面、概念之间**新建了哪些联系**、发现了什么知识缺口、下一步建议
-4. 若有变更，按语义分箱提交并推送到 GitHub（如 `wiki/` 内容层、`raw/` 来源层、`tools/` + `graph/` 分开提交，不用一坨 `update`）
+3. 提出新概念候选**征询我的意见**——只提不建；我点头的才进私有候选清单，够材料了才建页
+4. 写一份当日简报：新增/更新了哪些页面、概念之间**新建了哪些联系**、发现了什么知识缺口、下一步建议
+5. 若有变更，按语义分箱提交并推送到 GitHub（如 `wiki/` 内容层、`raw/` 来源层、`tools/` + `graph/` 分开提交，不用一坨 `update`）
 
-简报里固定报一个数：**当前 concept 页总数 + 距"本学期沉淀 50 个以上概念"还差几个**（截至 2026-09-13 为 15 个）。
+**简报写在哪里（重要）**：`.workbuddy/memory/daily/YYYY-MM-DD.md`——**不是** `wiki/` 下。`wiki/` 是公开层，而简报含个人学习状态、疑问与候选清单，**只留在本机的私有目录**（`.workbuddy/memory/` 已被 `.gitignore` 整目录忽略）。
+
+简报里固定报一个数：**当前 concept 页总数 + 距"本学期沉淀 50 个以上概念"还差几个**（截至 2026-09-14 为 **36 个，还差 14 个**）。
 
 > 注意：这类定时任务需要**电脑开机且 WorkBuddy 在运行**才会触发。
 
