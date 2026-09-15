@@ -137,3 +137,4 @@ last_updated: 2026-09-15
 - **2026-09-14** **元数据与计数校正**：`sources` 字段补入 `llm-wiki-learning-material`（此前只列 10 个 slug）；正文来源总数更正为 9。计数依据为 `wiki/sources/` 实际页面数与建立顺序，与 `README.md` 的 source 计数一致。
 - **2026-09-14** **页级扩展：一次新建 5 个概念页**（[[PublicOpinion]]、[[TypesOfCommunication]]、[[OpinionLeader]]、[[InternationalCommunication]]、[[MCP]]），概念页 36→**41**。本轮**没有新增来源**，全部材料来自既有 source 页 + 外部一手材料（MCP 官方文档与 Anthropic 公告、《公众舆论》Gutenberg 公版全文、程曼丽论国际传播、周敏 2026 论文 PDF）。同时收口了空白清单第 1 条（MCP），并回填双链、更新 [[Anthropic]] 与 [[ToolUse]] 的"待补充"段。
 - **2026-09-15** **内容结构调整**：整理来源层与主题页，撤下若干不再需要的来源页与主题页；保留的学科概念页统一为**中性来源口径**（教材表述 / 通用共识），并同步 `index.md`、`README.md`、`raw/README.md` 与知识图谱。当前：来源 **9** 份、概念页 **41** 个、实体页 **7** 个、综合页 **3** 个。
+- **2026-09-15** **修复整理残留**：上一轮整理在 `concepts/KnowledgeEquity.md` 的「来源」段截出一个空洞，已按其实际依据重写为 5 条外部可核查线索；同页入链由 1 条补至 3 条（从 [[RetrievalAugmentedGeneration]] 与 [[PumoEra]] 各补一条）。本次**未新增页面、未新增来源**，规模不变。

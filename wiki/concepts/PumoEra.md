@@ -51,4 +51,5 @@ last_updated: 2026-09-13
 ## 关联
 
 - 来源页：[[pumo-era]]（含全部可核查链接）
+- [[KnowledgeEquity]] — 信息生态的不均等，是该框架"极化"维度在知识与平台层面的表现
 - 本 wiki 摄入它的动因是 AI 相关的：本仓库的 concept-learner 工作流被用于学习任意领域新概念，wiki 模式不限主题——见 [[LLMWiki]]「适用范围」小节。

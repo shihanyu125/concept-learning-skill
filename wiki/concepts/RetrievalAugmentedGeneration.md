@@ -48,6 +48,7 @@ last_updated: 2026-09-13
 - [[Agent]] — RAG 是 Agent"检索"能力的主要实现
 - [[Context]] — RAG 的落点是往上下文里塞材料
 - [[LLMWiki]] — 明确以 RAG 为对照对象
+- [[KnowledgeEquity]] — 检索源本身的偏差（例如语料以维基百科为主）会顺着 RAG 进入生成结果
 - [[why-compile-not-retrieve]] — 深入分析这一组对照的边界：为什么"先编译"更好、以及在什么条件下这个结论不成立
 - 来源页：[[vector-database]]、[[llm-wiki-pattern]]
 
