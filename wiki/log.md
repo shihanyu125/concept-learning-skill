@@ -329,3 +329,10 @@ last_updated: 2026-09-13
 - **核对**：以 md5 逐份比对 `raw/` 与 `learning-materials/` 中的同名文件，7 份同名文件全部一致；`raw/` 共 11 个文件 = 9 个 source 页（其中 `concept-relationship` 一份内容两种格式）+ `raw/README.md` 说明文件，**一一对应、无未被摄取的资料**。
 - **结论**：来源层**本日无新增**，未新建任何 source 页或概念页。按约定，**没有新资料就如实说明，不为了凑产出而新建页面**。
 - **注**：`learning-materials/pumo.html` 与 `raw/pumo-era.md` 是同一主题的两种产物（前者为作品输出区的学习资料，后者为可核查材料汇编），后者的 source 页已明确记载两者关系，不重复建页。
+
+## [2026-09-16] graph | 重建知识图谱（65 节点 / 356 边 / 7 社区）
+
+- **执行**：`python3 tools/build_graph.py`，重新解析全部 `[[双链]]` 并做语义推断，覆盖写入 `graph/graph.json` 与 `graph/graph.html`。
+- **结果**：节点 **65** 个 · 边 **356** 条（EXTRACTED 342 / INFERRED 14）· 社区 **7** 个（Louvain 第一层贪心模块度优化）。
+- **枢纽**：`overview`(41) > `Context`(28) > `Agent`(26) > `Skill`(24) > `LLMWiki`(23)。
+- **说明**：本次为图谱重建，来源层与概念层页面均无内容改动，页面 frontmatter 的 `last_updated` 未变。
