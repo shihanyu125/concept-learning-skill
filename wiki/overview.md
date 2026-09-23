@@ -3,7 +3,7 @@ title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
 sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, llm-wiki-learning-material, karpathy-llm-wiki-gist, pumo-era]
-last_updated: 2026-09-15
+last_updated: 2026-09-23
 ---
 
 # Overview — 跨来源综述
@@ -31,7 +31,7 @@ last_updated: 2026-09-15
 
 ### 线三：把"记不住"从约束变成可管理的工程问题（记忆）
 
-- 根因是**模型无状态**：每次请求都从头看一遍上下文，"AI 忘了"不是 bug 而是默认状态。见 [[Memory]]。
+- 根因是**[[Statelessness|模型无状态]]**：每次请求都从头看一遍上下文，"AI 忘了"不是 bug 而是默认状态。见 [[Memory]]。
 - 工程上把记忆拆成三段：**写入 / 存储 / 取回**；其中"存储"按作用范围分**三层**——云端（跨设备跨会话）、用户级（跨项目）、工作区（仅当前项目）。
 - 工作区记忆内部还分**日志与结论**两个文件：日志**只追加**保真，结论**随时修订**求精炼。混在一起两边都会变差。
 - 那条悬了很久的疑问——"说能记住偏好的 AI 靠长期记忆还是重灌上下文"——在这条线上**已实质回答**：不存在"凭空记住"，两条路只是同一机制在不同存储位置上的安排。
@@ -138,3 +138,4 @@ last_updated: 2026-09-15
 - **2026-09-14** **页级扩展：一次新建 5 个概念页**（[[PublicOpinion]]、[[TypesOfCommunication]]、[[OpinionLeader]]、[[InternationalCommunication]]、[[MCP]]），概念页 36→**41**。本轮**没有新增来源**，全部材料来自既有 source 页 + 外部一手材料（MCP 官方文档与 Anthropic 公告、《公众舆论》Gutenberg 公版全文、程曼丽论国际传播、周敏 2026 论文 PDF）。同时收口了空白清单第 1 条（MCP），并回填双链、更新 [[Anthropic]] 与 [[ToolUse]] 的"待补充"段。
 - **2026-09-15** **内容结构调整**：整理来源层与主题页，撤下若干不再需要的来源页与主题页；保留的学科概念页统一为**中性来源口径**（教材表述 / 通用共识），并同步 `index.md`、`README.md`、`raw/README.md` 与知识图谱。当前：来源 **9** 份、概念页 **41** 个、实体页 **7** 个、综合页 **3** 个。
 - **2026-09-15** **修复整理残留**：上一轮整理在 `concepts/KnowledgeEquity.md` 的「来源」段截出一个空洞，已按其实际依据重写为 5 条外部可核查线索；同页入链由 1 条补至 3 条（从 [[RetrievalAugmentedGeneration]] 与 [[PumoEra]] 各补一条）。本次**未新增页面、未新增来源**，规模不变。
+- **2026-09-23** **概念页扩展：新增 3 页**（[[Statelessness]]、[[PythonDataType]]、[[JupyterNotebook]]），概念页 41→**44**，页面总数 65→**68**。本轮**未新增来源**：三页材料取自通用技术共识与官方文档通行表述，未进入 `raw/`。同轮回填入链——[[Memory]]、[[Prompt]] 指向 [[Statelessness]]；[[LLMWiki]] 指向 [[JupyterNotebook]]；[[JupyterNotebook]] 与 [[PythonDataType]] 互链；线三补入无状态页的显式链接。图谱重建为 **68 节点 / 367 边 / 8 社区**。

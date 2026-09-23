@@ -3,7 +3,7 @@ title: "LLMWiki（LLM Wiki 模式）"
 type: concept
 tags: [llm-wiki, knowledge-management, methodology, meta]
 sources: [llm-wiki-pattern]
-last_updated: 2026-09-15
+last_updated: 2026-09-23
 ---
 
 # LLMWiki（LLM Wiki 模式）
@@ -130,6 +130,7 @@ Karpathy 本人划的边界线：**human owns verification（验证责任在人�
 - [[why-compile-not-retrieve]] — 本 wiki 关于这组对照的深入分析（含边界条件）
 - [[ConceptLearner]] — 本仓库已有的能力包，与本 wiki 是同一思路在不同层面的应用
 - [[KnowledgeEquity]] — 编译式知识库在全球尺度上的镜像问题：谁的知识被收录、谁被漏掉
+- [[JupyterNotebook]] — 同一理念的另一种文件形态：纯文本、可读、可复现，且本身就能逐段运行
 - 来源页：[[karpathy-llm-wiki-gist]]、[[llm-wiki-pattern]]、[[llm-wiki-learning-material]]
 
 ## 来源

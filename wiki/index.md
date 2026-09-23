@@ -3,7 +3,7 @@ title: "Wiki Index"
 type: synthesis
 tags: [meta, index]
 sources: []
-last_updated: 2026-09-15
+last_updated: 2026-09-23
 ---
 
 # Wiki Index
@@ -80,6 +80,9 @@ last_updated: 2026-09-15
 - [GoldenAgeOfCommunication（传播学的黄金三十年）](concepts/GoldenAgeOfCommunication.md) — 为何诞生于 20 世纪初的美国：技术/政治/经济/社会/学术五条件
 - [SpiritualIntercourse（精神交往理论）](concepts/SpiritualIntercourse.md) — 马克思、恩格斯：物质交往决定精神交往；用时间消灭空间
 - [InternationalCommunication（国际传播）](concepts/InternationalCommunication.md) — 以国家为主体的跨国界传播：两个方向、三个特征、普莫时代的韧性
+- [Statelessness（无状态）](concepts/Statelessness.md) — 系统不保留上一次调用的痕迹；记忆、上下文、外置存储三条线共同的那块地基
+- [PythonDataType（Python 数据类型）](concepts/PythonDataType.md) — 类型决定一个值能做什么：核心类型与容器类型，以及"括号口诀"
+- [JupyterNotebook（Jupyter Notebook）](concepts/JupyterNotebook.md) — 既是笔记又是程序：单元、内核与可复现的操作记录
 
 ## Syntheses
 

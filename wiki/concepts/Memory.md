@@ -3,7 +3,7 @@ title: "Memory（记忆）"
 type: concept
 tags: [memory, llm, agent, state, core-concept]
 sources: [agent, llm-context]
-last_updated: 2026-09-15
+last_updated: 2026-09-23
 ---
 
 # Memory（记忆）
@@ -127,6 +127,7 @@ last_updated: 2026-09-15
 
 ## 关联
 
+- [[Statelessness]] — 记忆系统存在的全部理由：全篇讨论的那句前提（模型本身不保留上一次调用的痕迹）在这里被正面拆开
 - [[Agent]] — 记忆是它的三项核心增强之一
 - [[Context]] — 记忆必须在上下文里"落地"才能生效，窗口大小是硬上限
 - [[ContextManagement]] — 互补面：一个管怎么把内容挪出窗口，一个管怎么把内容取回来

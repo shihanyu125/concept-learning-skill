@@ -3,7 +3,7 @@ title: "Prompt（提示词）"
 type: concept
 tags: [llm, prompt, prompting, skill, core-concept]
 sources: [skill, concept-relationship]
-last_updated: 2026-09-13
+last_updated: 2026-09-23
 ---
 
 # Prompt（提示词）
@@ -18,7 +18,7 @@ last_updated: 2026-09-13
 
 ## 核心机制：为什么提示词是"用完即散"的
 
-模型本身**无状态**：每次回答前，它只把**这一次**的输入从头看一遍。这带来两个直接后果：
+模型本身**[[Statelessness|无状态]]**：每次回答前，它只把**这一次**的输入从头看一遍。这带来两个直接后果：
 
 - 你上一轮精心写的那段指令，**不会自动留到下一轮**——除非你（或程序）再把它放回去；
 - 想让它持续生效，就得**每轮重复携带**，于是持续占用 [[Token]] 额度。
