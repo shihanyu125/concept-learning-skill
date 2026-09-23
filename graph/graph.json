@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-16",
+  "built_at": "2026-09-23",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -7,11 +7,11 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 65,
-    "edges": 356,
-    "extracted": 342,
+    "nodes": 68,
+    "edges": 367,
+    "extracted": 353,
     "inferred": 14,
-    "communities": 7
+    "communities": 8
   },
   "nodes": [
     {
@@ -28,7 +28,7 @@
       "sources": [],
       "path": "concepts/AgendaSetting.md",
       "updated": "2026-09-15",
-      "community": 3,
+      "community": 4,
       "degree": 6
     },
     {
@@ -49,7 +49,7 @@
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 26
+      "degree": 28
     },
     {
       "id": "Automation",
@@ -135,7 +135,7 @@
       "path": "concepts/Context.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 28
+      "degree": 30
     },
     {
       "id": "ContextManagement",
@@ -155,7 +155,7 @@
       "path": "concepts/ContextManagement.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 16
+      "degree": 17
     },
     {
       "id": "CultivationTheory",
@@ -256,8 +256,23 @@
       ],
       "path": "concepts/InternationalCommunication.md",
       "updated": "2026-09-15",
-      "community": 3,
+      "community": 4,
       "degree": 10
+    },
+    {
+      "id": "JupyterNotebook",
+      "label": "Jupyter Notebook",
+      "type": "concept",
+      "tags": [
+        "python",
+        "tooling",
+        "notebook"
+      ],
+      "sources": [],
+      "path": "concepts/JupyterNotebook.md",
+      "updated": "2026-09-23",
+      "community": 3,
+      "degree": 4
     },
     {
       "id": "KnowledgeEquity",
@@ -290,9 +305,9 @@
         "llm-wiki-pattern"
       ],
       "path": "concepts/LLMWiki.md",
-      "updated": "2026-09-15",
+      "updated": "2026-09-23",
       "community": 0,
-      "degree": 23
+      "degree": 25
     },
     {
       "id": "LasswellFormula",
@@ -360,9 +375,9 @@
         "llm-context"
       ],
       "path": "concepts/Memory.md",
-      "updated": "2026-09-15",
+      "updated": "2026-09-23",
       "community": 1,
-      "degree": 20
+      "degree": 21
     },
     {
       "id": "ModelRouting",
@@ -448,9 +463,9 @@
         "concept-relationship"
       ],
       "path": "concepts/Prompt.md",
-      "updated": "2026-09-13",
+      "updated": "2026-09-23",
       "community": 1,
-      "degree": 15
+      "degree": 16
     },
     {
       "id": "PseudoEnvironment",
@@ -482,7 +497,7 @@
       "sources": [],
       "path": "concepts/PublicOpinion.md",
       "updated": "2026-09-15",
-      "community": 3,
+      "community": 4,
       "degree": 12
     },
     {
@@ -501,8 +516,23 @@
       ],
       "path": "concepts/PumoEra.md",
       "updated": "2026-09-13",
-      "community": 3,
+      "community": 4,
       "degree": 9
+    },
+    {
+      "id": "PythonDataType",
+      "label": "Python 数据类型",
+      "type": "concept",
+      "tags": [
+        "python",
+        "data-types",
+        "programming"
+      ],
+      "sources": [],
+      "path": "concepts/PythonDataType.md",
+      "updated": "2026-09-23",
+      "community": 3,
+      "degree": 2
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -573,7 +603,7 @@
       "sources": [],
       "path": "concepts/SpiralOfSilence.md",
       "updated": "2026-09-15",
-      "community": 3,
+      "community": 4,
       "degree": 6
     },
     {
@@ -591,6 +621,21 @@
       "path": "concepts/SpiritualIntercourse.md",
       "updated": "2026-09-15",
       "community": 2,
+      "degree": 6
+    },
+    {
+      "id": "Statelessness",
+      "label": "无状态",
+      "type": "concept",
+      "tags": [
+        "architecture",
+        "llm",
+        "state"
+      ],
+      "sources": [],
+      "path": "concepts/Statelessness.md",
+      "updated": "2026-09-23",
+      "community": 1,
       "degree": 6
     },
     {
@@ -626,7 +671,7 @@
       "path": "concepts/Token.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 11
+      "degree": 12
     },
     {
       "id": "ToolUse",
@@ -713,7 +758,7 @@
       ],
       "path": "concepts/VectorDatabase.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 5,
       "degree": 9
     },
     {
@@ -842,7 +887,7 @@
       ],
       "path": "entities/Pinecone.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 5,
       "degree": 5
     },
     {
@@ -873,7 +918,7 @@
       "sources": [],
       "path": "health-report.md",
       "updated": "2026-09-15",
-      "community": 5,
+      "community": 6,
       "degree": 0
     },
     {
@@ -886,7 +931,7 @@
       ],
       "sources": [],
       "path": "index.md",
-      "updated": "2026-09-15",
+      "updated": "2026-09-23",
       "community": 1,
       "degree": 1
     },
@@ -901,7 +946,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-09-15",
-      "community": 6,
+      "community": 7,
       "degree": 0
     },
     {
@@ -1062,7 +1107,7 @@
       ],
       "path": "sources/pumo-era.md",
       "updated": "2026-09-13",
-      "community": 3,
+      "community": 4,
       "degree": 6
     },
     {
@@ -1097,7 +1142,7 @@
       ],
       "path": "sources/vector-database.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 5,
       "degree": 6
     },
     {
@@ -1648,6 +1693,30 @@
       "confidence": 1.0
     },
     {
+      "source": "JupyterNotebook",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "JupyterNotebook",
+      "target": "PythonDataType",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "JupyterNotebook",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "JupyterNotebook",
+      "target": "Agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "KnowledgeEquity",
       "target": "LLMWiki",
       "kind": "EXTRACTED",
@@ -1829,6 +1898,12 @@
     },
     {
       "source": "Memory",
+      "target": "Statelessness",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Memory",
       "target": "Token",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -1991,6 +2066,12 @@
     },
     {
       "source": "Prompt",
+      "target": "Statelessness",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Prompt",
       "target": "Token",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -2100,6 +2181,12 @@
     {
       "source": "PumoEra",
       "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "PythonDataType",
+      "target": "Token",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2232,6 +2319,30 @@
     {
       "source": "SpiritualIntercourse",
       "target": "CultureIndustry",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Statelessness",
+      "target": "Context",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Statelessness",
+      "target": "ContextManagement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Statelessness",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Statelessness",
+      "target": "Agent",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
