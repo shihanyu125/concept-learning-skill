@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-23",
+  "built_at": "2026-09-28",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -8,8 +8,8 @@
   },
   "stats": {
     "nodes": 68,
-    "edges": 367,
-    "extracted": 353,
+    "edges": 373,
+    "extracted": 359,
     "inferred": 14,
     "communities": 8
   },
@@ -272,7 +272,7 @@
       "path": "concepts/JupyterNotebook.md",
       "updated": "2026-09-23",
       "community": 3,
-      "degree": 4
+      "degree": 6
     },
     {
       "id": "KnowledgeEquity",
@@ -532,7 +532,7 @@
       "path": "concepts/PythonDataType.md",
       "updated": "2026-09-23",
       "community": 3,
-      "degree": 2
+      "degree": 4
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -636,7 +636,7 @@
       "path": "concepts/Statelessness.md",
       "updated": "2026-09-23",
       "community": 1,
-      "degree": 6
+      "degree": 8
     },
     {
       "id": "Stereotype",
@@ -961,7 +961,7 @@
       "path": "log.md",
       "updated": "2026-09-13",
       "community": 1,
-      "degree": 17
+      "degree": 20
     },
     {
       "id": "overview",
@@ -984,9 +984,9 @@
         "pumo-era"
       ],
       "path": "overview.md",
-      "updated": "2026-09-15",
+      "updated": "2026-09-28",
       "community": 2,
-      "degree": 41
+      "degree": 44
     },
     {
       "id": "agent",
@@ -2755,6 +2755,24 @@
       "confidence": 1.0
     },
     {
+      "source": "log",
+      "target": "Statelessness",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "PythonDataType",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "JupyterNotebook",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "overview",
       "target": "Agent",
       "kind": "EXTRACTED",
@@ -2823,6 +2841,12 @@
     {
       "source": "overview",
       "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Statelessness",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2985,6 +3009,18 @@
     {
       "source": "overview",
       "target": "llm-wiki-learning-material",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "PythonDataType",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "JupyterNotebook",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
