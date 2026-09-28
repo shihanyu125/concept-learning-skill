@@ -3,7 +3,7 @@ title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
 sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, llm-wiki-learning-material, karpathy-llm-wiki-gist, pumo-era]
-last_updated: 2026-09-23
+last_updated: 2026-09-28
 ---
 
 # Overview — 跨来源综述
@@ -139,3 +139,4 @@ last_updated: 2026-09-23
 - **2026-09-15** **内容结构调整**：整理来源层与主题页，撤下若干不再需要的来源页与主题页；保留的学科概念页统一为**中性来源口径**（教材表述 / 通用共识），并同步 `index.md`、`README.md`、`raw/README.md` 与知识图谱。当前：来源 **9** 份、概念页 **41** 个、实体页 **7** 个、综合页 **3** 个。
 - **2026-09-15** **修复整理残留**：上一轮整理在 `concepts/KnowledgeEquity.md` 的「来源」段截出一个空洞，已按其实际依据重写为 5 条外部可核查线索；同页入链由 1 条补至 3 条（从 [[RetrievalAugmentedGeneration]] 与 [[PumoEra]] 各补一条）。本次**未新增页面、未新增来源**，规模不变。
 - **2026-09-23** **概念页扩展：新增 3 页**（[[Statelessness]]、[[PythonDataType]]、[[JupyterNotebook]]），概念页 41→**44**，页面总数 65→**68**。本轮**未新增来源**：三页材料取自通用技术共识与官方文档通行表述，未进入 `raw/`。同轮回填入链——[[Memory]]、[[Prompt]] 指向 [[Statelessness]]；[[LLMWiki]] 指向 [[JupyterNotebook]]；[[JupyterNotebook]] 与 [[PythonDataType]] 互链；线三补入无状态页的显式链接。图谱重建为 **68 节点 / 367 边 / 8 社区**。
+- **2026-09-28** **图谱产物陈旧漂移修正**：上一轮图谱重建发生在 09-23，而本综述与本仓库操作日志里指向那三个新概念页的条目在其后落笔，导致已发布的图谱边集合落后于实际链接 6 条。重跑图谱构建工具后补齐，规模为 **68 节点 / 373 边**（359 条确定性抽取 + 14 条语义推断）/ **8 个社区**。本次**未新增页面、未新增来源**，规模仍是 68 页；新增边全部是「本综述 / 操作日志 ↔ 那三页」形态，内容页之间没有新关系。
