@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-28",
+  "built_at": "2026-10-02",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -917,7 +917,7 @@
       ],
       "sources": [],
       "path": "health-report.md",
-      "updated": "2026-09-15",
+      "updated": "2026-10-02",
       "community": 6,
       "degree": 0
     },
@@ -945,7 +945,7 @@
       ],
       "sources": [],
       "path": "lint-report.md",
-      "updated": "2026-09-15",
+      "updated": "2026-10-02",
       "community": 7,
       "degree": 0
     },
