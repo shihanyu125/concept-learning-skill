@@ -3,12 +3,12 @@ title: "Health Report"
 type: synthesis
 tags: [meta, health-report]
 sources: []
-last_updated: 2026-10-02
+last_updated: 2026-10-12
 ---
 
 # Health Report — 结构体检
 
-生成时间：2026-10-02 · 由 `tools/health.py` 生成（零 LLM 调用）· 共 68 个页面
+生成时间：2026-10-12 · 由 `tools/health.py` 生成（零 LLM 调用）· 共 74 个页面
 
 **问题总数：0**
 

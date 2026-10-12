@@ -3,12 +3,12 @@ title: "Lint Report"
 type: synthesis
 tags: [meta, lint-report]
 sources: []
-last_updated: 2026-10-02
+last_updated: 2026-10-12
 ---
 
 # Lint Report — 内容体检（确定性部分）
 
-生成时间：2026-10-02 · 由 `tools/lint.py` 生成 · 共 68 个页面
+生成时间：2026-10-12 · 由 `tools/lint.py` 生成 · 共 74 个页面
 
 **问题总数：0**
 
