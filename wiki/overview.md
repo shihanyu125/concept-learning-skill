@@ -3,7 +3,7 @@ title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
 sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, llm-wiki-learning-material, karpathy-llm-wiki-gist, pumo-era]
-last_updated: 2026-09-28
+last_updated: 2026-10-12
 ---
 
 # Overview — 跨来源综述
@@ -56,6 +56,9 @@ last_updated: 2026-09-28
   - 这一次的特殊之处：**横跨两条线**。前四个把传播学线的"起点（李普曼的先驱概念）—骨架（传播分层）—中介（意见领袖）—当下（国际传播）"补成闭环；第五个补的是 AI 线挂了最久的缺口（[[Anthropic]] 页的"待补充"、[[ToolUse]] 的"待补充"、本条空白清单第 1 条三处同时指向它）。
   - **来源层说明**：[[MCP]] 与 [[InternationalCommunication]] 的部分材料（官方文档、期刊论文、公版全文）**未进入 `raw/`**（公开层新增需先经用户同意），已在各页「来源」段写明 URL 与核验方式。
   - **概念页的来源口径**：这批学科概念页统一采用**教材表述 / 通用共识**的口径，不绑定单一材料；不确定处一律标"待核实"。
+- **2026-10-12 页级扩展**：经逐条审核通过，一次新建 **6 个概念页**——[[SymbolicInteraction]]（象征性互动）、[[InformationTheoryAndCybernetics]]（信息论与控制论）、[[HotAndCoolMedia]]（热媒介与冷媒介）属传播学线；[[ClassAndObject]]（类与对象）、[[ModuleAndPackage]]（模块与包）属编程线；[[NeedhamQuestion]]（李约瑟难题）属中西比较线。概念页 44 → **50**。
+  - 其中 [[HotAndCoolMedia]] 由 [[MediumIsTheMessage]] 里"冷媒介 / 热媒介"那一节拆出独立成页，把两套同名的"冷热"概念（量媒介 vs 量社会）分开锚定；[[InformationTheoryAndCybernetics]] 补上了 [[LasswellFormula]] 与 [[EncodingDecoding]] 共同的上游依赖——此前这两页的"过程"语言没有出处可挂。
+  - **本轮未新增来源**：六页材料取自教材通行表述、官方文档与通用共识，均未进入 `raw/`，故 `sources` 一律留空；不确定处同样标"待核实"。
 
 ## 四条线怎么接在一起
 
@@ -140,3 +143,4 @@ last_updated: 2026-09-28
 - **2026-09-15** **修复整理残留**：上一轮整理在 `concepts/KnowledgeEquity.md` 的「来源」段截出一个空洞，已按其实际依据重写为 5 条外部可核查线索；同页入链由 1 条补至 3 条（从 [[RetrievalAugmentedGeneration]] 与 [[PumoEra]] 各补一条）。本次**未新增页面、未新增来源**，规模不变。
 - **2026-09-23** **概念页扩展：新增 3 页**（[[Statelessness]]、[[PythonDataType]]、[[JupyterNotebook]]），概念页 41→**44**，页面总数 65→**68**。本轮**未新增来源**：三页材料取自通用技术共识与官方文档通行表述，未进入 `raw/`。同轮回填入链——[[Memory]]、[[Prompt]] 指向 [[Statelessness]]；[[LLMWiki]] 指向 [[JupyterNotebook]]；[[JupyterNotebook]] 与 [[PythonDataType]] 互链；线三补入无状态页的显式链接。图谱重建为 **68 节点 / 367 边 / 8 社区**。
 - **2026-09-28** **图谱产物陈旧漂移修正**：上一轮图谱重建发生在 09-23，而本综述与本仓库操作日志里指向那三个新概念页的条目在其后落笔，导致已发布的图谱边集合落后于实际链接 6 条。重跑图谱构建工具后补齐，规模为 **68 节点 / 373 边**（359 条确定性抽取 + 14 条语义推断）/ **8 个社区**。本次**未新增页面、未新增来源**，规模仍是 68 页；新增边全部是「本综述 / 操作日志 ↔ 那三页」形态，内容页之间没有新关系。
+- **2026-10-12** **页级扩展：新增 6 页**（[[SymbolicInteraction]]、[[InformationTheoryAndCybernetics]]、[[NeedhamQuestion]]、[[ClassAndObject]]、[[ModuleAndPackage]]、[[HotAndCoolMedia]]），概念页 44 → **50**，页面总数 68 → **74**。本轮**未新增来源**。同轮回填入链——[[CommonMeaningSpace]] → 象征性互动；[[LasswellFormula]]、[[SocialInformationSystem]] → 信息论与控制论；[[GoldenAgeOfCommunication]] → 李约瑟难题；[[PythonDataType]]、[[JupyterNotebook]] → 类与对象 / 模块与包；[[MediumIsTheMessage]] 的冷热段 → 热媒介与冷媒介。六个新页均至少 1 条入链，断链与孤儿页均为 0。

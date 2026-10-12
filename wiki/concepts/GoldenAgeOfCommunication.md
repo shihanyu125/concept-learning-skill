@@ -3,7 +3,7 @@ title: "传播学的黄金三十年（诞生于 20 世纪初的美国）"
 type: concept
 tags: [传播学, 学科史, 黄金三十年, 时代必然性]
 sources: []
-last_updated: 2026-09-15
+last_updated: 2026-10-12
 ---
 
 # 传播学的黄金三十年（诞生于 20 世纪初的美国）
@@ -53,6 +53,7 @@ last_updated: 2026-09-15
 - [[LasswellFormula]] — 政治条件催生的第一个成果
 - [[PseudoEnvironment]]、[[CultivationTheory]] — 社会条件中"媒介引发担忧"的两条后续理论线
 - [[PumoEra]] — 当代版本的同构问题：今天的环境变化又在催生什么研究
+- [[NeedhamQuestion]] — 同一提问方式的反面：那里问"某样东西为什么**没有**在某个时空出现"，两页合起来是一套"条件—结果"的比较框架
 
 ## 来源
 

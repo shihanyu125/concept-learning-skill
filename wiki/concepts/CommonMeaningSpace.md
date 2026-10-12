@@ -3,7 +3,7 @@ title: "共同意义空间"
 type: concept
 tags: [传播学, 传播特点, 跨文化传播, 符号, 要点]
 sources: []
-last_updated: 2026-09-15
+last_updated: 2026-10-12
 ---
 
 # 共同意义空间（Common Meaning Space）
@@ -54,6 +54,7 @@ last_updated: 2026-09-15
 
 - [[CommunicationStudies]] — 共同意义空间是"传播为何可能"的前提
 - [[SocialInformationSystem]] — 双重偶然性：共同意义空间之下的另一重不确定性
+- [[SymbolicInteraction]] — 共同地面之上具体怎么互动：以符号为中介的"姿态—解释—回应"循环
 - [[PseudoEnvironment]]、[[EncodingDecoding]] — 意义传递的宏观与微观走向
 
 ## 来源

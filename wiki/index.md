@@ -3,7 +3,7 @@ title: "Wiki Index"
 type: synthesis
 tags: [meta, index]
 sources: []
-last_updated: 2026-09-23
+last_updated: 2026-10-12
 ---
 
 # Wiki Index
@@ -83,6 +83,12 @@ last_updated: 2026-09-23
 - [Statelessness（无状态）](concepts/Statelessness.md) — 系统不保留上一次调用的痕迹；记忆、上下文、外置存储三条线共同的那块地基
 - [PythonDataType（Python 数据类型）](concepts/PythonDataType.md) — 类型决定一个值能做什么：核心类型与容器类型，以及"括号口诀"
 - [JupyterNotebook（Jupyter Notebook）](concepts/JupyterNotebook.md) — 既是笔记又是程序：单元、内核与可复现的操作记录
+- [SymbolicInteraction（象征性互动）](concepts/SymbolicInteraction.md) — 用具体事物表示抽象含义，再以符号为中介互动；米德提出、布鲁默系统化
+- [InformationTheoryAndCybernetics（信息论与控制论）](concepts/InformationTheoryAndCybernetics.md) — 信源—编码—信道—解码—信宿 + 反馈：传播学最早借来的那套"过程"语言
+- [NeedhamQuestion（李约瑟难题）](concepts/NeedhamQuestion.md) — 技术长期领先，为何没有发生近代科学革命；价值在提问方式
+- [ClassAndObject（类与对象）](concepts/ClassAndObject.md) — 类是图纸、对象是按图造出的实物；self 指谁被调用就指谁
+- [ModuleAndPackage（模块与包）](concepts/ModuleAndPackage.md) — 一个 .py 文件即一个模块；拆开写、导入用，包是模块的上一层
+- [HotAndCoolMedia（热媒介与冷媒介）](concepts/HotAndCoolMedia.md) — 冷热量的不是温度而是"受众要不要补全"；含电视归类的争议与两套冷热概念的辨析
 
 ## Syntheses
 

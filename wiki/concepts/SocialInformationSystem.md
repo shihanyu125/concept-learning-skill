@@ -3,7 +3,7 @@ title: "社会信息系统（特点、双重偶然性与传播故障）"
 type: concept
 tags: [传播学, 社会信息系统, 双重偶然性, 传播障碍, 传播隔阂]
 sources: []
-last_updated: 2026-09-15
+last_updated: 2026-10-12
 ---
 
 # 社会信息系统（特点、双重偶然性与传播故障）
@@ -45,6 +45,7 @@ last_updated: 2026-09-15
 - [[GoldenAgeOfCommunication]] — 系统失序 → 学科诞生
 - [[Gatekeeping]] — 信息链条上的把关环节
 - [[SpiralOfSilence]]、[[PseudoEnvironment]] — 扭曲与失真在宏观层面的后果
+- [[InformationTheoryAndCybernetics]] — "系统"这个词的来源：系统论把对象看成要素与关系的整体，反馈则解释了自我修复
 
 ## 来源
 

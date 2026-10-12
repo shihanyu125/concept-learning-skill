@@ -3,7 +3,7 @@ title: "Python 数据类型"
 type: concept
 tags: [python, data-types, programming]
 sources: []
-last_updated: 2026-09-23
+last_updated: 2026-10-12
 ---
 
 # Python 数据类型
@@ -78,4 +78,6 @@ last_updated: 2026-09-23
 ## 关联
 
 - [[JupyterNotebook]] —— 数据类型最直观的学习方式，就是在交互式环境里逐行定义、逐行看结果；
+- [[ClassAndObject]] —— 自己定义类型的那一步：类是"自定义的数据类型"，对象是它的实例；
+- [[ModuleAndPackage]] —— 类型与函数写进 .py 文件就成模块，再用导入拼起来；
 - [[Token]] —— 字符串会被切成更小的单位送去处理，理解字符串是理解这一步的前提。

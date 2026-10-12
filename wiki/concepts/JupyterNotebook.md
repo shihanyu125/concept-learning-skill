@@ -3,7 +3,7 @@ title: "Jupyter Notebook"
 type: concept
 tags: [python, tooling, notebook]
 sources: []
-last_updated: 2026-09-23
+last_updated: 2026-10-12
 ---
 
 # Jupyter Notebook
@@ -59,5 +59,6 @@ Notebook 是一种**既是笔记、又是程序**的文件：同一份文档里�
 
 - [[LLMWiki]] —— 两者理念相通：内容存成纯文本、可读、可版本管理，工具只是外壳；
 - [[PythonDataType]] —— 在交互式环境里逐行定义、逐行看结果，是理解类型最快的方式；
+- [[ClassAndObject]] —— 分段执行最容易踩的坑，就是"定义类的那一段还没跑过就实例化"；
 - [[Context]] —— Markdown 单元本质上就是在给这份文档准备"给人读的上下文"；
 - [[Agent]] —— 让 AI 协助写代码时，Notebook 的分段结构正好便于逐步确认与纠错。
