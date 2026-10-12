@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-02",
+  "built_at": "2026-10-12",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -7,11 +7,11 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 68,
-    "edges": 373,
-    "extracted": 359,
+    "nodes": 74,
+    "edges": 411,
+    "extracted": 397,
     "inferred": 14,
-    "communities": 8
+    "communities": 9
   },
   "nodes": [
     {
@@ -48,7 +48,7 @@
       ],
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 28
     },
     {
@@ -64,7 +64,7 @@
       "sources": [],
       "path": "concepts/Automation.md",
       "updated": "2026-09-15",
-      "community": 1,
+      "community": 2,
       "degree": 7
     },
     {
@@ -81,8 +81,23 @@
       "sources": [],
       "path": "concepts/BiasOfCommunication.md",
       "updated": "2026-09-15",
-      "community": 2,
-      "degree": 3
+      "community": 0,
+      "degree": 4
+    },
+    {
+      "id": "ClassAndObject",
+      "label": "类与对象",
+      "type": "concept",
+      "tags": [
+        "python",
+        "编程基础",
+        "面向对象"
+      ],
+      "sources": [],
+      "path": "concepts/ClassAndObject.md",
+      "updated": "2026-10-12",
+      "community": 3,
+      "degree": 6
     },
     {
       "id": "CommonMeaningSpace",
@@ -97,9 +112,9 @@
       ],
       "sources": [],
       "path": "concepts/CommonMeaningSpace.md",
-      "updated": "2026-09-15",
-      "community": 2,
-      "degree": 8
+      "updated": "2026-10-12",
+      "community": 5,
+      "degree": 10
     },
     {
       "id": "CommunicationStudies",
@@ -113,7 +128,7 @@
       "sources": [],
       "path": "concepts/CommunicationStudies.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 10
     },
     {
@@ -134,7 +149,7 @@
       ],
       "path": "concepts/Context.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 30
     },
     {
@@ -154,7 +169,7 @@
       ],
       "path": "concepts/ContextManagement.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 17
     },
     {
@@ -171,8 +186,8 @@
       "sources": [],
       "path": "concepts/CultivationTheory.md",
       "updated": "2026-09-15",
-      "community": 2,
-      "degree": 4
+      "community": 0,
+      "degree": 5
     },
     {
       "id": "CultureIndustry",
@@ -188,7 +203,7 @@
       "sources": [],
       "path": "concepts/CultureIndustry.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 5,
       "degree": 3
     },
     {
@@ -205,8 +220,8 @@
       "sources": [],
       "path": "concepts/EncodingDecoding.md",
       "updated": "2026-09-15",
-      "community": 2,
-      "degree": 4
+      "community": 5,
+      "degree": 7
     },
     {
       "id": "Gatekeeping",
@@ -221,7 +236,7 @@
       "sources": [],
       "path": "concepts/Gatekeeping.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 9
     },
     {
@@ -236,9 +251,40 @@
       ],
       "sources": [],
       "path": "concepts/GoldenAgeOfCommunication.md",
-      "updated": "2026-09-15",
-      "community": 2,
-      "degree": 11
+      "updated": "2026-10-12",
+      "community": 4,
+      "degree": 13
+    },
+    {
+      "id": "HotAndCoolMedia",
+      "label": "热媒介与冷媒介",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "媒介环境学派",
+        "经典理论",
+        "麦克卢汉"
+      ],
+      "sources": [],
+      "path": "concepts/HotAndCoolMedia.md",
+      "updated": "2026-10-12",
+      "community": 0,
+      "degree": 5
+    },
+    {
+      "id": "InformationTheoryAndCybernetics",
+      "label": "信息论与控制论",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "信息科学",
+        "基础概念"
+      ],
+      "sources": [],
+      "path": "concepts/InformationTheoryAndCybernetics.md",
+      "updated": "2026-10-12",
+      "community": 4,
+      "degree": 6
     },
     {
       "id": "InternationalCommunication",
@@ -270,9 +316,9 @@
       ],
       "sources": [],
       "path": "concepts/JupyterNotebook.md",
-      "updated": "2026-09-23",
+      "updated": "2026-10-12",
       "community": 3,
-      "degree": 6
+      "degree": 7
     },
     {
       "id": "KnowledgeEquity",
@@ -288,7 +334,7 @@
       "sources": [],
       "path": "concepts/KnowledgeEquity.md",
       "updated": "2026-09-15",
-      "community": 0,
+      "community": 1,
       "degree": 3
     },
     {
@@ -306,8 +352,8 @@
       ],
       "path": "concepts/LLMWiki.md",
       "updated": "2026-09-23",
-      "community": 0,
-      "degree": 25
+      "community": 1,
+      "degree": 26
     },
     {
       "id": "LasswellFormula",
@@ -321,9 +367,9 @@
       ],
       "sources": [],
       "path": "concepts/LasswellFormula.md",
-      "updated": "2026-09-15",
-      "community": 2,
-      "degree": 8
+      "updated": "2026-10-12",
+      "community": 4,
+      "degree": 10
     },
     {
       "id": "MCP",
@@ -340,7 +386,7 @@
       "sources": [],
       "path": "concepts/MCP.md",
       "updated": "2026-09-14",
-      "community": 1,
+      "community": 2,
       "degree": 9
     },
     {
@@ -355,9 +401,9 @@
       ],
       "sources": [],
       "path": "concepts/MediumIsTheMessage.md",
-      "updated": "2026-09-15",
-      "community": 2,
-      "degree": 4
+      "updated": "2026-10-12",
+      "community": 0,
+      "degree": 7
     },
     {
       "id": "Memory",
@@ -376,7 +422,7 @@
       ],
       "path": "concepts/Memory.md",
       "updated": "2026-09-23",
-      "community": 1,
+      "community": 2,
       "degree": 21
     },
     {
@@ -392,8 +438,38 @@
       "sources": [],
       "path": "concepts/ModelRouting.md",
       "updated": "2026-09-15",
-      "community": 1,
+      "community": 2,
       "degree": 8
+    },
+    {
+      "id": "ModuleAndPackage",
+      "label": "模块与包",
+      "type": "concept",
+      "tags": [
+        "python",
+        "编程基础",
+        "工程组织"
+      ],
+      "sources": [],
+      "path": "concepts/ModuleAndPackage.md",
+      "updated": "2026-10-12",
+      "community": 3,
+      "degree": 6
+    },
+    {
+      "id": "NeedhamQuestion",
+      "label": "李约瑟难题",
+      "type": "concept",
+      "tags": [
+        "历史",
+        "科学史",
+        "中西比较"
+      ],
+      "sources": [],
+      "path": "concepts/NeedhamQuestion.md",
+      "updated": "2026-10-12",
+      "community": 4,
+      "degree": 4
     },
     {
       "id": "OpinionLeader",
@@ -409,7 +485,7 @@
       "sources": [],
       "path": "concepts/OpinionLeader.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 7
     },
     {
@@ -426,7 +502,7 @@
       "sources": [],
       "path": "concepts/PersuasionResearch.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 6
     },
     {
@@ -444,7 +520,7 @@
       ],
       "path": "concepts/ProgressiveDisclosure.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 21
     },
     {
@@ -464,7 +540,7 @@
       ],
       "path": "concepts/Prompt.md",
       "updated": "2026-09-23",
-      "community": 1,
+      "community": 2,
       "degree": 16
     },
     {
@@ -480,8 +556,8 @@
       "sources": [],
       "path": "concepts/PseudoEnvironment.md",
       "updated": "2026-09-15",
-      "community": 2,
-      "degree": 8
+      "community": 4,
+      "degree": 9
     },
     {
       "id": "PublicOpinion",
@@ -517,7 +593,7 @@
       "path": "concepts/PumoEra.md",
       "updated": "2026-09-13",
       "community": 4,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "PythonDataType",
@@ -530,9 +606,9 @@
       ],
       "sources": [],
       "path": "concepts/PythonDataType.md",
-      "updated": "2026-09-23",
+      "updated": "2026-10-12",
       "community": 3,
-      "degree": 4
+      "degree": 6
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -550,7 +626,7 @@
       ],
       "path": "concepts/RetrievalAugmentedGeneration.md",
       "updated": "2026-09-13",
-      "community": 0,
+      "community": 1,
       "degree": 20
     },
     {
@@ -569,7 +645,7 @@
       ],
       "path": "concepts/Skill.md",
       "updated": "2026-09-15",
-      "community": 1,
+      "community": 2,
       "degree": 24
     },
     {
@@ -585,9 +661,9 @@
       ],
       "sources": [],
       "path": "concepts/SocialInformationSystem.md",
-      "updated": "2026-09-15",
-      "community": 2,
-      "degree": 8
+      "updated": "2026-10-12",
+      "community": 4,
+      "degree": 10
     },
     {
       "id": "SpiralOfSilence",
@@ -620,7 +696,7 @@
       "sources": [],
       "path": "concepts/SpiritualIntercourse.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 6
     },
     {
@@ -635,8 +711,8 @@
       "sources": [],
       "path": "concepts/Statelessness.md",
       "updated": "2026-09-23",
-      "community": 1,
-      "degree": 8
+      "community": 3,
+      "degree": 9
     },
     {
       "id": "Stereotype",
@@ -651,7 +727,22 @@
       "sources": [],
       "path": "concepts/Stereotype.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
+      "degree": 5
+    },
+    {
+      "id": "SymbolicInteraction",
+      "label": "象征性互动（Symbolic Interaction）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "符号学",
+        "社会互动"
+      ],
+      "sources": [],
+      "path": "concepts/SymbolicInteraction.md",
+      "updated": "2026-10-12",
+      "community": 5,
       "degree": 5
     },
     {
@@ -670,7 +761,7 @@
       ],
       "path": "concepts/Token.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 12
     },
     {
@@ -690,7 +781,7 @@
       ],
       "path": "concepts/ToolUse.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 16
     },
     {
@@ -707,7 +798,7 @@
       "sources": [],
       "path": "concepts/TwoStepFlow.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 10
     },
     {
@@ -724,8 +815,8 @@
       "sources": [],
       "path": "concepts/TypesOfCommunication.md",
       "updated": "2026-09-15",
-      "community": 2,
-      "degree": 12
+      "community": 4,
+      "degree": 13
     },
     {
       "id": "UsesAndGratifications",
@@ -740,7 +831,7 @@
       "sources": [],
       "path": "concepts/UsesAndGratifications.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 5
     },
     {
@@ -758,7 +849,7 @@
       ],
       "path": "concepts/VectorDatabase.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 9
     },
     {
@@ -775,8 +866,8 @@
       ],
       "path": "concepts/Workflow.md",
       "updated": "2026-09-15",
-      "community": 1,
-      "degree": 13
+      "community": 2,
+      "degree": 14
     },
     {
       "id": "AndrejKarpathy",
@@ -793,7 +884,7 @@
       ],
       "path": "entities/AndrejKarpathy.md",
       "updated": "2026-09-13",
-      "community": 0,
+      "community": 1,
       "degree": 7
     },
     {
@@ -812,7 +903,7 @@
       ],
       "path": "entities/Anthropic.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 17
     },
     {
@@ -834,7 +925,7 @@
       ],
       "path": "entities/ConceptLearner.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 16
     },
     {
@@ -852,7 +943,7 @@
       ],
       "path": "entities/LlmWikiAgent.md",
       "updated": "2026-09-13",
-      "community": 0,
+      "community": 1,
       "degree": 8
     },
     {
@@ -870,7 +961,7 @@
       ],
       "path": "entities/OpenAI.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 15
     },
     {
@@ -887,7 +978,7 @@
       ],
       "path": "entities/Pinecone.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 5
     },
     {
@@ -904,7 +995,7 @@
       ],
       "path": "entities/WorkBuddy.md",
       "updated": "2026-09-15",
-      "community": 1,
+      "community": 2,
       "degree": 13
     },
     {
@@ -918,7 +1009,7 @@
       "sources": [],
       "path": "health-report.md",
       "updated": "2026-10-02",
-      "community": 6,
+      "community": 7,
       "degree": 0
     },
     {
@@ -931,8 +1022,8 @@
       ],
       "sources": [],
       "path": "index.md",
-      "updated": "2026-09-23",
-      "community": 1,
+      "updated": "2026-10-12",
+      "community": 2,
       "degree": 1
     },
     {
@@ -946,7 +1037,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-10-02",
-      "community": 7,
+      "community": 8,
       "degree": 0
     },
     {
@@ -960,8 +1051,8 @@
       "sources": [],
       "path": "log.md",
       "updated": "2026-09-13",
-      "community": 1,
-      "degree": 20
+      "community": 3,
+      "degree": 31
     },
     {
       "id": "overview",
@@ -984,9 +1075,9 @@
         "pumo-era"
       ],
       "path": "overview.md",
-      "updated": "2026-09-28",
-      "community": 2,
-      "degree": 44
+      "updated": "2026-10-12",
+      "community": 4,
+      "degree": 52
     },
     {
       "id": "agent",
@@ -1002,7 +1093,7 @@
       ],
       "path": "sources/agent.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 13
     },
     {
@@ -1019,7 +1110,7 @@
       ],
       "path": "sources/concept-relationship.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 10
     },
     {
@@ -1037,7 +1128,7 @@
       ],
       "path": "sources/karpathy-llm-wiki-gist.md",
       "updated": "2026-09-13",
-      "community": 0,
+      "community": 1,
       "degree": 10
     },
     {
@@ -1054,7 +1145,7 @@
       ],
       "path": "sources/llm-context.md",
       "updated": "2026-09-15",
-      "community": 1,
+      "community": 2,
       "degree": 13
     },
     {
@@ -1071,7 +1162,7 @@
       ],
       "path": "sources/llm-wiki-learning-material.md",
       "updated": "2026-09-14",
-      "community": 0,
+      "community": 1,
       "degree": 10
     },
     {
@@ -1089,7 +1180,7 @@
       ],
       "path": "sources/llm-wiki-pattern.md",
       "updated": "2026-09-13",
-      "community": 0,
+      "community": 1,
       "degree": 10
     },
     {
@@ -1124,7 +1215,7 @@
       ],
       "path": "sources/skill.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 9
     },
     {
@@ -1142,7 +1233,7 @@
       ],
       "path": "sources/vector-database.md",
       "updated": "2026-09-13",
-      "community": 5,
+      "community": 6,
       "degree": 6
     },
     {
@@ -1164,7 +1255,7 @@
       ],
       "path": "syntheses/agent-context-skill-relationship.md",
       "updated": "2026-09-13",
-      "community": 1,
+      "community": 2,
       "degree": 22
     },
     {
@@ -1181,7 +1272,7 @@
       "sources": [],
       "path": "syntheses/communication-studies-founding-figures.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 4,
       "degree": 11
     },
     {
@@ -1201,7 +1292,7 @@
       ],
       "path": "syntheses/why-compile-not-retrieve.md",
       "updated": "2026-09-13",
-      "community": 0,
+      "community": 1,
       "degree": 9
     }
   ],
@@ -1345,6 +1436,30 @@
       "confidence": 1.0
     },
     {
+      "source": "ClassAndObject",
+      "target": "PythonDataType",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ClassAndObject",
+      "target": "ModuleAndPackage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ClassAndObject",
+      "target": "JupyterNotebook",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ClassAndObject",
+      "target": "Statelessness",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "CommonMeaningSpace",
       "target": "BiasOfCommunication",
       "kind": "EXTRACTED",
@@ -1365,6 +1480,12 @@
     {
       "source": "CommonMeaningSpace",
       "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CommonMeaningSpace",
+      "target": "SymbolicInteraction",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1635,6 +1756,54 @@
     {
       "source": "GoldenAgeOfCommunication",
       "target": "PumoEra",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GoldenAgeOfCommunication",
+      "target": "NeedhamQuestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HotAndCoolMedia",
+      "target": "MediumIsTheMessage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HotAndCoolMedia",
+      "target": "BiasOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HotAndCoolMedia",
+      "target": "CultivationTheory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "InformationTheoryAndCybernetics",
+      "target": "LasswellFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "InformationTheoryAndCybernetics",
+      "target": "EncodingDecoding",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "InformationTheoryAndCybernetics",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "InformationTheoryAndCybernetics",
+      "target": "TypesOfCommunication",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1959,6 +2128,30 @@
     {
       "source": "ModelRouting",
       "target": "WorkBuddy",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModuleAndPackage",
+      "target": "PythonDataType",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModuleAndPackage",
+      "target": "Workflow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ModuleAndPackage",
+      "target": "LLMWiki",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "NeedhamQuestion",
+      "target": "PumoEra",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2355,6 +2548,18 @@
     {
       "source": "Stereotype",
       "target": "UsesAndGratifications",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SymbolicInteraction",
+      "target": "EncodingDecoding",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "SymbolicInteraction",
+      "target": "PseudoEnvironment",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2773,6 +2978,72 @@
       "confidence": 1.0
     },
     {
+      "source": "log",
+      "target": "SymbolicInteraction",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "InformationTheoryAndCybernetics",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "NeedhamQuestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ClassAndObject",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ModuleAndPackage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "HotAndCoolMedia",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "CommonMeaningSpace",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "LasswellFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "SocialInformationSystem",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "MediumIsTheMessage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "overview",
       "target": "Agent",
       "kind": "EXTRACTED",
@@ -2948,6 +3219,60 @@
     },
     {
       "source": "overview",
+      "target": "SymbolicInteraction",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "InformationTheoryAndCybernetics",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "HotAndCoolMedia",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "ClassAndObject",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "ModuleAndPackage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "NeedhamQuestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "MediumIsTheMessage",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "LasswellFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "EncodingDecoding",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
       "target": "VectorDatabase",
       "kind": "EXTRACTED",
       "confidence": 1.0
@@ -2979,12 +3304,6 @@
     {
       "source": "overview",
       "target": "agent-context-skill-relationship",
-      "kind": "EXTRACTED",
-      "confidence": 1.0
-    },
-    {
-      "source": "overview",
-      "target": "LasswellFormula",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
