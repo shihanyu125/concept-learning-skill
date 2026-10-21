@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-12",
+  "built_at": "2026-10-21",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -452,7 +452,7 @@
       ],
       "sources": [],
       "path": "concepts/ModuleAndPackage.md",
-      "updated": "2026-10-12",
+      "updated": "2026-10-21",
       "community": 3,
       "degree": 6
     },
