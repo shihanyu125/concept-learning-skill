@@ -3,7 +3,7 @@ title: "模块与包"
 type: concept
 tags: [python, 编程基础, 工程组织]
 sources: []
-last_updated: 2026-10-12
+last_updated: 2026-10-21
 ---
 
 # 模块与包
@@ -30,6 +30,23 @@ import 模块A
 | `from 模块A import 打招呼` | 直接 `打招呼()` | 只反复用其中一样，少打几个字 |
 
 两种写法功能上没有区别，差别只在于调用时要写多少前缀。
+
+## 起个别名：`as`
+
+`import pandas as pd` 里的 `pd` **不是 Python 的关键字**，而是你自己给这个模块起的外号——`as` 的意思就是「就叫它」。
+
+| 写法 | 后面要写 |
+| --- | --- |
+| `import pandas` | `pandas.read_csv()` |
+| `import pandas as pd` | `pd.read_csv()` |
+
+三件事要分清：
+
+- **`pandas` 是真名**，也是 `pip install` 装的那个包；所以 `import pd` 会报 `ModuleNotFoundError: No module named 'pd'`——外号不是地址。
+- **`pd` 是外号**，只在写了这行导入的**这个文件**里有效；换个文件不写这句，`pd` 就不存在。
+- 外号可以随便起（`import pandas as 小明` 照样能跑），但 `pd` 是社区通行写法，别人一看就懂，别自创。
+
+同类习惯还有 `import numpy as np`、`import matplotlib.pyplot as plt`——都是「真名太长，起个短外号」。
 
 ## 为什么要拆
 
