@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-21",
+  "built_at": "2026-10-24",
   "builder": "tools/build_graph.py",
   "method": {
     "pass1": "确定性解析 [[双链]] → EXTRACTED",
@@ -7,11 +7,11 @@
     "clustering": "Louvain 第一层（贪心模块度优化，纯标准库实现）"
   },
   "stats": {
-    "nodes": 74,
-    "edges": 411,
-    "extracted": 397,
+    "nodes": 94,
+    "edges": 528,
+    "extracted": 514,
     "inferred": 14,
-    "communities": 9
+    "communities": 10
   },
   "nodes": [
     {
@@ -28,7 +28,7 @@
       "sources": [],
       "path": "concepts/AgendaSetting.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 6
     },
     {
@@ -48,8 +48,56 @@
       ],
       "path": "concepts/Agent.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 28
+    },
+    {
+      "id": "AllportRumorFormula",
+      "label": "奥尔波特公式（R = I × A）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "流言",
+        "公式",
+        "危机传播"
+      ],
+      "sources": [],
+      "path": "concepts/AllportRumorFormula.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 7
+    },
+    {
+      "id": "Anonymity",
+      "label": "匿名性（Anonymity）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "集合行为",
+        "去个体化"
+      ],
+      "sources": [],
+      "path": "concepts/Anonymity.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 9
+    },
+    {
+      "id": "AschConformityExperiment",
+      "label": "阿希三垂线实验（Asch Conformity Experiment）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "社会心理学",
+        "经典实验"
+      ],
+      "sources": [],
+      "path": "concepts/AschConformityExperiment.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 7
     },
     {
       "id": "Automation",
@@ -64,8 +112,24 @@
       "sources": [],
       "path": "concepts/Automation.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 3,
       "degree": 7
+    },
+    {
+      "id": "BargainingPower",
+      "label": "议价能力",
+      "type": "concept",
+      "tags": [
+        "组织",
+        "行政",
+        "公共政策",
+        "博弈"
+      ],
+      "sources": [],
+      "path": "concepts/BargainingPower.md",
+      "updated": "2026-10-21",
+      "community": 5,
+      "degree": 3
     },
     {
       "id": "BiasOfCommunication",
@@ -81,7 +145,7 @@
       "sources": [],
       "path": "concepts/BiasOfCommunication.md",
       "updated": "2026-09-15",
-      "community": 0,
+      "community": 4,
       "degree": 4
     },
     {
@@ -95,9 +159,25 @@
       ],
       "sources": [],
       "path": "concepts/ClassAndObject.md",
-      "updated": "2026-10-12",
-      "community": 3,
-      "degree": 6
+      "updated": "2026-10-24",
+      "community": 7,
+      "degree": 7
+    },
+    {
+      "id": "CollectiveBehavior",
+      "label": "集合行为（Collective Behavior）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "社会心理学",
+        "非常态"
+      ],
+      "sources": [],
+      "path": "concepts/CollectiveBehavior.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 15
     },
     {
       "id": "CommonMeaningSpace",
@@ -113,8 +193,8 @@
       "sources": [],
       "path": "concepts/CommonMeaningSpace.md",
       "updated": "2026-10-12",
-      "community": 5,
-      "degree": 10
+      "community": 2,
+      "degree": 11
     },
     {
       "id": "CommunicationStudies",
@@ -128,8 +208,40 @@
       "sources": [],
       "path": "concepts/CommunicationStudies.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 10
+      "community": 5,
+      "degree": 12
+    },
+    {
+      "id": "ConceptAsTool",
+      "label": "概念即工具",
+      "type": "concept",
+      "tags": [
+        "方法论",
+        "认知",
+        "学习",
+        "工具"
+      ],
+      "sources": [],
+      "path": "concepts/ConceptAsTool.md",
+      "updated": "2026-10-21",
+      "community": 0,
+      "degree": 3
+    },
+    {
+      "id": "Conformity",
+      "label": "从众（Conformity）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "社会心理学",
+        "群体压力"
+      ],
+      "sources": [],
+      "path": "concepts/Conformity.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 9
     },
     {
       "id": "Context",
@@ -149,7 +261,7 @@
       ],
       "path": "concepts/Context.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 30
     },
     {
@@ -169,8 +281,40 @@
       ],
       "path": "concepts/ContextManagement.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 17
+    },
+    {
+      "id": "CrisisPRGoldenHours",
+      "label": "危机公关的黄金窗口（24 / 48 小时）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "危机传播",
+        "公关",
+        "流言治理"
+      ],
+      "sources": [],
+      "path": "concepts/CrisisPRGoldenHours.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 7
+    },
+    {
+      "id": "CrowdPsychology",
+      "label": "群体心理（Crowd Psychology）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "社会心理学",
+        "勒庞"
+      ],
+      "sources": [],
+      "path": "concepts/CrowdPsychology.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 9
     },
     {
       "id": "CultivationTheory",
@@ -186,7 +330,7 @@
       "sources": [],
       "path": "concepts/CultivationTheory.md",
       "updated": "2026-09-15",
-      "community": 0,
+      "community": 4,
       "degree": 5
     },
     {
@@ -203,7 +347,7 @@
       "sources": [],
       "path": "concepts/CultureIndustry.md",
       "updated": "2026-09-15",
-      "community": 5,
+      "community": 2,
       "degree": 3
     },
     {
@@ -220,7 +364,7 @@
       "sources": [],
       "path": "concepts/EncodingDecoding.md",
       "updated": "2026-09-15",
-      "community": 5,
+      "community": 2,
       "degree": 7
     },
     {
@@ -236,7 +380,7 @@
       "sources": [],
       "path": "concepts/Gatekeeping.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 9
     },
     {
@@ -252,8 +396,56 @@
       "sources": [],
       "path": "concepts/GoldenAgeOfCommunication.md",
       "updated": "2026-10-12",
-      "community": 4,
-      "degree": 13
+      "community": 5,
+      "degree": 14
+    },
+    {
+      "id": "GroupImitation",
+      "label": "群体模仿（Group Imitation）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "集合行为",
+        "社会化"
+      ],
+      "sources": [],
+      "path": "concepts/GroupImitation.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 9
+    },
+    {
+      "id": "GroupPressureAndInformationPressure",
+      "label": "群体压力与信息压力（Group Pressure / Information Pressure）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "社会心理学",
+        "学科迁移"
+      ],
+      "sources": [],
+      "path": "concepts/GroupPressureAndInformationPressure.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 9
+    },
+    {
+      "id": "GroupSuggestion",
+      "label": "群体暗示（Group Suggestion）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "集合行为",
+        "情绪传播"
+      ],
+      "sources": [],
+      "path": "concepts/GroupSuggestion.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 8
     },
     {
       "id": "HotAndCoolMedia",
@@ -268,7 +460,7 @@
       "sources": [],
       "path": "concepts/HotAndCoolMedia.md",
       "updated": "2026-10-12",
-      "community": 0,
+      "community": 4,
       "degree": 5
     },
     {
@@ -283,7 +475,7 @@
       "sources": [],
       "path": "concepts/InformationTheoryAndCybernetics.md",
       "updated": "2026-10-12",
-      "community": 4,
+      "community": 5,
       "degree": 6
     },
     {
@@ -302,8 +494,24 @@
       ],
       "path": "concepts/InternationalCommunication.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 10
+    },
+    {
+      "id": "JohariWindow",
+      "label": "约哈里窗口",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "自我表露",
+        "人际传播",
+        "关系"
+      ],
+      "sources": [],
+      "path": "concepts/JohariWindow.md",
+      "updated": "2026-10-20",
+      "community": 2,
+      "degree": 5
     },
     {
       "id": "JupyterNotebook",
@@ -317,7 +525,7 @@
       "sources": [],
       "path": "concepts/JupyterNotebook.md",
       "updated": "2026-10-12",
-      "community": 3,
+      "community": 7,
       "degree": 7
     },
     {
@@ -367,9 +575,25 @@
       ],
       "sources": [],
       "path": "concepts/LasswellFormula.md",
-      "updated": "2026-10-12",
-      "community": 4,
-      "degree": 10
+      "updated": "2026-10-24",
+      "community": 5,
+      "degree": 11
+    },
+    {
+      "id": "LookingGlassSelf",
+      "label": "镜中我",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "自我认知",
+        "符号互动论",
+        "人际传播"
+      ],
+      "sources": [],
+      "path": "concepts/LookingGlassSelf.md",
+      "updated": "2026-10-20",
+      "community": 2,
+      "degree": 4
     },
     {
       "id": "MCP",
@@ -386,7 +610,7 @@
       "sources": [],
       "path": "concepts/MCP.md",
       "updated": "2026-09-14",
-      "community": 2,
+      "community": 3,
       "degree": 9
     },
     {
@@ -402,7 +626,7 @@
       "sources": [],
       "path": "concepts/MediumIsTheMessage.md",
       "updated": "2026-10-12",
-      "community": 0,
+      "community": 4,
       "degree": 7
     },
     {
@@ -422,7 +646,7 @@
       ],
       "path": "concepts/Memory.md",
       "updated": "2026-09-23",
-      "community": 2,
+      "community": 3,
       "degree": 21
     },
     {
@@ -438,7 +662,7 @@
       "sources": [],
       "path": "concepts/ModelRouting.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 3,
       "degree": 8
     },
     {
@@ -453,7 +677,7 @@
       "sources": [],
       "path": "concepts/ModuleAndPackage.md",
       "updated": "2026-10-21",
-      "community": 3,
+      "community": 7,
       "degree": 6
     },
     {
@@ -467,9 +691,25 @@
       ],
       "sources": [],
       "path": "concepts/NeedhamQuestion.md",
-      "updated": "2026-10-12",
-      "community": 4,
-      "degree": 4
+      "updated": "2026-10-24",
+      "community": 5,
+      "degree": 6
+    },
+    {
+      "id": "OnlineGathering",
+      "label": "群聚（线上群聚）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "网络传播",
+        "新概念"
+      ],
+      "sources": [],
+      "path": "concepts/OnlineGathering.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 6
     },
     {
       "id": "OpinionLeader",
@@ -485,7 +725,7 @@
       "sources": [],
       "path": "concepts/OpinionLeader.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 7
     },
     {
@@ -502,7 +742,7 @@
       "sources": [],
       "path": "concepts/PersuasionResearch.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 6
     },
     {
@@ -519,9 +759,9 @@
         "concept-relationship"
       ],
       "path": "concepts/ProgressiveDisclosure.md",
-      "updated": "2026-09-13",
-      "community": 2,
-      "degree": 21
+      "updated": "2026-10-24",
+      "community": 3,
+      "degree": 23
     },
     {
       "id": "Prompt",
@@ -540,7 +780,7 @@
       ],
       "path": "concepts/Prompt.md",
       "updated": "2026-09-23",
-      "community": 2,
+      "community": 3,
       "degree": 16
     },
     {
@@ -556,8 +796,8 @@
       "sources": [],
       "path": "concepts/PseudoEnvironment.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 9
+      "community": 5,
+      "degree": 16
     },
     {
       "id": "PublicOpinion",
@@ -573,8 +813,8 @@
       "sources": [],
       "path": "concepts/PublicOpinion.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 12
+      "community": 5,
+      "degree": 19
     },
     {
       "id": "PumoEra",
@@ -592,7 +832,7 @@
       ],
       "path": "concepts/PumoEra.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 5,
       "degree": 10
     },
     {
@@ -607,8 +847,8 @@
       "sources": [],
       "path": "concepts/PythonDataType.md",
       "updated": "2026-10-12",
-      "community": 3,
-      "degree": 6
+      "community": 7,
+      "degree": 7
     },
     {
       "id": "RetrievalAugmentedGeneration",
@@ -630,6 +870,22 @@
       "degree": 20
     },
     {
+      "id": "Rumor",
+      "label": "流言（Rumor）",
+      "type": "concept",
+      "tags": [
+        "传播学",
+        "群体传播",
+        "集合行为",
+        "信息失真"
+      ],
+      "sources": [],
+      "path": "concepts/Rumor.md",
+      "updated": "2026-10-19",
+      "community": 0,
+      "degree": 11
+    },
+    {
       "id": "Skill",
       "label": "Skill（Agent Skill / 技能包）",
       "type": "concept",
@@ -645,7 +901,7 @@
       ],
       "path": "concepts/Skill.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 3,
       "degree": 24
     },
     {
@@ -662,7 +918,7 @@
       "sources": [],
       "path": "concepts/SocialInformationSystem.md",
       "updated": "2026-10-12",
-      "community": 4,
+      "community": 5,
       "degree": 10
     },
     {
@@ -679,8 +935,8 @@
       "sources": [],
       "path": "concepts/SpiralOfSilence.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 6
+      "community": 0,
+      "degree": 11
     },
     {
       "id": "SpiritualIntercourse",
@@ -696,7 +952,7 @@
       "sources": [],
       "path": "concepts/SpiritualIntercourse.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 6
     },
     {
@@ -727,8 +983,8 @@
       "sources": [],
       "path": "concepts/Stereotype.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 5
+      "community": 5,
+      "degree": 6
     },
     {
       "id": "SymbolicInteraction",
@@ -742,8 +998,8 @@
       "sources": [],
       "path": "concepts/SymbolicInteraction.md",
       "updated": "2026-10-12",
-      "community": 5,
-      "degree": 5
+      "community": 2,
+      "degree": 6
     },
     {
       "id": "Token",
@@ -761,7 +1017,7 @@
       ],
       "path": "concepts/Token.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 12
     },
     {
@@ -781,7 +1037,7 @@
       ],
       "path": "concepts/ToolUse.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 16
     },
     {
@@ -798,7 +1054,7 @@
       "sources": [],
       "path": "concepts/TwoStepFlow.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 10
     },
     {
@@ -815,8 +1071,8 @@
       "sources": [],
       "path": "concepts/TypesOfCommunication.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 13
+      "community": 5,
+      "degree": 18
     },
     {
       "id": "UsesAndGratifications",
@@ -831,7 +1087,7 @@
       "sources": [],
       "path": "concepts/UsesAndGratifications.md",
       "updated": "2026-09-15",
-      "community": 4,
+      "community": 5,
       "degree": 5
     },
     {
@@ -853,6 +1109,39 @@
       "degree": 9
     },
     {
+      "id": "WesternPseudohistory",
+      "label": "西方伪史论",
+      "type": "concept",
+      "tags": [
+        "史学理论",
+        "伪史学",
+        "阴谋论",
+        "史料批判",
+        "知识社会学"
+      ],
+      "sources": [],
+      "path": "concepts/WesternPseudohistory.md",
+      "updated": "2026-10-23",
+      "community": 5,
+      "degree": 5
+    },
+    {
+      "id": "WithStatement",
+      "label": "with 语句",
+      "type": "concept",
+      "tags": [
+        "python",
+        "异常处理",
+        "资源管理",
+        "语法"
+      ],
+      "sources": [],
+      "path": "concepts/WithStatement.md",
+      "updated": "2026-10-21",
+      "community": 7,
+      "degree": 4
+    },
+    {
       "id": "Workflow",
       "label": "Workflow（工作流）",
       "type": "concept",
@@ -866,7 +1155,7 @@
       ],
       "path": "concepts/Workflow.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 3,
       "degree": 14
     },
     {
@@ -903,7 +1192,7 @@
       ],
       "path": "entities/Anthropic.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 17
     },
     {
@@ -925,8 +1214,41 @@
       ],
       "path": "entities/ConceptLearner.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 16
+    },
+    {
+      "id": "GustaveLeBon",
+      "label": "古斯塔夫·勒庞（Gustave Le Bon）",
+      "type": "entity",
+      "tags": [
+        "人物",
+        "社会心理学",
+        "群体心理",
+        "法国"
+      ],
+      "sources": [],
+      "path": "entities/GustaveLeBon.md",
+      "updated": "2026-10-24",
+      "community": 0,
+      "degree": 10
+    },
+    {
+      "id": "HaroldLasswell",
+      "label": "哈罗德·拉斯韦尔（Harold Lasswell）",
+      "type": "entity",
+      "tags": [
+        "人物",
+        "传播学",
+        "政治学",
+        "美国",
+        "四大奠基人"
+      ],
+      "sources": [],
+      "path": "entities/HaroldLasswell.md",
+      "updated": "2026-10-24",
+      "community": 5,
+      "degree": 10
     },
     {
       "id": "LlmWikiAgent",
@@ -961,7 +1283,7 @@
       ],
       "path": "entities/OpenAI.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 15
     },
     {
@@ -995,7 +1317,7 @@
       ],
       "path": "entities/WorkBuddy.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 3,
       "degree": 13
     },
     {
@@ -1009,7 +1331,7 @@
       "sources": [],
       "path": "health-report.md",
       "updated": "2026-10-12",
-      "community": 7,
+      "community": 8,
       "degree": 0
     },
     {
@@ -1022,8 +1344,8 @@
       ],
       "sources": [],
       "path": "index.md",
-      "updated": "2026-10-12",
-      "community": 2,
+      "updated": "2026-10-24",
+      "community": 3,
       "degree": 1
     },
     {
@@ -1037,7 +1359,7 @@
       "sources": [],
       "path": "lint-report.md",
       "updated": "2026-10-12",
-      "community": 8,
+      "community": 9,
       "degree": 0
     },
     {
@@ -1051,8 +1373,8 @@
       "sources": [],
       "path": "log.md",
       "updated": "2026-09-13",
-      "community": 3,
-      "degree": 31
+      "community": 0,
+      "degree": 55
     },
     {
       "id": "overview",
@@ -1075,9 +1397,9 @@
         "pumo-era"
       ],
       "path": "overview.md",
-      "updated": "2026-10-12",
-      "community": 4,
-      "degree": 52
+      "updated": "2026-10-24",
+      "community": 5,
+      "degree": 73
     },
     {
       "id": "agent",
@@ -1093,7 +1415,7 @@
       ],
       "path": "sources/agent.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 13
     },
     {
@@ -1110,7 +1432,7 @@
       ],
       "path": "sources/concept-relationship.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 10
     },
     {
@@ -1145,7 +1467,7 @@
       ],
       "path": "sources/llm-context.md",
       "updated": "2026-09-15",
-      "community": 2,
+      "community": 3,
       "degree": 13
     },
     {
@@ -1198,7 +1520,7 @@
       ],
       "path": "sources/pumo-era.md",
       "updated": "2026-09-13",
-      "community": 4,
+      "community": 5,
       "degree": 6
     },
     {
@@ -1215,7 +1537,7 @@
       ],
       "path": "sources/skill.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 9
     },
     {
@@ -1255,7 +1577,7 @@
       ],
       "path": "syntheses/agent-context-skill-relationship.md",
       "updated": "2026-09-13",
-      "community": 2,
+      "community": 3,
       "degree": 22
     },
     {
@@ -1272,8 +1594,8 @@
       "sources": [],
       "path": "syntheses/communication-studies-founding-figures.md",
       "updated": "2026-09-15",
-      "community": 4,
-      "degree": 11
+      "community": 5,
+      "degree": 13
     },
     {
       "id": "why-compile-not-retrieve",
@@ -1406,6 +1728,90 @@
       "confidence": 1.0
     },
     {
+      "source": "AllportRumorFormula",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AllportRumorFormula",
+      "target": "CrisisPRGoldenHours",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AllportRumorFormula",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AllportRumorFormula",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AllportRumorFormula",
+      "target": "PublicOpinion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Anonymity",
+      "target": "SpiralOfSilence",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Anonymity",
+      "target": "GroupImitation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Anonymity",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Anonymity",
+      "target": "CrowdPsychology",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Anonymity",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AschConformityExperiment",
+      "target": "GroupPressureAndInformationPressure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AschConformityExperiment",
+      "target": "Conformity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AschConformityExperiment",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "AschConformityExperiment",
+      "target": "SpiralOfSilence",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "Automation",
       "target": "Memory",
       "kind": "EXTRACTED",
@@ -1456,6 +1862,60 @@
     {
       "source": "ClassAndObject",
       "target": "Statelessness",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ClassAndObject",
+      "target": "WithStatement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "GroupImitation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "OnlineGathering",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "Conformity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "GroupPressureAndInformationPressure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "CrowdPsychology",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CollectiveBehavior",
+      "target": "TypesOfCommunication",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1546,6 +2006,24 @@
     {
       "source": "CommunicationStudies",
       "target": "SpiritualIntercourse",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Conformity",
+      "target": "GroupPressureAndInformationPressure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Conformity",
+      "target": "SpiralOfSilence",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Conformity",
+      "target": "TypesOfCommunication",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1682,6 +2160,60 @@
       "confidence": 1.0
     },
     {
+      "source": "CrisisPRGoldenHours",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrisisPRGoldenHours",
+      "target": "PublicOpinion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrisisPRGoldenHours",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrisisPRGoldenHours",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrowdPsychology",
+      "target": "Conformity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrowdPsychology",
+      "target": "GustaveLeBon",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrowdPsychology",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrowdPsychology",
+      "target": "GroupImitation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "CrowdPsychology",
+      "target": "SpiralOfSilence",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "CultivationTheory",
       "target": "SpiralOfSilence",
       "kind": "EXTRACTED",
@@ -1762,6 +2294,48 @@
     {
       "source": "GoldenAgeOfCommunication",
       "target": "NeedhamQuestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupImitation",
+      "target": "GroupPressureAndInformationPressure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupImitation",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupImitation",
+      "target": "Conformity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupPressureAndInformationPressure",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupPressureAndInformationPressure",
+      "target": "SpiralOfSilence",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupPressureAndInformationPressure",
+      "target": "CommunicationStudies",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GroupSuggestion",
+      "target": "Rumor",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1858,6 +2432,24 @@
     {
       "source": "InternationalCommunication",
       "target": "pumo-era",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "JohariWindow",
+      "target": "LookingGlassSelf",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "JohariWindow",
+      "target": "CommonMeaningSpace",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "JohariWindow",
+      "target": "TypesOfCommunication",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -1989,7 +2581,19 @@
     },
     {
       "source": "LasswellFormula",
+      "target": "HaroldLasswell",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LasswellFormula",
       "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "LookingGlassSelf",
+      "target": "SymbolicInteraction",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2156,6 +2760,36 @@
       "confidence": 1.0
     },
     {
+      "source": "NeedhamQuestion",
+      "target": "BargainingPower",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "NeedhamQuestion",
+      "target": "WesternPseudohistory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "OnlineGathering",
+      "target": "Anonymity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "OnlineGathering",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "OnlineGathering",
+      "target": "PublicOpinion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "OpinionLeader",
       "target": "TwoStepFlow",
       "kind": "EXTRACTED",
@@ -2224,6 +2858,12 @@
     {
       "source": "ProgressiveDisclosure",
       "target": "Agent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "ProgressiveDisclosure",
+      "target": "ConceptAsTool",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2416,6 +3056,18 @@
     {
       "source": "RetrievalAugmentedGeneration",
       "target": "LlmWikiAgent",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Rumor",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "Rumor",
+      "target": "PublicOpinion",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -2690,6 +3342,24 @@
       "confidence": 1.0
     },
     {
+      "source": "WesternPseudohistory",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WesternPseudohistory",
+      "target": "PublicOpinion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "WithStatement",
+      "target": "PythonDataType",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "Workflow",
       "target": "ConceptLearner",
       "kind": "EXTRACTED",
@@ -2788,6 +3458,90 @@
     {
       "source": "ConceptLearner",
       "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "Anonymity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "GroupImitation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "AschConformityExperiment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "GustaveLeBon",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "Stereotype",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "communication-studies-founding-figures",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "CommunicationStudies",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "GoldenAgeOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "TypesOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "PublicOpinion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "HaroldLasswell",
+      "target": "PseudoEnvironment",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
@@ -3044,6 +3798,150 @@
       "confidence": 1.0
     },
     {
+      "source": "log",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "CrowdPsychology",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Conformity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "GroupPressureAndInformationPressure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "AschConformityExperiment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "GroupImitation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Anonymity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "OnlineGathering",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "TypesOfCommunication",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "AllportRumorFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "CrisisPRGoldenHours",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "PublicOpinion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "LookingGlassSelf",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "JohariWindow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "GustaveLeBon",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "HaroldLasswell",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "BargainingPower",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ConceptAsTool",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "WithStatement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "WesternPseudohistory",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "log",
+      "target": "ProgressiveDisclosure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
       "source": "overview",
       "target": "Agent",
       "kind": "EXTRACTED",
@@ -3268,6 +4166,132 @@
     {
       "source": "overview",
       "target": "EncodingDecoding",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "CollectiveBehavior",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "CrowdPsychology",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Conformity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "GroupPressureAndInformationPressure",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "AschConformityExperiment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "GroupSuggestion",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "GroupImitation",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Anonymity",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "OnlineGathering",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "Rumor",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "AllportRumorFormula",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "CrisisPRGoldenHours",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "PseudoEnvironment",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "LookingGlassSelf",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "JohariWindow",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "GustaveLeBon",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "HaroldLasswell",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "BargainingPower",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "ConceptAsTool",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "WithStatement",
+      "kind": "EXTRACTED",
+      "confidence": 1.0
+    },
+    {
+      "source": "overview",
+      "target": "WesternPseudohistory",
       "kind": "EXTRACTED",
       "confidence": 1.0
     },
