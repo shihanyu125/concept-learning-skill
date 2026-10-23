@@ -3,7 +3,7 @@ title: "Overview — 跨来源综述"
 type: synthesis
 tags: [meta, overview, synthesis]
 sources: [agent, llm-context, skill, vector-database, concept-relationship, llm-wiki-pattern, llm-wiki-learning-material, karpathy-llm-wiki-gist, pumo-era]
-last_updated: 2026-10-12
+last_updated: 2026-10-24
 ---
 
 # Overview — 跨来源综述
@@ -59,6 +59,13 @@ last_updated: 2026-10-12
 - **2026-10-12 页级扩展**：经逐条审核通过，一次新建 **6 个概念页**——[[SymbolicInteraction]]（象征性互动）、[[InformationTheoryAndCybernetics]]（信息论与控制论）、[[HotAndCoolMedia]]（热媒介与冷媒介）属传播学线；[[ClassAndObject]]（类与对象）、[[ModuleAndPackage]]（模块与包）属编程线；[[NeedhamQuestion]]（李约瑟难题）属中西比较线。概念页 44 → **50**。
   - 其中 [[HotAndCoolMedia]] 由 [[MediumIsTheMessage]] 里"冷媒介 / 热媒介"那一节拆出独立成页，把两套同名的"冷热"概念（量媒介 vs 量社会）分开锚定；[[InformationTheoryAndCybernetics]] 补上了 [[LasswellFormula]] 与 [[EncodingDecoding]] 共同的上游依赖——此前这两页的"过程"语言没有出处可挂。
   - **本轮未新增来源**：六页材料取自教材通行表述、官方文档与通用共识，均未进入 `raw/`，故 `sources` 一律留空；不确定处同样标"待核实"。
+- **2026-10-24 页级扩展**：经逐条审核通过，一次新建 **18 个概念页 + 2 个实体页**，概念页 50 → **68**，实体页 7 → **9**，页面总数 74 → **94**。
+  - **群体传播闭环（10 页）**：[[CollectiveBehavior]]（集合行为）、[[CrowdPsychology]]（群体心理）、[[Conformity]]（从众）、[[GroupPressureAndInformationPressure]]（群体压力与信息压力）、[[AschConformityExperiment]]（阿希三垂线实验）、[[GroupSuggestion]]（群体暗示）、[[GroupImitation]]（群体模仿）、[[Anonymity]]（匿名性）、[[OnlineGathering]]（群聚）、[[Rumor]]（流言）。此前 wiki 里"传播的类型与层次"只到"群体传播"这一层名，层内机制是空的；这一批把它补成了可拆解的机制组。
+  - **舆论与危机（2 页）**：[[AllportRumorFormula]]（R = I × A）、[[CrisisPRGoldenHours]]（危机公关的黄金窗口）。两页把 [[Rumor]] 从"现象描述"推到"可计算的量"和"可干预的时点"，并接上 [[PublicOpinion]] 与 [[PseudoEnvironment]]。
+  - **自我认知（2 页）**：[[LookingGlassSelf]]（镜中我）、[[JohariWindow]]（约哈里窗口）。属于传播学里"人内传播 / 自我"这一支，此前只有 [[SymbolicInteraction]] 一页孤悬，现互链成组。
+  - **人物锚点（2 个实体页）**：[[GustaveLeBon]]（勒庞）、[[HaroldLasswell]]（拉斯韦尔）。前者是群体心理诸页的命题来源，后者填补了 [[LasswellFormula]] 长期"有理论、无人物页"的缺口。
+  - **另四页**：[[BargainingPower]]（议价能力，组织与资源分配）、[[ConceptAsTool]]（概念即工具，方法论）、[[WithStatement]]（Python 上下文管理器）、[[WesternPseudohistory]]（西方伪史论，史学辨伪线）。
+  - **就地修补**：新增页里发现 6 处残缺双链（缺开括号，形如 `群体暗示|群体暗示]]`），已统一修好；另从 [[ProgressiveDisclosure]]、[[ClassAndObject]]、[[LasswellFormula]]、[[NeedhamQuestion]] 四处补入链，孤儿页归零。
 
 ## 四条线怎么接在一起
 
@@ -144,3 +151,4 @@ last_updated: 2026-10-12
 - **2026-09-23** **概念页扩展：新增 3 页**（[[Statelessness]]、[[PythonDataType]]、[[JupyterNotebook]]），概念页 41→**44**，页面总数 65→**68**。本轮**未新增来源**：三页材料取自通用技术共识与官方文档通行表述，未进入 `raw/`。同轮回填入链——[[Memory]]、[[Prompt]] 指向 [[Statelessness]]；[[LLMWiki]] 指向 [[JupyterNotebook]]；[[JupyterNotebook]] 与 [[PythonDataType]] 互链；线三补入无状态页的显式链接。图谱重建为 **68 节点 / 367 边 / 8 社区**。
 - **2026-09-28** **图谱产物陈旧漂移修正**：上一轮图谱重建发生在 09-23，而本综述与本仓库操作日志里指向那三个新概念页的条目在其后落笔，导致已发布的图谱边集合落后于实际链接 6 条。重跑图谱构建工具后补齐，规模为 **68 节点 / 373 边**（359 条确定性抽取 + 14 条语义推断）/ **8 个社区**。本次**未新增页面、未新增来源**，规模仍是 68 页；新增边全部是「本综述 / 操作日志 ↔ 那三页」形态，内容页之间没有新关系。
 - **2026-10-12** **页级扩展：新增 6 页**（[[SymbolicInteraction]]、[[InformationTheoryAndCybernetics]]、[[NeedhamQuestion]]、[[ClassAndObject]]、[[ModuleAndPackage]]、[[HotAndCoolMedia]]），概念页 44 → **50**，页面总数 68 → **74**。本轮**未新增来源**。同轮回填入链——[[CommonMeaningSpace]] → 象征性互动；[[LasswellFormula]]、[[SocialInformationSystem]] → 信息论与控制论；[[GoldenAgeOfCommunication]] → 李约瑟难题；[[PythonDataType]]、[[JupyterNotebook]] → 类与对象 / 模块与包；[[MediumIsTheMessage]] 的冷热段 → 热媒介与冷媒介。六个新页均至少 1 条入链，断链与孤儿页均为 0。
+- **2026-10-24** **页级扩展：新增 20 页**（18 概念 + 2 实体），概念页 50 → **68**，实体页 7 → **9**，页面总数 74 → **94**。主题从「群体传播的机制组」展开：集合行为、群体心理、从众、群体压力与信息压力、阿希实验、群体暗示、群体模仿、匿名性、群聚、流言，再加流言的量化（奥尔波特公式）与干预（危机公关黄金窗口）；另补自我认知两页（镜中我、约哈里窗口）、人物两页（勒庞、拉斯韦尔）、组织与资源分配一页（议价能力）、方法论一页（概念即工具）、编程一页（with 语句）、史学辨伪一页（西方伪史论）。本轮**未新增来源**，`sources` 一律留空，口径为教材表述 / 通用共识。修补：新页内 6 处残缺双链已修；四页补入链后孤儿页归零。

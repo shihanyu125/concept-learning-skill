@@ -3,7 +3,7 @@ title: "类与对象"
 type: concept
 tags: [python, 编程基础, 面向对象]
 sources: []
-last_updated: 2026-10-12
+last_updated: 2026-10-24
 ---
 
 # 类与对象
@@ -76,6 +76,7 @@ class 大学生:
 - [[ModuleAndPackage]] — 类通常写在模块里，用的时候导入进来
 - [[JupyterNotebook]] — 分段执行的环境里，「定义类的那一段有没有跑过」尤其容易忘
 - [[Statelessness]] — 对象的「状态」存在对象自己身上，与函数的无状态形成对照
+- [[WithStatement]] — 上下文管理器就是一类对象：实现了 `__enter__` / `__exit__`，才被 `with` 语句接住
 - 相关但尚未建页的邻居概念：DataFrame（它本身就是一个类的实例，先有类，才有对象）
 
 ## 来源与说明

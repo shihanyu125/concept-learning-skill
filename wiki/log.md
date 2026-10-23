@@ -1069,3 +1069,15 @@ last_updated: 2026-09-13
 - **两类结构性不对称仍是主线**：① 某些学派的分支页已齐、学派母体页仍缺；② 概念页以结论 / 理论为主，方法层仍显稀薄。两者都不是词频能看出来的，单列备忘。
 - **脚本盲区重申**：「缺页候选 0」不代表没有缺口，本节即是对该判据的人工补位。
 - **图谱**：本节操作未改动任何页面的链接关系。
+
+## [2026-10-24] ingest | 批量新建 20 页：群体传播机制组 + 人物锚点
+
+- **范围**：经逐条审核通过，本轮落地 **18 个概念页 + 2 个实体页**，概念页 50 → **68**，实体页 7 → **9**，页面总数 74 → **94**。
+- **群体传播机制组（10 页）**：[[CollectiveBehavior]]、[[CrowdPsychology]]、[[Conformity]]、[[GroupPressureAndInformationPressure]]、[[AschConformityExperiment]]、[[GroupSuggestion]]、[[GroupImitation]]、[[Anonymity]]、[[OnlineGathering]]、[[Rumor]]。此前「群体传播」只作为一个层名出现在 [[TypesOfCommunication]]，层内机制为空；本批把它拆成「触发情境 → 趋同动力 → 三条机制 → 线上形态」四段可分别引用的结构。
+- **舆论与危机（2 页）**：[[AllportRumorFormula]]、[[CrisisPRGoldenHours]]。前者给 [[Rumor]] 一个可计算的量（重要性 × 模糊性），后者给同一批变量一个可干预的时点，两页与 [[PublicOpinion]]、[[PseudoEnvironment]] 互链。
+- **自我认知（2 页）**：[[LookingGlassSelf]]、[[JohariWindow]]，补的是「人内传播」这一支——此前只有 [[SymbolicInteraction]] 一页孤悬。
+- **人物锚点（2 个实体页）**：[[GustaveLeBon]]（群体心理诸页的命题来源）、[[HaroldLasswell]]（补上 [[LasswellFormula]] 长期「有理论、无人物页」的缺口）。
+- **另四页**：[[BargainingPower]]（组织与资源分配）、[[ConceptAsTool]]（方法论）、[[WithStatement]]（Python 上下文管理器）、[[WesternPseudohistory]]（史学辨伪）。
+- **来源口径**：本轮**未新增来源**，20 页 `sources` 一律留空，正文注明「教材表述 / 通用共识」；不确定处标「待核实」，不伪造出处。
+- **质量修补**：新页内发现 **6 处残缺双链**（形如 `群体暗示|群体暗示]]`，缺开括号），分布于 [[CollectiveBehavior]]（2）、[[Rumor]]、[[Anonymity]]、[[CrowdPsychology]]、[[GroupImitation]]，已统一修好；另从 [[ProgressiveDisclosure]]、[[ClassAndObject]]、[[LasswellFormula]]、[[NeedhamQuestion]] 四处补入链，**孤儿页 0**。
+- **体检**：`tools/health.py` 报空页 0 / 目录同步 0 / 日志覆盖 0；`tools/lint.py` 报断链 0 / 孤儿页 0 / 格式违规 0 / 缺页候选 0。

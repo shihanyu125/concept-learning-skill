@@ -3,7 +3,7 @@ title: "拉斯韦尔 5W 模式与三功能说"
 type: concept
 tags: [传播学, 经典理论, 拉斯韦尔, 传播模式]
 sources: []
-last_updated: 2026-10-12
+last_updated: 2026-10-24
 ---
 
 # 拉斯韦尔 5W 模式与三功能说
@@ -40,4 +40,4 @@ last_updated: 2026-10-12
 
 - 上游：[[InformationTheoryAndCybernetics]] — 5W 的"过程"思路承自信息论；它缺的那一环，正是控制论引入的反馈。
 - 下游：[[Gatekeeping]] 补"渠道中间发生了什么"；[[TwoStepFlow]] 补"对谁"的人际层。
-- **人物线**：拉斯韦尔是四大奠基人中**最早**系统研究传播问题的一位（政治学出身，三项贡献各自成页）——见 [[communication-studies-founding-figures|四大奠基人与施拉姆]]；这门学科诞生的时空条件见 [[GoldenAgeOfCommunication]]。
+- **人物线**：[[HaroldLasswell|哈罗德·拉斯韦尔]] 是四大奠基人中**最早**系统研究传播问题的一位（政治学出身，三项贡献各自成页）——见 [[communication-studies-founding-figures|四大奠基人与施拉姆]]；这门学科诞生的时空条件见 [[GoldenAgeOfCommunication]]。

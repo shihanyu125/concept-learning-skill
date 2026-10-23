@@ -3,7 +3,7 @@ title: "ProgressiveDisclosure（渐进式披露）"
 type: concept
 tags: [context-management, agent-skill, mechanism]
 sources: [skill, concept-relationship]
-last_updated: 2026-09-13
+last_updated: 2026-10-24
 ---
 
 # ProgressiveDisclosure（渐进式披露）
@@ -43,6 +43,7 @@ last_updated: 2026-09-13
 - [[Token]] — 节约上下文，省的就是 token
 - [[Agent]] — Agent 每个循环都在消耗上下文，因此受益
 - [[LLMWiki]] — wiki 的 index.md 也是同一思路：先看目录，再决定读哪页
+- [[ConceptAsTool]] — 反面的一层：披露省的是"看多少"，这一页讲的是"看不看得懂、指挥不指挥得动"
 - 来源页：[[skill]]、[[concept-relationship]]
 
 ## 来源

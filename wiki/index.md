@@ -3,7 +3,7 @@ title: "Wiki Index"
 type: synthesis
 tags: [meta, index]
 sources: []
-last_updated: 2026-10-12
+last_updated: 2026-10-24
 ---
 
 # Wiki Index
@@ -36,6 +36,8 @@ last_updated: 2026-10-12
 - [LlmWikiAgent](entities/LlmWikiAgent.md) — 开源参考实现 `SamurAIGPT/llm-wiki-agent`，本仓库的规范参照
 - [ConceptLearner](entities/ConceptLearner.md) — 本仓库里真实存在的概念学习 Skill，是 [[Skill]] 的活例子
 - [WorkBuddy](entities/WorkBuddy.md) — 本 wiki 所在的 Agent 平台；记忆分层、自动化、模型档位三个主题的共同载体
+- [GustaveLeBon（古斯塔夫·勒庞）](entities/GustaveLeBon.md) — 群体心理学的源头人物，《乌合之众》作者；"心理群体"这一区分的提出者
+- [HaroldLasswell（哈罗德·拉斯韦尔）](entities/HaroldLasswell.md) — 传播学四大奠基人之一，政治学出身；5W 与三功能说的提出者
 
 ## Concepts
 
@@ -89,6 +91,24 @@ last_updated: 2026-10-12
 - [ClassAndObject（类与对象）](concepts/ClassAndObject.md) — 类是图纸、对象是按图造出的实物；self 指谁被调用就指谁
 - [ModuleAndPackage（模块与包）](concepts/ModuleAndPackage.md) — 一个 .py 文件即一个模块；拆开写、导入用，包是模块的上一层
 - [HotAndCoolMedia（热媒介与冷媒介）](concepts/HotAndCoolMedia.md) — 冷热量的不是温度而是"受众要不要补全"；含电视归类的争议与两套冷热概念的辨析
+- [CollectiveBehavior（集合行为）](concepts/CollectiveBehavior.md) — 某种刺激下发生的非常态社会集合；缺一个关键词，定义就不完整
+- [CrowdPsychology（群体心理）](concepts/CrowdPsychology.md) — 一群人凑到一起不是简单相加：理智被削弱，同时获得群体共有的属性
+- [Conformity（从众）](concepts/Conformity.md) — 在群体压力下改变自己的判断或行为，哪怕答案一眼可辨
+- [GroupPressureAndInformationPressure（群体压力与信息压力）](concepts/GroupPressureAndInformationPressure.md) — 趋同的两台发动机：怕被孤立，与"说的人多就比较可信"
+- [AschConformityExperiment（阿希三垂线实验）](concepts/AschConformityExperiment.md) — 把从众做成可重复实验的那一次；关键是"一个人 vs 一群同谋"
+- [GroupSuggestion（群体暗示）](concepts/GroupSuggestion.md) — 情绪先于事实到达：身体先动，判断后到
+- [GroupImitation（群体模仿）](concepts/GroupImitation.md) — 行为向多数看齐，且是不自觉的复制
+- [Anonymity（匿名性）](concepts/Anonymity.md) — 身份被淹没后，自我约束与社会代价一起失效
+- [OnlineGathering（群聚）](concepts/OnlineGathering.md) — 集合行为的线上形态：话题驱动、可匿名、来得快去得也快
+- [Rumor（流言）](concepts/Rumor.md) — 信源不明、无法确认的信息，在恐惧与模糊中高速扩散
+- [AllportRumorFormula（奥尔波特公式）](concepts/AllportRumorFormula.md) — R = I × A：流言量正比于重要性乘模糊性，任一为零则不传
+- [CrisisPRGoldenHours（危机公关的黄金窗口）](concepts/CrisisPRGoldenHours.md) — 首响时间就是战场：抢在信息真空被填满之前压缩模糊性
+- [LookingGlassSelf（镜中我）](concepts/LookingGlassSelf.md) — 人的自我概念来自"我以为别人怎么看我"；库利 1902
+- [JohariWindow（约哈里窗口）](concepts/JohariWindow.md) — 自我认知的四格：我知道 / 我不知道 × 别人知道 / 别人不知道
+- [BargainingPower（议价能力）](concepts/BargainingPower.md) — 一个机构能说多硬的话，取决于手里有多少别人需要的东西；专业水平不在这张表上
+- [ConceptAsTool（概念即工具）](concepts/ConceptAsTool.md) — 手里有锤子才看得见冰箱：概念决定你能不能提出问题
+- [WithStatement（with 语句）](concepts/WithStatement.md) — 上下文管理器：不管中途是否出错，退出时都把资源收干净
+- [WesternPseudohistory（西方伪史论）](concepts/WesternPseudohistory.md) — 一类主张"西方古典文明系伪造"的叙事；与疑古、辨伪的分界在可证伪性与证据完整性
 
 ## Syntheses
 
