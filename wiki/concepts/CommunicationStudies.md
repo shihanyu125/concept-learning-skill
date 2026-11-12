@@ -53,6 +53,8 @@ last_updated: 2026-09-15
 - [[communication-studies-founding-figures]] — 谁把这门学科立了起来
 - [[LasswellFormula]] — 学科骨架 5W 的出处
 - [[SpiritualIntercourse]] — 另一条理论源头：马克思精神交往
+- [[MediaArchaeology]] — 交叉带之一：与科学技术史、档案学接壤
+- [[MediaGeography]] — 交叉带之二：与人文地理学接壤
 
 ## 来源
 

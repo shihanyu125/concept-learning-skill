@@ -109,6 +109,8 @@ last_updated: 2026-10-24
 - [ConceptAsTool（概念即工具）](concepts/ConceptAsTool.md) — 手里有锤子才看得见冰箱：概念决定你能不能提出问题
 - [WithStatement（with 语句）](concepts/WithStatement.md) — 上下文管理器：不管中途是否出错，退出时都把资源收干净
 - [WesternPseudohistory（西方伪史论）](concepts/WesternPseudohistory.md) — 一类主张"西方古典文明系伪造"的叙事；与疑古、辨伪的分界在可证伪性与证据完整性
+- [MediaArchaeology（媒介考古学）](concepts/MediaArchaeology.md) — 把媒介当装置、专挖死媒介：问"这台机器让什么成为可能"，不问"它表达了什么"
+- [MediaGeography（媒介地理学）](concepts/MediaGeography.md) — 媒介与空间、地方互相生成；邵培仁五要素 + Adams 四象限；别与"媒介地质学"混
 
 ## Syntheses
 
